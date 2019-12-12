@@ -1,0 +1,2 @@
+# HedonicGames
+ModifiedFractionalHedonicGames and SimpleSymmetricFractionalGedonicGames implementations
