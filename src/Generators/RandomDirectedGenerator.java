@@ -1,5 +1,7 @@
 package Generators;
 
+import Graphs.DirectedWeightedGraph;
+import Structures.Edge;
 import org.jgrapht.graph.*;
 import org.jgrapht.traverse.DepthFirstIterator;
 import Random.RandomInt;
@@ -8,16 +10,16 @@ import java.util.*;
 public class RandomDirectedGenerator {
     private HashMap adjMap =null;
     private int nv,n_archi;
-    private SimpleDirectedWeightedGraph<Integer, DefaultWeightedEdge> graph;
+    private DirectedWeightedGraph<Integer, Edge> graph;
 
 
     public RandomDirectedGenerator(int nv, int n_archi){
         this.nv=nv;
         this.n_archi=n_archi;
-            graph= new <Integer, DefaultWeightedEdge>SimpleDirectedWeightedGraph<Integer, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+            graph= new <Integer, Edge>DirectedWeightedGraph<Integer, Edge>(Edge.class);
     }
 
-    public SimpleDirectedWeightedGraph<Integer, DefaultWeightedEdge> generateGraph() {
+    public SimpleDirectedWeightedGraph<Integer, Edge> generateGraph() {
         Integer u; //randomGenerator.nextInt(nv);
         Integer v; //randomGenerator.nextInt(nv);
         List <Integer >disconnected=new <Integer> ArrayList<Integer>();

@@ -1,6 +1,7 @@
 
 //import com.google.common.graph.Graphs;
 import Generators.RandomDirectedGenerator;
+import Structures.Edge;
 import org.jgrapht.graph.*;
 import org.jgrapht.*;
 
@@ -75,7 +76,7 @@ public class App {
         //----------------------------------------------------------
 
         RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(5,15);
-        Graph <Integer, DefaultWeightedEdge> generatedgraph = rdmgn.generateGraph();
+        Graph <Integer, Edge> generatedgraph = rdmgn.generateGraph();
         //System.out.println(generatedgraph.toString());
 
 

@@ -16,7 +16,7 @@ public class Edge extends DefaultWeightedEdge {
     @Override
     public String toString() {
         String info= super.toString();
-        return info+" weight: "+this.getWeight();
+        return info+": "+this.getWeight();
     }
 
     @Override

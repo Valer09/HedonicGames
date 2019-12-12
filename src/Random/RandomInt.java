@@ -26,5 +26,17 @@ public class RandomInt {
 
     }
 
+    public static Integer randomIntWithExclusion(int start, int end, Integer exclusions){
+        Random randomGenerator = new Random();
+        //System.out.println(exclusions.size()+ " è la taglia della lista esclusioni");
+        int random = randomGenerator.nextInt(end);
+        while (random == exclusions) {
+            random = randomGenerator.nextInt(end);
+        }
+        return random;
+
+    }
+
+
 }
 

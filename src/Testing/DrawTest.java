@@ -1,4 +1,5 @@
 package Testing;
+import Generators.WeightGenerator;
 import com.mxgraph.layout.*;
 import com.mxgraph.swing.*;
 import org.jgrapht.*;
@@ -25,7 +26,7 @@ public class DrawTest extends JApplet{
 
         private static final Dimension DEFAULT_SIZE = new Dimension(1080, 720);
 
-        private JGraphXAdapter<String, DefaultWeightedEdge> jgxAdapter;
+        private JGraphXAdapter <String, DefaultWeightedEdge> jgxAdapter;
 
         /**
          * An alternative starting point for this demo, to also allow running this applet as an
@@ -37,10 +38,9 @@ public class DrawTest extends JApplet{
         {
             DrawTest applet = new DrawTest();
             applet.init();
-
             JFrame frame = new JFrame();
             frame.getContentPane().add(applet);
-            frame.setTitle("JGraphT Adapter to JGraphX Demo");
+            frame.setTitle("GraphDrawer");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.pack();
             frame.setVisible(true);
@@ -49,34 +49,20 @@ public class DrawTest extends JApplet{
         @Override
         public void init()
         {
-            // create a JGraphT graph
-            ListenableGraph<String, DefaultWeightedEdge> g =
-                    new DefaultListenableGraph<>(new DefaultDirectedGraph<>(DefaultWeightedEdge.class));
+            RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(9,10);
+            Graph <Integer, Edge> generatedgraph = rdmgn.generateGraph();
 
-            RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(25,30);
-            Graph <Integer, DefaultWeightedEdge> generatedgraph = rdmgn.generateGraph();
-            // add some sample data (graph manipulated via JGraphX)
-            Iterator<Integer> iterator = new DepthFirstIterator<Integer, DefaultWeightedEdge>(generatedgraph);
-            while(iterator.hasNext()){
-                g.addVertex(iterator.next().toString());
-            }
-            Set<DefaultWeightedEdge> edges= generatedgraph.edgeSet();
-            for ( DefaultWeightedEdge e : edges  ){
-                g.addEdge(generatedgraph.getEdgeSource(e).toString(),generatedgraph.getEdgeTarget(e).toString());
-
-            }
+            WeightGenerator wg= new WeightGenerator(generatedgraph);
+            wg.generateWeights();
 
             // create a visualization using JGraph, via an adapter
-            System.out.println(g.toString());
-            jgxAdapter = new JGraphXAdapter<String, DefaultWeightedEdge>(g);
+            jgxAdapter = new JGraphXAdapter(generatedgraph);
             setPreferredSize(DEFAULT_SIZE);
             mxGraphComponent component = new mxGraphComponent(jgxAdapter);
             component.setConnectable(false);
             component.getGraph().setAllowDanglingEdges(false);
             getContentPane().add(component);
             resize(DEFAULT_SIZE);
-
-
 
             // positioning via jgraphx layouts
             mxCircleLayout layout = new mxCircleLayout(jgxAdapter);
