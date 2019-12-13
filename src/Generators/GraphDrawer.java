@@ -1,5 +1,4 @@
-package Testing;
-import Generators.WeightGenerator;
+package Generators;
 import com.mxgraph.layout.*;
 import com.mxgraph.swing.*;
 import org.jgrapht.*;
@@ -12,12 +11,21 @@ import Structures.Edge;
 /**
  * For drawing of graphs
  */
-public class Drawer extends JApplet{
+public class GraphDrawer extends JApplet{
 
     private static final long serialVersionUID = 2202072534703043194L;
     private static final Dimension DEFAULT_SIZE = new Dimension(1080, 720);
     private JGraphXAdapter <String, DefaultWeightedEdge> jgxAdapter;
     private static Graph <Integer, Edge> generatedgraph;
+
+
+    /**
+     * For using this tool from other
+     * @param g
+     */
+    public static void setGraph(Graph <Integer, Edge> g){
+        generatedgraph=g;
+    }
 
     /**
      * Starting point
@@ -25,7 +33,7 @@ public class Drawer extends JApplet{
      */
     public static void main(String[] args)
     {
-        Drawer applet = new Drawer();
+        GraphDrawer applet = new GraphDrawer();
         applet.init();
         JFrame frame = new JFrame();
         frame.getContentPane().add(applet);
@@ -64,12 +72,8 @@ public class Drawer extends JApplet{
         // that's all there is to it!...
     }
 
-    /**
-     * For using this tool from other
-     * @param g
-     */
-    public static void setGraph(Graph <Integer, Edge> g){
-        generatedgraph=g;
-        }
-    }
+
+
+}
+
 

@@ -2,9 +2,9 @@ package Testing;
 
 import java.io.*;
 
-public class Test {
+public class Serializable {
 
-    public static class TEST implements Serializable{
+    public static class TEST implements java.io.Serializable {
         private boolean a;
         private int x,y;
         private String s;

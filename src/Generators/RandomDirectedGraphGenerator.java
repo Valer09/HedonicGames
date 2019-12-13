@@ -7,13 +7,13 @@ import org.jgrapht.traverse.DepthFirstIterator;
 import Random.RandomInt;
 import java.util.*;
 
-public class RandomDirectedGenerator {
+public class RandomDirectedGraphGenerator {
     private HashMap adjMap =null;
     private int nv,n_archi;
     private DirectedWeightedGraph<Integer, Edge> graph;
 
 
-    public RandomDirectedGenerator(int nv, int n_archi){
+    public RandomDirectedGraphGenerator(int nv, int n_archi){
         this.nv=nv;
         this.n_archi=n_archi;
             graph= new <Integer, Edge>DirectedWeightedGraph<Integer, Edge>(Edge.class);

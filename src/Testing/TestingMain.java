@@ -1,15 +1,26 @@
+package Testing;
 
-//import com.google.common.graph.Graphs;
-import Generators.RandomDirectedGenerator;
+import Generators.GraphDrawer;
+import Generators.RandomDirectedGraphGenerator;
+import Structures.Agent;
 import Structures.Edge;
-import Testing.Drawer;
-import org.jgrapht.*;
+import Structures.MFCoalitionStructure;
+import Structures.MFCoreStatus;
+import org.jgrapht.Graph;
 
-public class App {
+import java.util.ArrayList;
+//import com.google.common.graph.Graphs;
 
-    public static void main(String[] args) {
+public class TestingMain {
+    static int n, n_relazioni;
+    static RandomDirectedGraphGenerator relationsGraphGenerator;
+    static Graph<Integer, Edge> relationsGraph;
+    static ArrayList<Agent> agents;
+    static MFCoalitionStructure startingStructure;
+    static MFCoreStatus status;
 
-/*        System.out.println("Hello Java");
+
+    /*        System.out.println("Hello Java");
 
         Graph<Integer, DefaultWeightedEdge> mygraph= new SimpleDirectedWeightedGraph(DefaultWeightedEdge.class);
 
@@ -72,18 +83,14 @@ public class App {
         System.out.println(mygraph.outDegreeOf(1));
         System.out.println(mygraph.inDegreeOf(1));*/
 
-        //---------------------------------------------------------
-        //----------------------------------------------------------
+    //---------------------------------------------------------
+    //---------------------------------------------------------
 
-        RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(5,15);
-        Graph <Integer, Edge> generatedgraph = rdmgn.generateGraph();
-        Drawer.setGraph(generatedgraph);
-        Drawer.main(null);
-
-
-
-
-
+    public static void main(String []args){
+    relationsGraphGenerator= new RandomDirectedGraphGenerator(5,15);
+    Graph<Integer, Edge> relationsGraph = relationsGraphGenerator.generateGraph();
+    GraphDrawer.setGraph(relationsGraph);
+    GraphDrawer.main(null);
 
     }
 }
