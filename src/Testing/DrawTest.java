@@ -27,12 +27,13 @@ public class DrawTest extends JApplet{
         private static final Dimension DEFAULT_SIZE = new Dimension(1080, 720);
 
         private JGraphXAdapter <String, DefaultWeightedEdge> jgxAdapter;
+        private static Graph <Integer, Edge> generatedgraph;
 
         /**
          * An alternative starting point for this demo, to also allow running this applet as an
          * application.
          *
-         * @param args command line arguments
+         * @param //args command line arguments
          */
         public static void main(String[] args)
         {
@@ -49,9 +50,6 @@ public class DrawTest extends JApplet{
         @Override
         public void init()
         {
-            RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(9,10);
-            Graph <Integer, Edge> generatedgraph = rdmgn.generateGraph();
-
             WeightGenerator wg= new WeightGenerator(generatedgraph);
             wg.generateWeights();
 
@@ -76,6 +74,9 @@ public class DrawTest extends JApplet{
 
             layout.execute(jgxAdapter.getDefaultParent());
             // that's all there is to it!...
+        }
+        public static void setGraph(Graph <Integer, Edge> g){
+            generatedgraph=g;
         }
     }
 
