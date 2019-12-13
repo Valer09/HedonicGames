@@ -2,11 +2,8 @@
 //import com.google.common.graph.Graphs;
 import Generators.RandomDirectedGenerator;
 import Structures.Edge;
-import Testing.DrawTest;
-import org.jgrapht.graph.*;
+import Testing.Drawer;
 import org.jgrapht.*;
-
-import javax.swing.*;
 
 public class App {
 
@@ -80,8 +77,8 @@ public class App {
 
         RandomDirectedGenerator rdmgn= new RandomDirectedGenerator(5,15);
         Graph <Integer, Edge> generatedgraph = rdmgn.generateGraph();
-        DrawTest.setGraph(generatedgraph);
-        DrawTest.main(null);
+        Drawer.setGraph(generatedgraph);
+        Drawer.main(null);
 
 
 
