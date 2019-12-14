@@ -7,7 +7,6 @@ import java.util.Random;
 import java.util.Set;
 
 public class WeightGenerator {
-    private boolean is_directed;
     private Graph g;
     public WeightGenerator (Graph g){
         this.g=g;

@@ -1,13 +1,20 @@
 package Testing;
 
+import Generators.FileGenerator;
 import Generators.GraphDrawer;
 import Generators.RandomDirectedGraphGenerator;
+import Generators.WeightGenerator;
 import Structures.Agent;
 import Structures.Edge;
 import Structures.MFCoalitionStructure;
 import Structures.MFCoreStatus;
 import org.jgrapht.Graph;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 //import com.google.common.graph.Graphs;
 
@@ -89,9 +96,11 @@ public class TestingMain {
     public static void main(String []args){
     relationsGraphGenerator= new RandomDirectedGraphGenerator(5,15);
     Graph<Integer, Edge> relationsGraph = relationsGraphGenerator.generateGraph();
+    WeightGenerator wg = new WeightGenerator(relationsGraph);
+    wg.generateWeights();
     GraphDrawer.setGraph(relationsGraph);
-    GraphDrawer.main(null);
+    FileGenerator.graphFileGenerator(relationsGraph);
+    //GraphDrawer.main(null);
 
     }
 }
-

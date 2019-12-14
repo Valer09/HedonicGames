@@ -6,7 +6,13 @@ import org.jgrapht.ext.*;
 import org.jgrapht.graph.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
 import Structures.Edge;
+import org.jgrapht.io.*;
 
 /**
  * For drawing of graphs
@@ -71,9 +77,6 @@ public class GraphDrawer extends JApplet{
         layout.execute(jgxAdapter.getDefaultParent());
         // that's all there is to it!...
     }
-
-
-
 }
 
 
