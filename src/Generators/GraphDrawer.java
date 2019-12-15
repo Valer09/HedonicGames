@@ -22,15 +22,15 @@ public class GraphDrawer extends JApplet{
 
     private static final long serialVersionUID = 2202072534703043194L;
     private static final Dimension DEFAULT_SIZE = new Dimension(1080, 720);
-    private JGraphXAdapter <Vertex, DefaultWeightedEdge> jgxAdapter;
-    private static Graph <Vertex, Edge> generatedgraph;
+    private JGraphXAdapter <Integer, DefaultWeightedEdge> jgxAdapter;
+    private static Graph<Integer, Edge> generatedgraph;
 
 
     /**
      * For using this tool from other
      * @param g
      */
-    public static void setGraph(Graph <Vertex, Edge> g){
+    public static void setGraph(Graph<Integer, Edge> g){
         generatedgraph=g;
     }
 
@@ -53,8 +53,6 @@ public class GraphDrawer extends JApplet{
     @Override
     public void init()
     {
-        WeightGenerator wg= new WeightGenerator(generatedgraph);
-        wg.generateWeights();
 
         // create a visualization using JGraph, via an adapter
         jgxAdapter = new JGraphXAdapter(generatedgraph);

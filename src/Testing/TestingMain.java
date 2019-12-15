@@ -7,12 +7,6 @@ import Generators.WeightGenerator;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
-
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -20,12 +14,13 @@ import java.util.Set;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
-    static int n, n_relazioni;
+    static int n, n_relazioni, n_istanze;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
     static Graph<Integer, Edge> relationsGraph;
-    static Agent [] agents;
-    static Agent [][] coalitions;
-    static Agent [][] startingCoalitions;
+    static Agent[] agents;
+    //static Agent[][] coalitions;
+    static ArrayList<Agent> [] coalitions;
+    static Agent[][] startingCoalitions;
     static HashMap<Integer, Integer> partition;
     static HashMap<Integer, Integer> startingPartition;
     static MFCoreStatus status;
@@ -36,68 +31,141 @@ public class TestingMain {
     //---------------------------------------------------------
     //---------------------------------------------------------
 
-    public static void main(String []args){
+    public static void main(String[] args) {
 
-    System.out.println("Inserisci il numero di agenti: ");
-    Scanner scan = new Scanner(System.in);
-    n = scan.nextInt();
-    System.out.println("Inserisci il numero di relazioni: ");
-    n_relazioni=scan.nextInt();
-    initGraph();
+        System.out.println("Inserisci il numero di agenti: ");
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+        System.out.println("Inserisci il numero di relazioni: ");
+        n_relazioni = scan.nextInt();
+        System.out.println("Inserisci il numero di istanze da provare: ");
+        n_istanze = scan.nextInt();
 
-    //inizializzazione agenti, coalizioni e partizioni
-    agents = new Agent [n+1];
-    agents[0]=null;
-    coalitions = new Agent [n+1][n+1];
-    coalitions [0][0]=null;
-    partition = new HashMap<Integer, Integer>();
+/*    for(int i=0; i<n_istanze ;i++){
 
-    //costruisco lista di agenti e di coalizioni di uguale cardinalità
-    for (Integer v : vertexSet){
-        agents[v]=new Agent(v);
-    }
+    }*/
 
-    //costruisco partitione e colaizioni iniziali con assegnamento dell'utilità all'agente
-    for (Agent a : agents ){
-        int random= RandomInt.randomIntWithExclusion(0,n,0);
-        a.setUtility(calculateUtility(a.getID()));
-        partition.put(a.getID(),random);
-        startingPartition.put(a.getID(),random);
-        coalitions[a.getID()][random]=a;
-        startingCoalitions[a.getID()][random]=a;
-    }
-    //inizializzo gli stati
-    initialStatus=new MFCoreStatus(startingPartition);
-    status=new MFCoreStatus(partition);
+        initGraph();
+        initStructures();
+        //showGraph();
+        agents[5].setUtility(200);
+        System.out.println("Ciao");
+        //findCoreEquilibrium();
 
     }
 
-    static double calculateUtility(int i){
-        double sum=0;
-        int coalition_cardinality=0;
-        int j=partition.get(i);
-        Agent[] coalition =coalitions[j];
-        for (Agent a : coalition){
-            if (relationsGraph.containsEdge(i,a.getID())){
-                Edge e=relationsGraph.getEdge(i,a.getID());
-                sum+=relationsGraph.getEdgeWeight(e);
-                coalition_cardinality++;
-            }
-        }
-        sum=(sum)/(coalition_cardinality-1);
-        return sum;
-    }
 
-    public static void initGraph(){
+    public static void initGraph() {
         //creazione grafi
-        relationsGraphGenerator= new RandomDirectedGraphGenerator(n,n_relazioni);
+        relationsGraphGenerator = new RandomDirectedGraphGenerator(n, n_relazioni);
         relationsGraph = relationsGraphGenerator.generateGraph();
         wg = new WeightGenerator(relationsGraph);
         wg.generateWeights();
         //GraphDrawer.setGraph(relationsGraph);
         //FileGenerator.graphFileGenerator(relationsGraph);
         //GraphDrawer.main(null);
-        vertexSet=relationsGraph.vertexSet();
+        vertexSet = relationsGraph.vertexSet();
 
     }
-}
+
+    static void initStructures() {
+        //inizializzazione agenti, coalizioni e partizioni
+        agents = new Agent[n + 1];
+        agents[0] = null;
+        //coalitions = new Agent[n + 1][n + 1];
+        coalitions = new ArrayList [n+1];
+        startingCoalitions = new Agent[n + 1][n + 1];
+        //coalitions[0][0] = null;
+        coalitions[0].add(null);
+        startingCoalitions[0][0] = null;
+        partition = new HashMap<Integer, Integer>();
+        startingPartition = new HashMap<Integer, Integer>();
+
+        //costruisco lista di agenti e di coalizioni di uguale cardinalità
+        for (Integer v : vertexSet) {
+            agents[v] = new Agent(v);
+        }
+        initSetting();
+    }
+
+    static void initSetting() {
+        //costruisco partitione e coalizioni iniziali
+        for (Agent a : agents) {
+            if (a == null)
+                continue;
+            int random = RandomInt.randomIntWithExclusion(0, (n / 2) + 1, 0);
+            //a.setUtility(calculateUtility(a.getID()));
+            partition.put(a.getID(), random);
+            Agent x = new Agent(a.getID());
+            startingPartition.put(x.getID(), random);
+            //coalitions[random][a.getID()] = a;
+            coalitions[random].add(a);
+            startingCoalitions[random][x.getID()] = x;
+        }
+
+        for (Agent a : agents) {
+            if (a == null)
+                continue;
+            a.setUtility(calculateUtility(a.getID()));
+            startingCoalitions[startingPartition.get(a.getID())][a.getID()].setUtility(calculateUtility(a.getID()));
+
+        }
+
+
+        //inizializzo gli stati
+        initialStatus = new MFCoreStatus(startingPartition);
+        status = new MFCoreStatus(partition);
+    }
+
+    static double calculateUtility(int i) {
+        double sum = 0;
+        int coalition_cardinality = 1;
+        int j = partition.get(i);
+        //Agent[] coalition = coalitions[j];
+        ArrayList<Agent> coalition = coalitions[j];
+        for (Agent a : coalition) {
+            if (a == null || a.getID() == i)
+                continue;
+            coalition_cardinality++;
+            if (relationsGraph.containsEdge(i, a.getID())) {
+                Edge e = relationsGraph.getEdge(i, a.getID());
+                sum += relationsGraph.getEdgeWeight(e);
+
+            }
+        }
+        if (coalition_cardinality - 1 < 1) {
+            sum = 0;
+            return sum;
+        } else {
+            sum = (sum) / ((coalition_cardinality - 1));
+            return sum;
+        }
+    }
+
+    static void refreshUtility() {
+        for (Agent a : agents) {
+            if (a == null)
+                continue;
+            a.setUtility(calculateUtility(a.getID()));
+        }
+    }
+        public static void showGraph () {
+            GraphDrawer.setGraph(relationsGraph);
+            FileGenerator.graphFileGenerator(relationsGraph);
+            GraphDrawer.main(null);
+        }
+        public static void deviation (ArrayList < Agent > T) {
+        int j=0;
+        for (int i=0; i<coalitions.length; i++){
+            //trovo il primo indice di una colazione vuota in cui spostare gli agenti
+            if (coalitions[i].isEmpty() || coalitions[i]==null)
+                j=i;
+        }
+        for (Agent t : T){
+            //eliminazione agenti dalle vecchie coalizioni, inserimento nelle nuove, aggiornamento strutturaCoalizione
+        }
+        refreshUtility();
+
+        }
+
+    }
