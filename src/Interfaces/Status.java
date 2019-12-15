@@ -6,7 +6,7 @@ public interface Status<T> {
      * Return Coalition Structure
      * @return - <b>CoalitionStructure</b>
      */
-    CoalitionStructure getCoalitionStructure();
+    Object getCoalitionStructure();
 
     /**
      * Return a string info representing the status

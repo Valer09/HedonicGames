@@ -1,4 +1,5 @@
 package Generators;
+import Structures.Vertex;
 import com.mxgraph.layout.*;
 import com.mxgraph.swing.*;
 import org.jgrapht.*;
@@ -21,15 +22,15 @@ public class GraphDrawer extends JApplet{
 
     private static final long serialVersionUID = 2202072534703043194L;
     private static final Dimension DEFAULT_SIZE = new Dimension(1080, 720);
-    private JGraphXAdapter <String, DefaultWeightedEdge> jgxAdapter;
-    private static Graph <Integer, Edge> generatedgraph;
+    private JGraphXAdapter <Vertex, DefaultWeightedEdge> jgxAdapter;
+    private static Graph <Vertex, Edge> generatedgraph;
 
 
     /**
      * For using this tool from other
      * @param g
      */
-    public static void setGraph(Graph <Integer, Edge> g){
+    public static void setGraph(Graph <Vertex, Edge> g){
         generatedgraph=g;
     }
 

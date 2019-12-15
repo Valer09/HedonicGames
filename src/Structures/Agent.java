@@ -1,8 +1,12 @@
 package Structures;
 
 public class Agent {
-    private static Integer i;
+    private Integer i;
     private double utility;
+
+    public Agent (int i){
+        this.i=i;
+    }
 
     public Integer getID(){
         return i;
@@ -10,5 +14,8 @@ public class Agent {
 
     public double getUtility(){
         return utility;
+    }
+    public void setUtility(double u){
+        this.utility=u;
     }
 }

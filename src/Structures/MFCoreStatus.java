@@ -2,9 +2,16 @@ package Structures;
 
 import Interfaces.Status;
 
+import java.util.HashMap;
+
 public class MFCoreStatus implements Status {
-    private MFCoalitionStructure coalitionStructure;
-    Boolean coreStable;
+    private HashMap<Integer, Integer> partition;
+    private Boolean coreStable;
+
+
+    public MFCoreStatus(HashMap<Integer, Integer> partition){
+        this.partition=partition;
+    }
 
     /**
      * Return Coalition Structure
@@ -12,8 +19,8 @@ public class MFCoreStatus implements Status {
      * @return - <b>CoalitionStructure</b>
      */
     @Override
-    public MFCoalitionStructure getCoalitionStructure() {
-        return null;
+    public HashMap<Integer, Integer> getCoalitionStructure() {
+        return partition;
     }
 
     /**
