@@ -1,5 +1,4 @@
 package Generators;
-import Structures.Vertex;
 import com.mxgraph.layout.*;
 import com.mxgraph.swing.*;
 import org.jgrapht.*;
@@ -7,13 +6,8 @@ import org.jgrapht.ext.*;
 import org.jgrapht.graph.*;
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.HashMap;
-import java.util.Map;
+
 import Structures.Edge;
-import org.jgrapht.io.*;
 
 /**
  * For drawing of graphs
@@ -28,7 +22,7 @@ public class GraphDrawer extends JApplet{
 
     /**
      * For using this tool from other
-     * @param g
+     * @param g graph
      */
     public static void setGraph(Graph<Integer, Edge> g){
         generatedgraph=g;
@@ -36,7 +30,7 @@ public class GraphDrawer extends JApplet{
 
     /**
      * Starting point
-     * @param //args command line arguments
+     * @param args command line arguments
      */
     public static void main(String[] args)
     {
@@ -50,10 +44,6 @@ public class GraphDrawer extends JApplet{
         frame.setVisible(true);
         applet.start();
         applet.paint(frame.getGraphics());
-
-
-
-
 
     }
 
@@ -82,8 +72,6 @@ public class GraphDrawer extends JApplet{
 
         layout.execute(jgxAdapter.getDefaultParent());
         // that's all there is to it!...
-
-
     }
 }
 

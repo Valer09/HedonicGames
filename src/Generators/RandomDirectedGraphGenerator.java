@@ -7,21 +7,32 @@ import org.jgrapht.traverse.DepthFirstIterator;
 import Random.RandomInt;
 import java.util.*;
 
+/**
+ * It creates a random directed graph based on number of nodes and number of edges passed in costructor
+ * In this graph every node is an Integer and every edge is an instance of Edge class
+ */
 public class RandomDirectedGraphGenerator {
-    private HashMap adjMap =null;
     private int nv,n_archi;
     private DirectedWeightedGraph<Integer, Edge> graph;
 
-
+    /**
+     * Constructor
+     * @param nv - Number of nodes
+     * @param n_archi - Number of edges
+     */
     public RandomDirectedGraphGenerator(int nv, int n_archi){
         this.nv=nv;
         this.n_archi=n_archi;
             graph= new <Integer, Edge>DirectedWeightedGraph<Integer, Edge>(Edge.class);
     }
 
+    /**
+     * Generate Graph
+     * @return Directed graph
+     */
     public SimpleDirectedWeightedGraph<Integer, Edge> generateGraph() {
-        Integer u; //randomGenerator.nextInt(nv);
-        Integer v; //randomGenerator.nextInt(nv);
+        Integer u;
+        Integer v;
         List <Integer >disconnected=new <Integer> ArrayList<Integer>();
         List<Integer> exclusions=new ArrayList<Integer>();
 
@@ -43,8 +54,6 @@ public class RandomDirectedGraphGenerator {
             graph.addEdge(u,v);
             disconnected.remove(u);
             disconnected.remove(v);
-
-           // System.out.println(graph.vertexSet());
         }
         i=0;
         Iterator <Integer> iterator = new DepthFirstIterator<Integer, DefaultWeightedEdge>(graph);
@@ -55,10 +64,8 @@ public class RandomDirectedGraphGenerator {
             graph.addEdge(d, RandomInt.randomIntWithExclusion(1,nv,exclusions));
             exclusions.clear();
             i++;
-            //System.out.println(graph.toString());
         }
         i=0;
-        //System.out.println(graph.vertexSet()+" FINE");
         return graph;
     }
 }

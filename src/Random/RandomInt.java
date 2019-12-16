@@ -5,7 +5,19 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * It can generate a random positive int in range from start to end and excluding a set of numers listed
+ */
 public class RandomInt {
+
+    /**
+     *
+     * It can generate a random positive int in range from start to end and excluding a set of numers listed
+     * @param start lower bound
+     * @param end upped bound
+     * @param exclusions list of integer to excluding
+     * @return random integer
+     */
     public static Integer randomIntWithExclusion(int start, int end,List<Integer> exclusions){
         Random randomGenerator = new Random();
         Collections.sort(exclusions);
@@ -26,6 +38,13 @@ public class RandomInt {
 
     }
 
+    /**
+     * It can generate a random positive int in range from start to end and excluding one
+     * @param start lower bound
+     * @param end upper bound
+     * @param exclusions number to exclude
+     * @return random integer
+     */
     public static Integer randomIntWithExclusion(int start, int end, Integer exclusions){
         Random randomGenerator = new Random();
         //System.out.println(exclusions.size()+ " è la taglia della lista esclusioni");

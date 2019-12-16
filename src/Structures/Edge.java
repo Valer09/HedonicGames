@@ -2,6 +2,9 @@ package Structures;
 
 import org.jgrapht.graph.DefaultWeightedEdge;
 
+/**
+ * Extends DefaultWeightedEdge
+ */
 public class Edge extends DefaultWeightedEdge {
     private double w;
 
@@ -9,6 +12,7 @@ public class Edge extends DefaultWeightedEdge {
         super();
         w=super.getWeight();
     }
+
     public double getWeight(){
         return super.getWeight();
     }
