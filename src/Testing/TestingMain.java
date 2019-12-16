@@ -7,6 +7,8 @@ import Generators.WeightGenerator;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
+import org.jgrapht.io.GraphMLExporter;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -41,20 +43,15 @@ public class TestingMain {
         System.out.println("Inserisci il numero di istanze da provare: ");
         n_istanze = scan.nextInt();
 
-/*    for(int i=0; i<n_istanze ;i++){
-
-    }*/
 
         initGraph();
         initStructures();
         //showGraph();
-        agents[5].setUtility(200);
         System.out.println("Ciao");
         //findCoreEquilibrium();
 
     }
-
-
+    
     public static void initGraph() {
         //creazione grafi
         relationsGraphGenerator = new RandomDirectedGraphGenerator(n, n_relazioni);
@@ -74,9 +71,12 @@ public class TestingMain {
         agents[0] = null;
         //coalitions = new Agent[n + 1][n + 1];
         coalitions = new ArrayList [n+1];
+        for (int i=0; i<=n; i++){
+            coalitions[i]= new ArrayList<Agent>();
+        }
         startingCoalitions = new Agent[n + 1][n + 1];
         //coalitions[0][0] = null;
-        coalitions[0].add(null);
+        //coalitions[0].add(null);
         startingCoalitions[0][0] = null;
         partition = new HashMap<Integer, Integer>();
         startingPartition = new HashMap<Integer, Integer>();
@@ -102,15 +102,12 @@ public class TestingMain {
             coalitions[random].add(a);
             startingCoalitions[random][x.getID()] = x;
         }
-
         for (Agent a : agents) {
             if (a == null)
                 continue;
             a.setUtility(calculateUtility(a.getID()));
             startingCoalitions[startingPartition.get(a.getID())][a.getID()].setUtility(calculateUtility(a.getID()));
-
         }
-
 
         //inizializzo gli stati
         initialStatus = new MFCoreStatus(startingPartition);
@@ -149,20 +146,25 @@ public class TestingMain {
             a.setUtility(calculateUtility(a.getID()));
         }
     }
-        public static void showGraph () {
+    public static void showGraph () {
             GraphDrawer.setGraph(relationsGraph);
             FileGenerator.graphFileGenerator(relationsGraph);
             GraphDrawer.main(null);
         }
-        public static void deviation (ArrayList < Agent > T) {
-        int j=0;
-        for (int i=0; i<coalitions.length; i++){
+    public static void deviation (ArrayList < Agent > T) {
+        int targetCoalition=0;
+        for (int i=1; i<coalitions.length; i++){
             //trovo il primo indice di una colazione vuota in cui spostare gli agenti
-            if (coalitions[i].isEmpty() || coalitions[i]==null)
-                j=i;
+            if (coalitions[i].isEmpty() || coalitions[i]==null){
+                targetCoalition=i;
+                break;
+            }
         }
         for (Agent t : T){
-            //eliminazione agenti dalle vecchie coalizioni, inserimento nelle nuove, aggiornamento strutturaCoalizione
+            int startingCoalition = partition.get(t.getID());
+            coalitions[startingCoalition].remove(t);
+            coalitions[targetCoalition].add(t);
+            partition.replace(t.getID(),targetCoalition);
         }
         refreshUtility();
 

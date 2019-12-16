@@ -48,6 +48,13 @@ public class GraphDrawer extends JApplet{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        applet.start();
+        applet.paint(frame.getGraphics());
+
+
+
+
+
     }
 
     @Override
@@ -75,6 +82,8 @@ public class GraphDrawer extends JApplet{
 
         layout.execute(jgxAdapter.getDefaultParent());
         // that's all there is to it!...
+
+
     }
 }
 

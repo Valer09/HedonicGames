@@ -31,7 +31,7 @@ public class RandomDirectedGraphGenerator {
         }
 
         int i=0,j=0;
-        while (i<n_archi || i < 3*(n_archi)) {
+        while (i<n_archi && i < 3*(n_archi)) {
             i++;
             exclusions.clear();
             u= RandomInt.randomIntWithExclusion(1,nv,exclusions);
@@ -48,7 +48,7 @@ public class RandomDirectedGraphGenerator {
         }
         i=0;
         Iterator <Integer> iterator = new DepthFirstIterator<Integer, DefaultWeightedEdge>(graph);
-        while( (!(disconnected.isEmpty()) || i < 3*(n_archi) ) && iterator.hasNext() ){
+        while( (!(disconnected.isEmpty()) && i < 3*(n_archi) ) && iterator.hasNext() ){
             exclusions.clear();
             Integer d= iterator.next();
             exclusions.add(d);
