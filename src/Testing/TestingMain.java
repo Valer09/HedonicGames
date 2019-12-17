@@ -7,7 +7,6 @@ import Generators.WeightGenerator;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -15,7 +14,7 @@ import java.util.Set;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
-    static int n, n_relazioni, n_istanze;
+    static int n, n_relazioni, n_istanze, q;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
     static Graph<Integer, Edge> relationsGraph;
     static Agent[] agents;
@@ -27,6 +26,8 @@ public class TestingMain {
     static MFCoreStatus initialStatus;
     static WeightGenerator wg;
     static Set<Integer> vertexSet;
+    static ArrayList <Agent> newCoalition;
+    static int level=0;
 
     //---------------------------------------------------------
     //---------------------------------------------------------
@@ -41,18 +42,52 @@ public class TestingMain {
         n_relazioni = scan.nextInt();
         System.out.println("Inserisci il numero di istanze da provare: ");
         n_istanze = scan.nextInt();
+        System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
+        q=scan.nextInt();
 
         //call to methods for initializes Graph and structures
+        for (int i=1; i<= n_istanze; i++){
         initGraph();
+        FileGenerator.graphFileGenerator(relationsGraph);
         initStructures();
 
         //show relationsGraphs: if you need uncomment below
         //showGraph();
 
         //run algorithm to search equilibrium
-        //findCoreEquilibrium();
+        //calculateQStability(0,agents.length,agents);
+        System.out.println(calculateQStability(0,agents.length-1,agents));
+        //System.out.println(newCoalition);
+        }
+
 
     }
+
+    static boolean calculateQStability(int i, int j, Agent [] list) {
+        //base
+        if ((j - i) < q || j == 1)
+            return false;
+        newCoalition = new ArrayList<>(j + 1);
+        for (int k = i; k <= j; k++) {
+            if (k == 0)
+                newCoalition.add(null);
+            else
+                newCoalition.add(new Agent(list[k].getID()));
+        }
+        for (int k = i; k <= j; k++) {
+            int middle = (i + j) / 2;
+            if (k == 0)
+                continue;
+            if (agents[list[k].getID()].getUtility() >= calculateUtility(k, newCoalition)) {
+                if (calculateQStability(i, middle, agents))
+                    return true;
+                else
+                    return calculateQStability(middle + 1, j, agents);
+            }
+        }
+        return true;
+    }
+
 
     public static void initGraph() {
         //Graph creation
@@ -162,6 +197,34 @@ public class TestingMain {
     }
 
     /**
+     * Calculate Utility of an agent i respect to given coalition to testing
+     * @param i ID Agent
+     * @param newCoalition - Coalition to test
+     * @return double - utility
+     */
+    static double calculateUtility(int i, ArrayList<Agent> newCoalition) {
+        double sum = 0;
+        int coalition_cardinality = 1;
+        int j = partition.get(i);
+        for (Agent a : newCoalition) {
+            if (a == null || a.getID() == i)
+                continue;
+            coalition_cardinality++;
+            if (relationsGraph.containsEdge(i, a.getID())) {
+                Edge e = relationsGraph.getEdge(i, a.getID());
+                sum += relationsGraph.getEdgeWeight(e);
+            }
+        }
+        if (coalition_cardinality - 1 < 1) {
+            sum = 0;
+            return sum;
+        } else {
+            sum = (sum) / ((coalition_cardinality - 1));
+            return sum;
+        }
+    }
+
+    /**
      * It refreshes utility of all agents
      */
     static void refreshUtility() {
@@ -178,7 +241,6 @@ public class TestingMain {
      */
     public static void showGraph () {
             GraphDrawer.setGraph(relationsGraph);
-            FileGenerator.graphFileGenerator(relationsGraph);
             GraphDrawer.main(null);
         }
 
@@ -205,5 +267,4 @@ public class TestingMain {
         }
         refreshUtility();
         }
-
     }
