@@ -7,10 +7,9 @@ import Generators.WeightGenerator;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Set;
+
+import java.lang.reflect.Array;
+import java.util.*;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
@@ -28,6 +27,7 @@ public class TestingMain {
     static Set<Integer> vertexSet;
     static ArrayList <Agent> newCoalition;
     static int level=0;
+    static boolean found=false;
 
     //---------------------------------------------------------
     //---------------------------------------------------------
@@ -56,37 +56,80 @@ public class TestingMain {
 
         //run algorithm to search equilibrium
         //calculateQStability(0,agents.length,agents);
-        System.out.println(calculateQStability(0,agents.length-1,agents));
+        //System.out.println(calculateQStability(0,agents.length-1,agents));
         //System.out.println(newCoalition);
-        }
-
-
-    }
-
-    static boolean calculateQStability(int i, int j, Agent [] list) {
-        //base
-        if ((j - i) < q || j == 1)
-            return false;
-        newCoalition = new ArrayList<>(j + 1);
-        for (int k = i; k <= j; k++) {
-            if (k == 0)
-                newCoalition.add(null);
-            else
-                newCoalition.add(new Agent(list[k].getID()));
-        }
-        for (int k = i; k <= j; k++) {
-            int middle = (i + j) / 2;
-            if (k == 0)
-                continue;
-            if (agents[list[k].getID()].getUtility() >= calculateUtility(k, newCoalition)) {
-                if (calculateQStability(i, middle, agents))
-                    return true;
-                else
-                    return calculateQStability(middle + 1, j, agents);
+            List <Integer> agentlist = new ArrayList<>();
+            for(Agent a : agents){
+                if (a==null)
+                    continue;
+                agentlist.add(a.getID());
             }
+
+            /*  Set <Integer> initialset=new HashSet<>(agentlist);
+            Set<Set<Integer>> subsets = powerSet(initialset,q);*/
+            List<Set<Integer>> solution = getSubsets(agentlist, q);
+
+            System.out.println(level);
         }
-        return true;
+        
     }
+    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
+
+        //successful stop clause
+        if (!found){
+        if (current.size() == k) {
+            ArrayList<Agent> totest = new ArrayList<Agent>();
+            found = true;
+            for (Integer a : current)
+                totest.add(new Agent(a));
+            for (Agent a : totest) {
+                a.setUtility(calculateUtility(a.getID(),totest));
+                if (calculateUtility(a.getID(), totest) <= agents[a.getID()].getUtility()) {
+                    found = false;
+                    break;
+                }
+
+            }
+            if (found) {
+                newCoalition = totest;
+                deviation(newCoalition);
+            }
+            //solution.add(new HashSet<>(current));
+
+            return;
+        }
+        }
+        //unseccessful stop clause
+        if (idx == superSet.size()) return;
+        Integer x = superSet.get(idx);
+        current.add(x);
+        //"guess" x is in the subset
+        getSubsets(superSet, k, idx+1, current, solution);
+        current.remove(x);
+        //"guess" x is not in the subset
+        getSubsets(superSet, k, idx+1, current, solution);
+    }
+
+    public static List<Set<Integer>> getSubsets(List<Integer> superSet, int k) {
+        List<Set<Integer>> res = new ArrayList<>();
+        getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
+        return res;
+    }
+
+        /*private static List<Set<Integer>> srcCore(List <Integer> superset, int k, boolean quick){
+        if (quick){
+            for (int i=q; i >= 2; i--){
+                List <Set<Integer>> subset = getSubsets(superset,q);
+                List <Agent> sublist=  new ArrayList<Agent>();
+                for ()
+            }
+
+        }
+
+        }*/
+
+
+
 
 
     public static void initGraph() {
@@ -149,7 +192,7 @@ public class TestingMain {
             coalitions[random].add(a);
             startingCoalitions[random][x.getID()] = x;
         }
-        //Setting the utility of agents
+        //Setting the utility of agents in agents
         for (Agent a : agents) {
             if (a == null)
                 continue;
@@ -157,6 +200,13 @@ public class TestingMain {
             startingCoalitions  [startingPartition.get(a.getID())]
                                 [a.getID()].setUtility(calculateUtility(a.getID()));
         }
+        //setting utility of agents in StartingCoalitions
+        for (Agent [] coal : startingCoalitions)
+            for (Agent a : coal){
+                if(a==null)
+                    continue;
+                a.setUtility(calculateUtility(a.getID()));
+            }
 
         //Creation of state of the game
         initialStatus = new MFCoreStatus(startingPartition);
@@ -233,6 +283,9 @@ public class TestingMain {
                 continue;
             a.setUtility(calculateUtility(a.getID()));
         }
+        for (ArrayList<Agent> coal : coalitions)
+            for (Agent a : coal)
+                a.setUtility(calculateUtility(a.getID()));
     }
 
     /**
@@ -261,7 +314,10 @@ public class TestingMain {
         //deletions from old coalition and insertion on new partiotion; updating of partion
         for (Agent t : T){
             int startingCoalition = partition.get(t.getID());
-            coalitions[startingCoalition].remove(t);
+            for (int i=0; i< coalitions[startingCoalition].size(); i++)
+                if (coalitions[startingCoalition].get(i).getID()==t.getID())
+                    coalitions[startingCoalition].remove(i);
+
             coalitions[targetCoalition].add(t);
             partition.replace(t.getID(),targetCoalition);
         }
