@@ -19,7 +19,7 @@ public class TestingMain {
     static Graph<Integer, Edge> relationsGraph;
     static Agent[] agents;
     static ArrayList<Agent> [] coalitions;
-    static Agent[][] startingCoalitions;
+    static ArrayList<Agent>[] startingCoalitions;
     static HashMap<Integer, Integer> partition;
     static HashMap<Integer, Integer> startingPartition;
     static MFCoreStatus status;
@@ -31,7 +31,6 @@ public class TestingMain {
     static boolean found=false;
     static boolean existsdeviation=true;
     static boolean coreStable=false;
-    private static Object IOException;
 
     //---------------------------------------------------------
     //---------------------------------------------------------
@@ -62,9 +61,10 @@ public class TestingMain {
         coreStable=calculateQStability(q);
 
         //System.out.println(newCoalition);
-
-
-        System.out.println(coreStable);
+        System.out.println("------STATO INIZIALE------\n");
+        System.out.println(initialStatus);
+        System.out.println("\n------ULTIMO STATO------\n");
+        System.out.println(status);
         }
 
     }
@@ -86,11 +86,14 @@ public class TestingMain {
                 getSubsets(agentlist, q);
                 if(existsdeviation){
                     deviation(newCoalition);
+
                 }
                 else {
                     System.out.println("dopo il livello "+level+" metto false poichè non esiste deviazione");
                     System.out.println(startingPartition.toString());
                     System.out.println(partition.toString());
+                    System.out.println("\n\n\n");
+                    status.setCoreStable(true);
                     return true;
                 }
                 elapsedTime = (new Date()).getTime() - startTime;
@@ -179,15 +182,16 @@ public class TestingMain {
         agents = new Agent[n + 1];
         agents[0] = null;
         coalitions = new ArrayList [n+1];
+        startingCoalitions = new ArrayList [n+1];
 
         //coalitions initialize
         for (int i=0; i<=n; i++){
             coalitions[i]= new ArrayList<Agent>();
+            startingCoalitions[i]= new ArrayList<Agent>();
         }
 
         //startingCoalitions initializing and setting to null in (0,0) index; initilizing partition and startingPartition
-        startingCoalitions = new Agent[n + 1][n + 1];
-        startingCoalitions[0][0] = null;
+        startingCoalitions[0].add(0,null);
         partition = new HashMap<Integer, Integer>();
         startingPartition = new HashMap<Integer, Integer>();
 
@@ -219,18 +223,16 @@ public class TestingMain {
             Agent x = new Agent(a.getID());
             startingPartition.put(x.getID(), random);
             coalitions[random].add(a);
-            startingCoalitions[random][x.getID()] = x;
+            startingCoalitions[random].add(x);
         }
         //Setting the utility of agents in agents
         for (Agent a : agents) {
             if (a == null)
                 continue;
             a.setUtility(calculateUtility(a.getID()));
-            startingCoalitions  [startingPartition.get(a.getID())]
-                                [a.getID()].setUtility(calculateUtility(a.getID()));
         }
         //setting utility of agents in StartingCoalitions
-        for (Agent [] coal : startingCoalitions)
+        for (ArrayList <Agent> coal : startingCoalitions)
             for (Agent a : coal){
                 if(a==null)
                     continue;
@@ -239,7 +241,9 @@ public class TestingMain {
 
         //Creation of state of the game
         initialStatus = new MFCoreStatus(startingPartition);
+        initialStatus.set(false,startingPartition,startingCoalitions,agents);
         status = new MFCoreStatus(partition);
+        status.set(false,partition,coalitions,agents);
     }
 
     /**

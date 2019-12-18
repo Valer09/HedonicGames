@@ -2,7 +2,9 @@ package Structures;
 
 import Interfaces.Status;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * the status of game is represented from a pair of information:
@@ -13,13 +15,68 @@ import java.util.HashMap;
  */
 public class MFCoreStatus implements Status {
     private HashMap<Integer, Integer> partition;
-    private Boolean coreStable;
+    private ArrayList<Agent>[] coalitions;
+    private Boolean coreStable=false;
+    private Agent[] agents;
 
     /**
      * Setting Status
      * @param partition HashMap
      */
     public MFCoreStatus(HashMap<Integer, Integer> partition){
+        this.partition=partition;
+    }
+
+    /**
+     * Agent getter
+     * @return Agent array
+     */
+    public Agent[] getAgents() {
+        return agents;
+    }
+
+    /**
+     * Agent setter
+     * @param agents - array of Agents
+     */
+    public void setAgents(Agent[] agents) {
+        this.agents = agents;
+    }
+
+    /**
+     * General setting of all status component
+     * @param status - bollean core status
+     * @param partition - partition HashMap Integer-Integer
+     * @param coalitions - coalitions, array of arraylist of agents
+     * @param agents - array of agents
+     */
+   public void set(boolean status, HashMap<Integer, Integer> partition, ArrayList<Agent> [] coalitions, Agent[] agents){
+        this.coreStable=status;
+        this.coalitions=coalitions;
+        this.partition=partition;
+        this.agents=agents;
+   }
+
+    /**
+     * coreStability setting
+     * @param coreStable - boolean
+     */
+    public void setCoreStable(Boolean coreStable){
+        this.coreStable=coreStable;
+    }
+    /**
+     * Coalition setting
+     * @param coalitions - array of arraylist of agents
+     */
+    public void setCoalitions (ArrayList<Agent> [] coalitions){
+        this.coalitions=coalitions;
+    }
+
+    /**
+     * Partition setting
+     * @param partition - HashMap integer-integer
+     */
+    public void setPartition(HashMap<Integer, Integer> partition){
         this.partition=partition;
     }
 
@@ -50,6 +107,40 @@ public class MFCoreStatus implements Status {
      */
     @Override
     public Boolean isStable() {
-        return false;
+        return coreStable;
+    }
+
+    /**
+     * Return coalitions of actual status
+     * @return ArrayList
+     */
+    public ArrayList<Agent>[] getCoalitions() {
+        return coalitions;
+    }
+
+    /**
+     * Print a string which show status
+     * @return String
+     */
+    public String toString(){
+        String s= "CORE: "+isStable()+"\n";
+        s=s+"PARTITIONS: {"+ "\n";
+        for (Agent a : agents){
+            if (a==null)
+                continue;
+            s=s+"A"+a.getID()+" -> "+"C"+partition.get(a.getID())+" ; \n";
+        }
+        s=s+"}\nCOALITIONS: \n\n";
+        for (int i=0; i<coalitions.length; i++){
+            if (i==0)
+                continue;
+            s=s+"C"+i+": ";
+            for (Agent a : coalitions[i])
+                s=s+"A"+a.getID()+", ";
+            s=s+"\n";
+        }
+
+        return s;
+
     }
 }
