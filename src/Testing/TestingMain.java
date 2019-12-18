@@ -8,6 +8,7 @@ import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
 
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 //import com.google.common.graph.Graphs;
@@ -28,6 +29,9 @@ public class TestingMain {
     static ArrayList <Agent> newCoalition;
     static int level=0;
     static boolean found=false;
+    static boolean existsdeviation=true;
+    static boolean coreStable=false;
+    private static Object IOException;
 
     //---------------------------------------------------------
     //---------------------------------------------------------
@@ -55,26 +59,52 @@ public class TestingMain {
         //showGraph();
 
         //run algorithm to search equilibrium
-        //calculateQStability(0,agents.length,agents);
-        //System.out.println(calculateQStability(0,agents.length-1,agents));
+        coreStable=calculateQStability(q);
+
         //System.out.println(newCoalition);
-            List <Integer> agentlist = new ArrayList<>();
-            for(Agent a : agents){
-                if (a==null)
-                    continue;
-                agentlist.add(a.getID());
-            }
 
-            /*  Set <Integer> initialset=new HashSet<>(agentlist);
-            Set<Set<Integer>> subsets = powerSet(initialset,q);*/
-            List<Set<Integer>> solution = getSubsets(agentlist, q);
 
-            System.out.println(level);
+        System.out.println(coreStable);
         }
-        
-    }
-    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
 
+    }
+
+    static boolean calculateQStability(int q){
+        List <Integer> agentlist = new ArrayList<>();
+        for(Agent a : agents){
+            if (a==null)
+                continue;
+            agentlist.add(a.getID());
+        }
+
+        long startTime = System.currentTimeMillis();
+        long elapsedTime = 0L;
+        while(existsdeviation){
+            if (elapsedTime < 2*60*1000){
+                existsdeviation=false;
+                newCoalition =null;
+                getSubsets(agentlist, q);
+                if(existsdeviation){
+                    deviation(newCoalition);
+                }
+                else {
+                    System.out.println("dopo il livello "+level+" metto false poichè non esiste deviazione");
+                    System.out.println(startingPartition.toString());
+                    System.out.println(partition.toString());
+                    return true;
+                }
+                elapsedTime = (new Date()).getTime() - startTime;
+            }else
+                return false;
+
+        }
+        return false;
+    }
+
+    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
+        if (existsdeviation)
+            return;
+        level++;
         //successful stop clause
         if (!found){
         if (current.size() == k) {
@@ -92,11 +122,10 @@ public class TestingMain {
             }
             if (found) {
                 newCoalition = totest;
-                deviation(newCoalition);
+                existsdeviation=true;
+                found=false;
             }
-            //solution.add(new HashSet<>(current));
-
-            return;
+           return;
         }
         }
         //unseccessful stop clause
