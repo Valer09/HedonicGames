@@ -31,4 +31,8 @@ public class Agent {
     public void setUtility(double u){
         this.utility=u;
     }
+
+    public String toString(){
+        return "Agent: "+this.getID()+ "; Utility: "+this.getUtility();
+    }
 }

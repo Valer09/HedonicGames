@@ -128,7 +128,7 @@ public class MFCoreStatus implements Status {
         for (Agent a : agents){
             if (a==null)
                 continue;
-            s=s+"A"+a.getID()+" -> "+"C"+partition.get(a.getID())+" ; \n";
+            s=s+"A"+a.getID()+" -> "+"C"+getCoalitionStructure().get(a.getID())+" ; \n";
         }
         s=s+"}\nCOALITIONS: \n\n";
         for (int i=0; i<coalitions.length; i++){
@@ -139,6 +139,12 @@ public class MFCoreStatus implements Status {
                 s=s+"A"+a.getID()+", ";
             s=s+"\n";
         }
+        s=s+"\n AGENTS:\n";
+        for(Agent a : agents)
+            if (a==null)
+                continue;
+            else
+                s=s+a.toString()+"\n";
 
         return s;
 

@@ -1,19 +1,20 @@
 package Testing;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Timer;
 
-public class GeneralTesting {
+import Generators.FileGenerator;
+import JsonOrg.JSONObject;
+
+/*public class GeneralTesting {
 
     public static void main(String [] args){
-        long startTime = System.currentTimeMillis();
-        long elapsedTime = 0L;
 
-        while (elapsedTime < 0.5*60*1000) {
-            System.out.println("ciao");
-            elapsedTime = (new Date()).getTime() - startTime;
-        }
+        FileGenerator.generateJsonFromStatus();
 
 
-    }
+    }*/
 
-}

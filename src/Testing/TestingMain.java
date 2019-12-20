@@ -8,13 +8,17 @@ import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
-    static int n, n_relazioni, n_istanze, q;
+    static int n, n_relazioni, n_istanze, q,n_grafi;
+    static double CONST_T;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
     static Graph<Integer, Edge> relationsGraph;
     static Agent[] agents;
@@ -32,6 +36,7 @@ public class TestingMain {
     static boolean existsdeviation=true;
     static boolean coreStable=false;
 
+
     //---------------------------------------------------------
     //---------------------------------------------------------
 
@@ -47,25 +52,91 @@ public class TestingMain {
         n_istanze = scan.nextInt();
         System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
         q=scan.nextInt();
+        System.out.println("Inserisci il numero grafi su cui provare: ");
+        n_grafi=scan.nextInt();
+        System.out.println("Inserisci il numero di minuti massimo per trovare una possibile deviazione per ogni stato: ");
+        CONST_T=scan.nextDouble();
 
+        if (q==2){
+
+        }
+        else{
+
+        }
+
+        for (int j=1; j<=n_grafi; j++){
+            System.out.println("CREAZIONE GRAFO NUMERO "+j);
         //call to methods for initializes Graph and structures
-        for (int i=1; i<= n_istanze; i++){
-        initGraph();
-        FileGenerator.graphFileGenerator(relationsGraph);
-        initStructures();
-
+            initGraph();
+            FileGenerator.graphFileGenerator(relationsGraph);
+            File jsonFile=FileGenerator.jsonFilegenerator();
+            File txtFile= FileGenerator.txtFileGenerator();
+            BufferedWriter writer = null;
+            try {
+                writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                writer.append('[');
+                writer.close();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
         //show relationsGraphs: if you need uncomment below
         //showGraph();
+            for (int i=1; i<= n_istanze; i++){
+                System.out.println("ESECUZIONE DELL'ISTANZA N. "+i+" PER IL GRAFO NUMERO. "+j);
+                clear();
+                initStructures();
+                //run algorithm to search equilibrium
+                if (q==2){
 
-        //run algorithm to search equilibrium
-        coreStable=calculateQStability(q);
+                }
+                else{
+                    coreStable=calculateQStability(q);
+                }
 
-        //System.out.println(newCoalition);
-        System.out.println("------STATO INIZIALE------\n");
-        System.out.println(initialStatus);
-        System.out.println("\n------ULTIMO STATO------\n");
-        System.out.println(status);
-        }
+                if(coreStable)
+                    System.out.println("Trovato Equilibrio");
+
+                try {
+                    writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                    writer.append(FileGenerator.generateJsonFromStatus(initialStatus,status,i));
+                    writer.append(',');
+                    writer.close();
+                    writer = new BufferedWriter(new FileWriter(txtFile, true));
+                    writer.write("\n\n****************ISTANZA N. "+i+"***************\n"+"\n----STATO INIZIALE----\n"
+                            +initialStatus.toString()
+                            +"\n----ULTIMO STATO----\n"
+                            +status.toString());
+                    writer.close();
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            try {
+                writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                writer.append("{\"END OF FILE:\" : true}" );
+                writer.append(']');
+                writer.close();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+    }
+    }
+
+    static void clear(){
+        coalitions=null;
+        startingCoalitions=null;
+        partition=null;
+        startingPartition=null;
+        status=null;
+        initialStatus=null;
+        newCoalition=null;
+        level=0;
+        found=false;
+        existsdeviation=true;
+        coreStable=false;
 
     }
 
@@ -80,7 +151,7 @@ public class TestingMain {
         long startTime = System.currentTimeMillis();
         long elapsedTime = 0L;
         while(existsdeviation){
-            if (elapsedTime < 2*60*1000){
+            if (elapsedTime < CONST_T*60*1000){
                 existsdeviation=false;
                 newCoalition =null;
                 getSubsets(agentlist, q);
@@ -89,19 +160,17 @@ public class TestingMain {
 
                 }
                 else {
-                    System.out.println("dopo il livello "+level+" metto false poichè non esiste deviazione");
-                    System.out.println(startingPartition.toString());
-                    System.out.println(partition.toString());
-                    System.out.println("\n\n\n");
                     status.setCoreStable(true);
                     return true;
                 }
                 elapsedTime = (new Date()).getTime() - startTime;
-            }else
+            }else{
+                System.out.println("Equilibrio non trovato nel tempo utile");
                 return false;
+            }
 
         }
-        return false;
+        return true;
     }
 
     private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
@@ -220,6 +289,7 @@ public class TestingMain {
             /*creation of a copies (x) of agents into new memory location for starting partition.
             In this way it will not change when something will be changed in partition.
             (would be happened if just a pointer had been used)*/
+
             Agent x = new Agent(a.getID());
             startingPartition.put(x.getID(), random);
             coalitions[random].add(a);
@@ -240,8 +310,13 @@ public class TestingMain {
             }
 
         //Creation of state of the game
+        Agent[] start = new Agent[n+1];
+        for (int i=1; i<agents.length ;i++ ){
+            start[i]=new Agent(i);
+            start[i].setUtility(agents[i].getUtility());
+        }
         initialStatus = new MFCoreStatus(startingPartition);
-        initialStatus.set(false,startingPartition,startingCoalitions,agents);
+        initialStatus.set(false,startingPartition,startingCoalitions,start);
         status = new MFCoreStatus(partition);
         status.set(false,partition,coalitions,agents);
     }
