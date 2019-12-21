@@ -73,8 +73,6 @@ public class FileGenerator {
 
     public static String generateJsonFromStatus(MFCoreStatus startingStatus, MFCoreStatus status, int i){
         JSONObject jsonString= new JSONObject();
-        JSONArray genericArray= new JSONArray();
-        JSONObject istanza = new JSONObject();
         jsonString.
                 put("CORE :", status.isStable()).
                 put("Agents", status.getAgents()).

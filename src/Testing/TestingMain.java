@@ -31,7 +31,8 @@ public class TestingMain {
     static WeightGenerator wg;
     static Set<Integer> vertexSet;
     static ArrayList <Agent> newCoalition;
-    static int level=0;
+    static int deviations=0;
+    static long deviation_avarage=0;
     static boolean found=false;
     static boolean existsdeviation=true;
     static boolean coreStable=false;
@@ -87,15 +88,15 @@ public class TestingMain {
                 clear();
                 initStructures();
                 //run algorithm to search equilibrium
-                if (q==2){
-
-                }
-                else{
                     coreStable=calculateQStability(q);
-                }
 
-                if(coreStable)
-                    System.out.println("Trovato Equilibrio");
+
+                if(coreStable){
+                    System.out.println("Trovato Equilibrio dopo "+deviations+" deviazioni");
+                }
+                else {
+                    System.out.println("Eseguite " + deviations + " deviazioni");
+                }
 
                 try {
                     writer = new BufferedWriter(new FileWriter(jsonFile, true));
@@ -123,6 +124,7 @@ public class TestingMain {
                 e.printStackTrace();
             }
     }
+        System.out.println("MEDIA DELLE DEVIAZIONI: "+(deviation_avarage)/(n_istanze*n_grafi));
     }
 
     static void clear(){
@@ -133,7 +135,7 @@ public class TestingMain {
         status=null;
         initialStatus=null;
         newCoalition=null;
-        level=0;
+        deviations=0;
         found=false;
         existsdeviation=true;
         coreStable=false;
@@ -154,10 +156,14 @@ public class TestingMain {
             if (elapsedTime < CONST_T*60*1000){
                 existsdeviation=false;
                 newCoalition =null;
-                getSubsets(agentlist, q);
+                if (q==2)
+                    get2subset(agentlist);
+                else
+                    getSubsets(agentlist, q);
                 if(existsdeviation){
                     deviation(newCoalition);
-
+                    deviations++;
+                    deviation_avarage=deviation_avarage+deviations;
                 }
                 else {
                     status.setCoreStable(true);
@@ -173,10 +179,41 @@ public class TestingMain {
         return true;
     }
 
+
+    private static void get2subset (List <Integer> superSet){
+        boolean found= true;
+        Integer [] set = new Integer [n+1];
+        set[0]=null;
+        ArrayList<Agent> totest= new ArrayList<Agent>();
+        for (Integer i : superSet)
+            set[i]=i;
+        for (int i=1; i<=set.length-1 && (!existsdeviation); i++){
+            found=true;
+            for(int j=i+1; j<=set.length && (!existsdeviation); j++){
+                found=true;
+                totest.add(new Agent(i));
+                totest.add(new Agent(j));
+                for (Agent a : totest) {
+                    a.setUtility(calculateUtility(a.getID(),totest));
+                    if (a.getUtility() <= agents[a.getID()].getUtility() ) {
+                        found=false;
+                        totest.clear();
+                        break;
+                    }
+                }
+                if(found){
+                    newCoalition = totest;
+                    existsdeviation=true;
+                }
+
+            }
+        }
+
+    }
+
     private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
         if (existsdeviation)
             return;
-        level++;
         //successful stop clause
         if (!found){
         if (current.size() == k) {
@@ -186,7 +223,7 @@ public class TestingMain {
                 totest.add(new Agent(a));
             for (Agent a : totest) {
                 a.setUtility(calculateUtility(a.getID(),totest));
-                if (calculateUtility(a.getID(), totest) <= agents[a.getID()].getUtility()) {
+                if (a.getUtility() <= agents[a.getID()].getUtility()) {
                     found = false;
                     break;
                 }
@@ -216,22 +253,6 @@ public class TestingMain {
         getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
         return res;
     }
-
-        /*private static List<Set<Integer>> srcCore(List <Integer> superset, int k, boolean quick){
-        if (quick){
-            for (int i=q; i >= 2; i--){
-                List <Set<Integer>> subset = getSubsets(superset,q);
-                List <Agent> sublist=  new ArrayList<Agent>();
-                for ()
-            }
-
-        }
-
-        }*/
-
-
-
-
 
     public static void initGraph() {
         //Graph creation
