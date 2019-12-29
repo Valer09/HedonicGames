@@ -16,32 +16,35 @@ public class GeneralTesting {
         ArrayList<Agent> totest = new ArrayList<Agent>();
         Integer[] set;
         set = new Integer[10];
-        set[0]=null;
-        for (int i=1;i<10;i++)
-            set[i]=i;
-        for (int i = 1; i <= set.length - 1; i++) {
-            for (int j = i + 1; j <= set.length; j++) {
-                totest.add(new Agent(i));
-                totest.add(new Agent(j));
-                System.out.print("{");
-                for (Agent a : totest) {
-                    System.out.print(+a.getID() + ",");
+        set[0] = null;
+        for (int i = 1; i < 10; i++)
+            set[i] = i;
+        for (int i = 1; i <= set.length - 2; i++) {
+            for (int j = i + 1; j <= set.length - 1; j++) {
+                for (int k = j + 1; k < set.length; k++) {
+                    totest.add(new Agent(i));
+                    totest.add(new Agent(j));
+                    totest.add(new Agent(k));
+                    System.out.print("{");
+                    for (Agent a : totest) {
+                        System.out.print(+a.getID() + ",");
+                    }
+                    System.out.println("}");
+                    totest.clear();
                 }
-                System.out.println("}");
-                totest.clear();
             }
         }
 
-        List<Integer> agentlist = new ArrayList<>();
+       /* List<Integer> agentlist = new ArrayList<>();
         for (int i=1; i<=10; i++)
             agentlist.add(i);
         List<Set<Integer>> res = new ArrayList<>();
         System.out.println(getSubsets(agentlist, 2));
-    }
+    }*/
 
 
 
-        private static void getSubsets (List < Integer > superSet,int k, int idx, Set<Integer > current, List < Set < Integer >> solution){
+        /*private static void getSubsets (List < Integer > superSet,int k, int idx, Set<Integer > current, List < Set < Integer >> solution){
 
             //successful stop clause
                 if (current.size() == k) {
@@ -64,8 +67,9 @@ public class GeneralTesting {
         List<Set<Integer>> res = new ArrayList<>();
         getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
         return res;
-    }
+    }*/
 
     }
+}
 
 

@@ -4,9 +4,11 @@ import Generators.FileGenerator;
 import Generators.GraphDrawer;
 import Generators.RandomDirectedGraphGenerator;
 import Generators.WeightGenerator;
+import Graphs.DirectedWeightedGraph;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultWeightedEdge;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -32,7 +34,7 @@ public class TestingMain {
     static Set<Integer> vertexSet;
     static ArrayList <Agent> newCoalition;
     static int deviations=0;
-    static long deviation_avarage=0;
+    static long deviation_avarage=0L;
     static boolean found=false;
     static boolean existsdeviation=true;
     static boolean coreStable=false;
@@ -124,7 +126,7 @@ public class TestingMain {
                 e.printStackTrace();
             }
     }
-        System.out.println("MEDIA DELLE DEVIAZIONI: "+(deviation_avarage)/(n_istanze*n_grafi));
+        System.out.println("MEDIA DELLE DEVIAZIONI: "+((int)(deviation_avarage))/(n_istanze*n_grafi));
     }
 
     static void clear(){
@@ -159,7 +161,10 @@ public class TestingMain {
                 if (q==2)
                     get2subset(agentlist);
                 else
-                    getSubsets(agentlist, q);
+                    if (q>3)
+                        get3subset(agentlist);
+                    else
+                        getSubsets(agentlist, q);
                 if(existsdeviation){
                     deviation(newCoalition);
                     deviations++;
@@ -177,6 +182,42 @@ public class TestingMain {
 
         }
         return true;
+    }
+
+    private static void get3subset (List <Integer> superSet){
+        boolean found= true;
+        Integer [] set = new Integer [n+1];
+        set[0]=null;
+        ArrayList<Agent> totest= new ArrayList<Agent>();
+        for (Integer i : superSet)
+            set[i]=i;
+        for (int i=1; i<=set.length-2 && (!existsdeviation); i++){
+            found=true;
+            for(int j=i+1; j<=set.length-1 && (!existsdeviation); j++){
+                for (int k=j+1; k<set.length && (!existsdeviation); k++)
+                {
+                    totest.clear();
+                    found=true;
+                    totest.add(new Agent(i));
+                    totest.add(new Agent(j));
+                    totest.add(new Agent(k));
+                    for (Agent a : totest) {
+                        a.setUtility(calculateUtility(a.getID(),totest));
+                        if (a.getUtility() <= agents[a.getID()].getUtility() ) {
+                            found=false;
+                            totest.clear();
+                            break;
+                        }
+                    }
+                    if(found){
+                        newCoalition = totest;
+                        existsdeviation=true;
+                    }
+                }
+
+            }
+        }
+
     }
 
 
@@ -261,7 +302,6 @@ public class TestingMain {
         wg = new WeightGenerator(relationsGraph);
         wg.generateWeights(0,100);
         vertexSet = relationsGraph.vertexSet();
-
     }
 
     /**
@@ -310,7 +350,6 @@ public class TestingMain {
             /*creation of a copies (x) of agents into new memory location for starting partition.
             In this way it will not change when something will be changed in partition.
             (would be happened if just a pointer had been used)*/
-
             Agent x = new Agent(a.getID());
             startingPartition.put(x.getID(), random);
             coalitions[random].add(a);
