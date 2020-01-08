@@ -60,12 +60,6 @@ public class TestingMain {
         System.out.println("Inserisci il numero di minuti massimo per trovare una possibile deviazione per ogni stato: ");
         CONST_T=scan.nextDouble();
 
-        if (q==2){
-
-        }
-        else{
-
-        }
 
         for (int j=1; j<=n_grafi; j++){
             System.out.println("CREAZIONE GRAFO NUMERO "+j);
@@ -161,7 +155,7 @@ public class TestingMain {
                 if (q==2)
                     get2subset(agentlist);
                 else
-                    if (q>3)
+                    if (q==3)
                         get3subset(agentlist);
                     else
                         getSubsets(agentlist, q);
