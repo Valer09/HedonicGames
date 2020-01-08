@@ -86,7 +86,6 @@ public class TestingMain {
                 //run algorithm to search equilibrium
                     coreStable=calculateQStability(q);
 
-
                 if(coreStable){
                     System.out.println("Trovato Equilibrio dopo "+deviations+" deviazioni");
                 }
@@ -119,7 +118,7 @@ public class TestingMain {
             catch (IOException e) {
                 e.printStackTrace();
             }
-    }
+        }
         System.out.println("MEDIA DELLE DEVIAZIONI: "+((int)(deviation_avarage))/(n_istanze*n_grafi));
     }
 
@@ -173,7 +172,6 @@ public class TestingMain {
                 System.out.println("Equilibrio non trovato nel tempo utile");
                 return false;
             }
-
         }
         return true;
     }
@@ -208,10 +206,8 @@ public class TestingMain {
                         existsdeviation=true;
                     }
                 }
-
             }
         }
-
     }
 
 
@@ -240,10 +236,8 @@ public class TestingMain {
                     newCoalition = totest;
                     existsdeviation=true;
                 }
-
             }
         }
-
     }
 
     private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
@@ -251,26 +245,25 @@ public class TestingMain {
             return;
         //successful stop clause
         if (!found){
-        if (current.size() == k) {
-            ArrayList<Agent> totest = new ArrayList<Agent>();
-            found = true;
-            for (Integer a : current)
-                totest.add(new Agent(a));
-            for (Agent a : totest) {
-                a.setUtility(calculateUtility(a.getID(),totest));
-                if (a.getUtility() <= agents[a.getID()].getUtility()) {
-                    found = false;
-                    break;
+            if (current.size() == k) {
+                ArrayList<Agent> totest = new ArrayList<Agent>();
+                found = true;
+                for (Integer a : current)
+                    totest.add(new Agent(a));
+                for (Agent a : totest) {
+                    a.setUtility(calculateUtility(a.getID(),totest));
+                    if (a.getUtility() <= agents[a.getID()].getUtility()) {
+                        found = false;
+                        break;
+                    }
                 }
-
+                if (found) {
+                    newCoalition = totest;
+                    existsdeviation=true;
+                    found=false;
+                }
+               return;
             }
-            if (found) {
-                newCoalition = totest;
-                existsdeviation=true;
-                found=false;
-            }
-           return;
-        }
         }
         //unseccessful stop clause
         if (idx == superSet.size()) return;
@@ -484,5 +477,5 @@ public class TestingMain {
             partition.replace(t.getID(),targetCoalition);
         }
         refreshUtility();
-        }
     }
+}
