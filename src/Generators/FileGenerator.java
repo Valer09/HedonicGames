@@ -62,9 +62,7 @@ public class FileGenerator {
                 out = new File("output/graphs/g"+i+".gv");
                 i++;
             }
-
             exporter.exportGraph(g,out);
-
 
         } catch (ExportException e) {
             e.printStackTrace();
@@ -80,9 +78,6 @@ public class FileGenerator {
                 put("STARTING COALITION: ", startingStatus.getCoalitions()).
                 put("LAST PARTITION", status.getCoalitionStructure()).
                 put("LAST COALITION", status.getCoalitions());
-
-
-
 
         return jsonString.toString();
 

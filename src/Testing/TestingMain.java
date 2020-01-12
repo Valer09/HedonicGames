@@ -154,10 +154,19 @@ public class TestingMain {
                 if (q==2)
                     get2subset(agentlist);
                 else
-                    if (q==3)
-                        get3subset(agentlist);
+                    if (q==3){
+                        get2subset(agentlist);
+                        if (!existsdeviation)
+                            get3subset(agentlist);
+                    }
                     else
-                        getSubsets(agentlist, q);
+                    {
+                        for (int i=2; i <=q; i++){
+                            getSubsets(agentlist, i);
+                            if (existsdeviation) break;
+                        }
+                    }
+
                 if(existsdeviation){
                     deviation(newCoalition);
                     deviations++;
@@ -245,7 +254,8 @@ public class TestingMain {
             return;
         //successful stop clause
         if (!found){
-            if (current.size() == k) {
+            if ( current.size() == k && current.size() > 1 ) {
+                System.out.println(current.size());
                 ArrayList<Agent> totest = new ArrayList<Agent>();
                 found = true;
                 for (Integer a : current)

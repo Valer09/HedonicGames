@@ -4,16 +4,18 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+import Random.RandomInt;
 
 import Generators.FileGenerator;
 import JsonOrg.JSONObject;
 import Structures.Agent;
 
 public class GeneralTesting {
+    static List < Set < Integer >> solution2 = new ArrayList<>();
 
     public static void main(String[] args) {
 
-        ArrayList<Agent> totest = new ArrayList<Agent>();
+        /*ArrayList<Agent> totest = new ArrayList<Agent>();
         Integer[] set;
         set = new Integer[10];
         set[0] = null;
@@ -33,22 +35,39 @@ public class GeneralTesting {
                     totest.clear();
                 }
             }
+        }*/
+
+        List<Integer> agentlist = new ArrayList<>();
+        for (int i=1; i<=40; i++)
+            agentlist.add(i);
+        List <Integer> exclusions=  new ArrayList<Integer>();
+        exclusions.add(0);
+        Set < Integer > solution = new HashSet<>() ;
+        int q=RandomInt.randomIntWithExclusion(1,39,1);
+        for (int i=1; i <= q; i++){
+            Integer x=RandomInt.randomIntWithExclusion(1,39,exclusions);
+            exclusions.add(x);
+            solution.add(x);
         }
 
-       /* List<Integer> agentlist = new ArrayList<>();
-        for (int i=1; i<=10; i++)
-            agentlist.add(i);
-        List<Set<Integer>> res = new ArrayList<>();
-        System.out.println(getSubsets(agentlist, 2));
-    }*/
+       /* List<Set<Integer>> res = new ArrayList<>();
+        //System.out.println(getSubsets(agentlist, 2));
+        int k= RandomInt.randomIntWithExclusion(1,5,0);
+        for (int i=2; i <= k; i++){
+            getSubsets(agentlist, i);
+        }*/
+       String s=getSubsets(agentlist,4).toString();
+       System.out.println(getSubsets(agentlist, 4));
+    }
 
 
 
-        /*private static void getSubsets (List < Integer > superSet,int k, int idx, Set<Integer > current, List < Set < Integer >> solution){
+        private static void getSubsets (List < Integer > superSet,int k, int idx, Set<Integer > current, List < Set < Integer >> solution){
 
             //successful stop clause
-                if (current.size() == k) {
+                if (current.size() == k   && current.size() > 1 ) {
                     solution.add(new HashSet<>(current));
+                    solution2.add(new HashSet<>(current));
                     return;
                 }
 
@@ -67,9 +86,8 @@ public class GeneralTesting {
         List<Set<Integer>> res = new ArrayList<>();
         getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
         return res;
-    }*/
+    }
 
     }
-}
 
 

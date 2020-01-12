@@ -19,7 +19,6 @@ public class WeightGenerator {
         this.g=g;
     }
 
-
     public void generateWeights(int starting, int end){
         Set<DefaultWeightedEdge> edges= g.edgeSet();
         for ( DefaultWeightedEdge e : edges  ){
