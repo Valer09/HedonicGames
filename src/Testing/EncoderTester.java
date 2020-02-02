@@ -1,5 +1,8 @@
 package Testing;
 
+import java.util.Random;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,27 +11,44 @@ public class EncoderTester {
     public static void main(String [] args){
         n=6;
         k=3;
-        N=11;
+        N=20;
 
         long positionlists[];
         long nPosition=binomialCoeff(n,k);
         positionlists = new long[(int)nPosition];
+        for (int i=0; i<positionlists.length-1; i++)
+            positionlists[i]=1;
 
         Long [] Ci = getSet(N);
-        for ( Long l : Ci)
-            System.out.println(l+", ");
+        ArrayList < Long[] > table= new ArrayList< Long [] >();
+        for (int i=0; i<=nPosition-1; i++)
+            table.add(i,getSet(i));
+        Random r = new Random();
+        int rdm = r.nextInt((int)nPosition);
+        System.out.println("Il numero random è "+rdm);
+        Long [] set = getSet(rdm);
+        System.out.println("Che corrisponde all'insieme: "+ toString(set));
+    }
+
+    static String toString(Long[] set){
+        String s="";
+        for (Long l : set)
+            s=s+l+", ";
+        return s;
 
     }
+
 
     public static Long [] getSet(long position){
         Long [] Ci;
         Ci = new Long[k];
-        int n=N;
+        int n=(int)position;
 
         for (int i=k; i > 0; i--){
-            Ci[i-1] = getCi(i, n) ;
-            n= (int) (n-binomialCoeff(  (Ci[i-1]).intValue() , i));
+            Ci[i-1] = getCi(i, n)+1;
+            n= (int) (n-binomialCoeff(  (Ci[i-1]).intValue()-1 , i));
         }
+
         return Ci;
 
     }
