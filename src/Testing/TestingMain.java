@@ -38,6 +38,8 @@ public class TestingMain {
     static boolean found=false;
     static boolean existsdeviation=true;
     static boolean coreStable=false;
+    static boolean okInput=false;
+    static boolean randomDeviation=false;
 
 
     //---------------------------------------------------------
@@ -46,20 +48,36 @@ public class TestingMain {
     public static void main(String[] args) {
 
         //User input to choose number of agents, relations and instances number
-        System.out.println("Inserisci il numero di agenti: ");
-        Scanner scan = new Scanner(System.in);
-        n = scan.nextInt();
-        System.out.println("Inserisci il numero di relazioni: ");
-        n_relazioni = scan.nextInt();
-        System.out.println("Inserisci il numero di istanze da provare: ");
-        n_istanze = scan.nextInt();
-        System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
-        q=scan.nextInt();
+            System.out.println("Inserisci il numero di agenti: ");
+            Scanner scan = new Scanner(System.in);
+            n = scan.nextInt();
+
+        while(!okInput){
+            System.out.println("Inserisci il numero di relazioni: ");
+            n_relazioni = scan.nextInt();
+            if (n_relazioni > n*(n-1))
+                System.out.println("Attenzione, il numero di relazione deve essere al massimo n*n-1, con n=numero di agenti.\nInserisci nuovamente ");
+            else
+                okInput=true;
+        }
+        okInput=false;
+        while(!okInput){
+            System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
+            q=scan.nextInt();
+            if (q > n-1)
+                System.out.println("Attenzione, il numero q deve avere una cardinalità massima di n-1;");
+            else
+                okInput=true;
+        }
         System.out.println("Inserisci il numero grafi su cui provare: ");
         n_grafi=scan.nextInt();
+        System.out.println("Inserisci il numero di istanze da provare: ");
+        n_istanze = scan.nextInt();
         System.out.println("Inserisci il numero di minuti massimo per trovare una possibile deviazione per ogni stato: ");
         CONST_T=scan.nextDouble();
-
+        System.out.println("Vuoi eseguire il programma in maniera da cercare sottoinsiemi di agenti da deviare di dimensione randomica?\n Se si, inserisci 1: ");
+        if (scan.nextInt() == 1 )
+            randomDeviation=false;
 
         for (int j=1; j<=n_grafi; j++){
             System.out.println("CREAZIONE GRAFO NUMERO "+j);
@@ -84,7 +102,7 @@ public class TestingMain {
                 clear();
                 initStructures();
                 //run algorithm to search equilibrium
-                    coreStable=calculateQStability(q);
+                coreStable=calculateQStability(q);
 
                 if(coreStable){
                     System.out.println("Trovato Equilibrio dopo "+deviations+" deviazioni");
@@ -151,9 +169,28 @@ public class TestingMain {
             if (elapsedTime < CONST_T*60*1000){
                 existsdeviation=false;
                 newCoalition =null;
-                if (q==2)
-                    get2subset(agentlist);
-                else
+
+                //**RANDOM**/
+                if (randomDeviation){
+                    getRandomSubset(agentlist, q);
+
+                    if(existsdeviation){
+                        deviation(newCoalition);
+                        deviations++;
+                        deviation_avarage=deviation_avarage+deviations;
+                    }
+                        else {
+                            status.setCoreStable(true);
+                            return true;
+                        }
+                    elapsedTime = (new Date()).getTime() - startTime;
+                }
+                //**END RANDOM**/
+                else{
+
+                    if (q==2)
+                        get2subset(agentlist);
+                    else
                     if (q==3){
                         get2subset(agentlist);
                         if (!existsdeviation)
@@ -166,23 +203,69 @@ public class TestingMain {
                             if (existsdeviation) break;
                         }
                     }
+                    if(existsdeviation){
+                        deviation(newCoalition);
+                        deviations++;
+                        deviation_avarage=deviation_avarage+deviations;
+                    }
+                    else {
+                        status.setCoreStable(true);
+                        return true;
+                    }
+                    elapsedTime = (new Date()).getTime() - startTime;
+                }
 
-                if(existsdeviation){
-                    deviation(newCoalition);
-                    deviations++;
-                    deviation_avarage=deviation_avarage+deviations;
-                }
-                else {
-                    status.setCoreStable(true);
-                    return true;
-                }
-                elapsedTime = (new Date()).getTime() - startTime;
             }else{
                 System.out.println("Equilibrio non trovato nel tempo utile");
                 return false;
             }
         }
         return true;
+    }
+
+    private static void getRandomSubset( List <Integer> superSet,  int q) {
+        found =true;
+        int k=0;
+        List <Integer> exclusions=  new ArrayList<Integer>();
+        exclusions.add(0);
+        ArrayList<Agent> totest= new ArrayList<Agent>();
+        if (q==2){
+            k=RandomInt.randomIntWithExclusion(0, superSet.size(), 0);
+            exclusions.add(k);
+            int j=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
+            totest.add(new Agent(k));
+            totest.add(new Agent(j));
+        }
+        else if(q==3){
+            k=RandomInt.randomIntWithExclusion(0, superSet.size(), 0);
+            exclusions.add(k);
+            int j=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
+            exclusions.add(k);
+            int w=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
+            totest.add(new Agent(k));
+            totest.add(new Agent(j));
+            totest.add(new Agent(w));
+        }
+        else {
+            k = RandomInt.randomIntWithExclusion(1, q, 1);
+            for (int i = 1; i <= k; i++) {
+                Integer x = RandomInt.randomIntWithExclusion(1, k, exclusions);
+                exclusions.add(x);
+                totest.add(new Agent(x));
+            }
+        }
+        for (Agent a : totest) {
+            a.setUtility(calculateUtility(a.getID(),totest));
+            if (a.getUtility() <= agents[a.getID()].getUtility() ) {
+                found=false;
+                totest.clear();
+                break;
+            }
+        }
+        if(found){
+            newCoalition = totest;
+            existsdeviation=true;
+        }
     }
 
     private static void get3subset (List <Integer> superSet){
