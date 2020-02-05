@@ -1,9 +1,6 @@
 package Testing;
 
-import Generators.FileGenerator;
-import Generators.GraphDrawer;
-import Generators.RandomDirectedGraphGenerator;
-import Generators.WeightGenerator;
+import Generators.*;
 import Graphs.DirectedWeightedGraph;
 import Random.RandomInt;
 import Structures.*;
@@ -77,7 +74,7 @@ public class TestingMain {
         CONST_T=scan.nextDouble();
         System.out.println("Vuoi eseguire il programma in maniera da cercare sottoinsiemi di agenti da deviare di dimensione randomica?\n Se si, inserisci 1: ");
         if (scan.nextInt() == 1 )
-            randomDeviation=false;
+            randomDeviation=true;
 
         for (int j=1; j<=n_grafi; j++){
             System.out.println("CREAZIONE GRAFO NUMERO "+j);
@@ -172,17 +169,18 @@ public class TestingMain {
 
                 //**RANDOM**/
                 if (randomDeviation){
-                    getRandomSubset(agentlist, q);
+
+                    getRandomSubset(agentlist);
 
                     if(existsdeviation){
                         deviation(newCoalition);
                         deviations++;
                         deviation_avarage=deviation_avarage+deviations;
                     }
-                        else {
-                            status.setCoreStable(true);
-                            return true;
-                        }
+                    else {
+                        status.setCoreStable(true);
+                        return true;
+                    }
                     elapsedTime = (new Date()).getTime() - startTime;
                 }
                 //**END RANDOM**/
@@ -223,49 +221,94 @@ public class TestingMain {
         return true;
     }
 
-    private static void getRandomSubset( List <Integer> superSet,  int q) {
-        found =true;
-        int k=0;
+    private static void getRandomSubset( List <Integer> superSet) {
+
+        found =false;
+        long counter[] = new long[q+1];
+        HashMap<Integer, boolean[]> positions = new HashMap<Integer, boolean[]>();
+        counter[0] = 0;
+        counter[1] = 0;
+        for (int i = 2; i <= q; i++) {
+            int coeff = (int) Codifier.binomialCoeff(n, i);
+            counter[i] = coeff;
+            positions.put(i, new boolean[coeff]);
+        }
+
         List <Integer> exclusions=  new ArrayList<Integer>();
-        exclusions.add(0);
-        ArrayList<Agent> totest= new ArrayList<Agent>();
-        if (q==2){
-            k=RandomInt.randomIntWithExclusion(0, superSet.size(), 0);
-            exclusions.add(k);
-            int j=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
-            totest.add(new Agent(k));
-            totest.add(new Agent(j));
-        }
-        else if(q==3){
-            k=RandomInt.randomIntWithExclusion(0, superSet.size(), 0);
-            exclusions.add(k);
-            int j=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
-            exclusions.add(k);
-            int w=RandomInt.randomIntWithExclusion(0, superSet.size(), exclusions);
-            totest.add(new Agent(k));
-            totest.add(new Agent(j));
-            totest.add(new Agent(w));
-        }
-        else {
-            k = RandomInt.randomIntWithExclusion(1, q, 1);
-            for (int i = 1; i <= k; i++) {
-                Integer x = RandomInt.randomIntWithExclusion(1, k, exclusions);
-                exclusions.add(x);
-                totest.add(new Agent(x));
+        List <Integer> exclusionsK=  new ArrayList<Integer>();
+        exclusionsK.add(0);
+        exclusionsK.add(1);
+
+        while(existsSubset(counter) && !found) {
+
+            exclusions.clear();
+            exclusions.add(0);
+            exclusions.add(1);
+
+            //random k
+            int k = RandomInt.randomIntWithExclusion(0, q, exclusionsK);
+
+            //jump while statements if
+            if (counter[k]<=0 ){
+                exclusionsK.add(k);
+                continue;
             }
-        }
-        for (Agent a : totest) {
-            a.setUtility(calculateUtility(a.getID(),totest));
-            if (a.getUtility() <= agents[a.getID()].getUtility() ) {
-                found=false;
-                totest.clear();
-                break;
+
+            long maxPosition = Codifier.binomialCoeff(n, k);
+
+            Random r = new Random();
+
+            //random position of combination in [0, (n-k)]
+            int randomPoistion = r.nextInt((int) maxPosition-1);
+            System.out.println("Il num random è: "+randomPoistion);
+            exclusions.clear();
+            //Search for a location in [0 , (n-k)] that has not been tried yet
+            while(positions.get(k)[randomPoistion]) {
+                exclusions.add(randomPoistion);
+                randomPoistion = RandomInt.randomIntWithExclusion(0, (int)maxPosition-1, exclusions);
             }
+            Long [] decodedSet = Codifier.decode(n, k, randomPoistion);
+            ArrayList<Agent> totest= new ArrayList<Agent>();
+            for (int i=0; i<= decodedSet.length-1; i++){
+                totest.add(  new Agent(decodedSet[i].intValue())  );
+            }
+
+            System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPoistion+"\nset: "+totest.toString());
+            for (int i=0; i < counter.length; i++){
+                System.out.println(counter[i]+", ");
+            }
+
+            for (Agent a : totest) {
+                a.setUtility(calculateUtility(a.getID(),totest));
+                if (a.getUtility() <= agents[a.getID()].getUtility() ) {
+                    found=false;
+                    totest.clear();
+                    counter[k]--;
+                    positions.get(k)[randomPoistion]=true;
+                    break;
+                }
+                found=true;
+            }
+            System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPoistion+"\nset: "+totest.toString());
+            for (int i=0; i < counter.length; i++){
+                System.out.println(counter[i]+", ");
+            }
+
+            if(found){
+                newCoalition = totest;
+                existsdeviation=true;
+            }
+
         }
-        if(found){
-            newCoalition = totest;
-            existsdeviation=true;
+
+    }
+
+    private static boolean existsSubset(long[] counter){
+        for (int i=2; i<= counter.length-1; i++){
+            if (counter[i] > 0)
+                return true;
         }
+        return false;
     }
 
     private static void get3subset (List <Integer> superSet){

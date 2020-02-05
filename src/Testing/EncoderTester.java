@@ -1,17 +1,15 @@
 package Testing;
 
 import java.util.Random;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class EncoderTester {
     static int n,k,N=0;
     public static void main(String [] args){
-        n=6;
-        k=3;
-        N=20;
+        n=5;
+        k=2;
+        N=5;
 
         long positionlists[];
         long nPosition=binomialCoeff(n,k);
@@ -26,7 +24,7 @@ public class EncoderTester {
         Random r = new Random();
         int rdm = r.nextInt((int)nPosition);
         System.out.println("Il numero random è "+rdm);
-        Long [] set = getSet(rdm);
+        Long [] set = getSet(8);
         System.out.println("Che corrisponde all'insieme: "+ toString(set));
     }
 
@@ -37,7 +35,6 @@ public class EncoderTester {
         return s;
 
     }
-
 
     public static Long [] getSet(long position){
         Long [] Ci;
@@ -64,7 +61,6 @@ public class EncoderTester {
         }
         return res;
     }
-
 
         // Returns value of Binomial Coefficient C(n, k)
         static long binomialCoeff(int n, int k)
