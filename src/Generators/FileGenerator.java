@@ -83,6 +83,23 @@ public class FileGenerator {
 
     }
 
+    public static String generateJsonFromStatusRdm(MFCoreStatus startingStatus, MFCoreStatus status, int i, int n_relazioni, boolean dynamicMode, int q, double CONST_T){
+        JSONObject jsonString= new JSONObject();
+        jsonString.
+                put("CORE :", status.isStable()).
+                put("Relazioni :", n_relazioni).
+                put("Modalità dinamica :", dynamicMode).
+                put("Q : ", q).
+                put("Time : ", CONST_T).
+                put("STARTING PARTITION: ", startingStatus.getCoalitionStructure()).
+                put("STARTING COALITION: ", startingStatus.getCoalitions()).
+                put("LAST PARTITION", status.getCoalitionStructure()).
+                put("LAST COALITION", status.getCoalitions());
+
+        return jsonString.toString();
+
+    }
+
     public static File jsonFilegenerator(){
             int k=0;
             File tmpDir = new File("output/executions/json/g0.json");

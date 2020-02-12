@@ -1,23 +1,20 @@
 package Testing;
 
 import Generators.*;
-import Graphs.DirectedWeightedGraph;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
-import org.jgrapht.graph.DefaultWeightedEdge;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
-    static int n, n_relazioni, n_istanze, q,n_grafi;
-    static double CONST_T;
+    static int n, n_max, n_relazioni, n_rel_max, n_istanze, start_q ,q, q_max, n_grafi, rel_increment,n_of_time_increment;
+    static double CONST_T , time_increment, start_time;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
     static Graph<Integer, Edge> relationsGraph;
     static Agent[] agents;
@@ -37,104 +34,420 @@ public class TestingMain {
     static boolean coreStable=false;
     static boolean okInput=false;
     static boolean randomDeviation=false;
+    static boolean dynamicMode=false;
 
 
     //---------------------------------------------------------
     //---------------------------------------------------------
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        //User input to choose number of agents, relations and instances number
+        System.out.println("Seleziona modalità di esecuzione: \n" +
+                "inserisci '1' per modalità variazione nodi,archi,k,tempo e mosse\n" +
+                "iserisci '2' per modalità variazione grafi e setting");
+        if(scan.nextInt() == 1)
+            dynamicMode=true;
+        else
+            dynamicMode=false;
+
+        if (!dynamicMode) {
+
+            //User input to choose number of agents, relations and instances number
             System.out.println("Inserisci il numero di agenti: ");
-            Scanner scan = new Scanner(System.in);
             n = scan.nextInt();
-
-        while(!okInput){
-            System.out.println("Inserisci il numero di relazioni: ");
-            n_relazioni = scan.nextInt();
-            if (n_relazioni > n*(n-1))
-                System.out.println("Attenzione, il numero di relazione deve essere al massimo n*n-1, con n=numero di agenti.\nInserisci nuovamente ");
-            else
-                okInput=true;
-        }
-        okInput=false;
-        while(!okInput){
-            System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
-            q=scan.nextInt();
-            if (q > n-1)
-                System.out.println("Attenzione, il numero q deve avere una cardinalità massima di n-1;");
-            else
-                okInput=true;
-        }
-        System.out.println("Inserisci il numero grafi su cui provare: ");
-        n_grafi=scan.nextInt();
-        System.out.println("Inserisci il numero di istanze da provare: ");
-        n_istanze = scan.nextInt();
-        System.out.println("Inserisci il numero di minuti massimo per trovare una possibile deviazione per ogni stato: ");
-        CONST_T=scan.nextDouble();
-        System.out.println("Vuoi eseguire il programma in maniera da cercare sottoinsiemi di agenti da deviare di dimensione randomica?\n Se si, inserisci 1: ");
-        if (scan.nextInt() == 1 )
-            randomDeviation=true;
-
-        for (int j=1; j<=n_grafi; j++){
-            System.out.println("CREAZIONE GRAFO NUMERO "+j);
-        //call to methods for initializes Graph and structures
-            initGraph();
-            FileGenerator.graphFileGenerator(relationsGraph);
-            File jsonFile=FileGenerator.jsonFilegenerator();
-            File txtFile= FileGenerator.txtFileGenerator();
-            BufferedWriter writer = null;
-            try {
-                writer = new BufferedWriter(new FileWriter(jsonFile, true));
-                writer.append('[');
-                writer.close();
+            while (!okInput) {
+                System.out.println("Inserisci il numero di relazioni: ");
+                n_relazioni = scan.nextInt();
+                if (n_relazioni > n * (n - 1))
+                    System.out.println("Attenzione, il numero di relazione deve essere al massimo n*n-1, con n=numero di agenti.\nInserisci nuovamente ");
+                else
+                    okInput = true;
             }
-            catch (IOException e) {
-                e.printStackTrace();
+            okInput = false;
+            while (!okInput) {
+                System.out.println("Inserisci il numero q per il calcolo q-stablity: ");
+                q = scan.nextInt();
+                if (q > n - 1)
+                    System.out.println("Attenzione, il numero q deve avere una cardinalità massima di n-1;");
+                else
+                    okInput = true;
             }
-        //show relationsGraphs: if you need uncomment below
-        //showGraph();
-            for (int i=1; i<= n_istanze; i++){
-                System.out.println("ESECUZIONE DELL'ISTANZA N. "+i+" PER IL GRAFO NUMERO. "+j);
-                clear();
-                initStructures();
-                //run algorithm to search equilibrium
-                coreStable=calculateQStability(q);
 
-                if(coreStable){
-                    System.out.println("Trovato Equilibrio dopo "+deviations+" deviazioni");
-                }
-                else {
-                    System.out.println("Eseguite " + deviations + " deviazioni");
-                }
 
+            System.out.println("Inserisci il numero grafi su cui provare: ");
+            n_grafi = scan.nextInt();
+            System.out.println("Inserisci il numero di istanze da provare: ");
+            n_istanze = scan.nextInt();
+            System.out.println("Inserisci il numero di minuti massimo per trovare una possibile deviazione per ogni stato: ");
+            CONST_T = scan.nextDouble();
+            System.out.println("Vuoi eseguire il programma in maniera da cercare sottoinsiemi di agenti da deviare di dimensione randomica?\n Se si, inserisci 1: ");
+            if (scan.nextInt() == 1)
+                randomDeviation = true;
+            for (int j = 1; j <= n_grafi; j++) {
+                System.out.println("CREAZIONE GRAFO NUMERO " + j);
+                //call to methods for initializes Graph and structures
+                initGraph();
+                FileGenerator.graphFileGenerator(relationsGraph);
+                File jsonFile = FileGenerator.jsonFilegenerator();
+                File txtFile = FileGenerator.txtFileGenerator();
+                BufferedWriter writer = null;
                 try {
                     writer = new BufferedWriter(new FileWriter(jsonFile, true));
-                    writer.append(FileGenerator.generateJsonFromStatus(initialStatus,status,i));
-                    writer.append(',');
+                    writer.append('[');
                     writer.close();
-                    writer = new BufferedWriter(new FileWriter(txtFile, true));
-                    writer.write("\n\n****************ISTANZA N. "+i+"***************\n"+"\n----STATO INIZIALE----\n"
-                            +initialStatus.toString()
-                            +"\n----ULTIMO STATO----\n"
-                            +status.toString());
-                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                catch (IOException e) {
+                //show relationsGraphs: if you need uncomment below
+                //showGraph();
+                for (int i = 1; i <= n_istanze; i++) {
+                    System.out.println("ESECUZIONE DELL'ISTANZA N. " + i + " PER IL GRAFO NUMERO. " + j);
+                    clear();
+                    initStructures();
+                    //run algorithm to search equilibrium
+                    coreStable = calculateQStability(q);
+
+                    if (coreStable) {
+                        System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                    } else {
+                        System.out.println("Eseguite " + deviations + " deviazioni");
+                    }
+
+                    try {
+                        writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                        writer.append(FileGenerator.generateJsonFromStatus(initialStatus, status, i));
+                        writer.append(',');
+                        writer.close();
+                        writer = new BufferedWriter(new FileWriter(txtFile, true));
+                        writer.write("\n\n****************ISTANZA N. " + i + "***************\n" + "\n----STATO INIZIALE----\n"
+                                + initialStatus.toString()
+                                + "\n----ULTIMO STATO----\n"
+                                + status.toString());
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                try {
+                    writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                    writer.append("{\"END OF FILE:\" : true}");
+                    writer.append(']');
+                    writer.close();
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            try {
-                writer = new BufferedWriter(new FileWriter(jsonFile, true));
-                writer.append("{\"END OF FILE:\" : true}" );
-                writer.append(']');
-                writer.close();
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
+            System.out.println("MEDIA DELLE DEVIAZIONI: " + ((int) (deviation_avarage)) / (n_istanze * n_grafi));
+
+
+
         }
-        System.out.println("MEDIA DELLE DEVIAZIONI: "+((int)(deviation_avarage))/(n_istanze*n_grafi));
+
+
+
+
+        else
+            {
+            System.out.println("Inserisci il numero n di agenti: ");
+            n = scan.nextInt();
+            while (!okInput) {
+                System.out.println("Inserisci il numero n di relazioni iniziale: ");
+                n_relazioni = scan.nextInt();
+                if (n_relazioni > n * (n - 1))
+                    System.out.println("Attenzione, il numero di relazione deve essere al massimo n*n-1, con n=numero di agenti.\nInserisci nuovamente ");
+                else
+                    okInput = true;
+            }
+            okInput = false;
+
+            while (!okInput) {
+                System.out.println("Inserisci il numero n di relazioni massimo: ");
+                n_rel_max = scan.nextInt();
+                if (n_rel_max < n_relazioni || n_rel_max > n * (n - 1))
+                    System.out.println("Attenzione, il numero di relazione massimo deve essere maggiore o uguale al n. di relazioni iniziale.\n" +
+                            "inoltre esso deve essere al massimo n*n-1, con n=numero di agenti\nInserisci nuovamente ");
+                else
+                    okInput = true;
+            }
+            okInput = false;
+            while (!okInput) {
+                System.out.println("Inserisci il numero q iniziale per il calcolo q-stablity: ");
+                start_q = scan.nextInt();
+                q = start_q;
+                if (start_q > n - 1)
+                    System.out.println("Attenzione, il numero q deve avere una cardinalità massima di n-1;");
+                else
+                    okInput = true;
+            }
+            okInput = false;
+            while (!okInput) {
+                System.out.println("Inserisci il numero q massimo per il calcolo q-stablity: ");
+                q_max = scan.nextInt();
+                if (q_max > n - 1 || q_max < q)
+                    System.out.println("Attenzione, il numero q massimo deve avere una cardinalità massima di n-1; Inoltre deve essere maggiore del numero q iniziale.");
+                else
+                    okInput = true;
+            }
+                okInput = false;
+
+                while (!okInput) {
+                    System.out.println("Inserisci il numero di incremento di relazioni : ");
+                    rel_increment = scan.nextInt();
+                    if (rel_increment < 1 || rel_increment >= n_rel_max)
+                        System.out.println("Attenzione, il numero di cui si incrementano le relazioni è troppo alto.");
+                    else
+                        okInput = true;
+                }
+                okInput = false;
+
+                while (!okInput) {
+                    System.out.println("Inserisci il numero di minuti da incrementare ad ogni passo : ");
+                    time_increment = scan.nextDouble();
+
+                    if (time_increment < 0 || time_increment >= 10)
+                        System.out.println("Attenzione, il numero di minuti da incrementare deve esse compreso tra 0 e 10. Scegliendo 0 non si avrà variazione. ");
+                    else
+                        okInput = true;
+                }
+                okInput = false;
+
+                while (!okInput) {
+                    System.out.println("Inserisci il numero di volte di cui incrementare il tempo : ");
+                    n_of_time_increment = scan.nextInt();
+                    okInput=true;
+                }
+                okInput = false;
+                while (!okInput) {
+                    System.out.println("Inserisci il numero di minuti iniziale : ");
+                    CONST_T = scan.nextDouble();
+                    start_time = CONST_T;
+
+                    if (start_time < 0 || start_time >= 10)
+                        System.out.println("Attenzione, il numero di minuti da incrementare deve esse compreso tra 0 e 10. Scegliendo 0 non si avrà variazione. ");
+                    else
+                        okInput = true;
+                }
+                okInput = false;
+
+
+                for (n_relazioni=n_relazioni;  n_relazioni <= n_rel_max; n_relazioni=n_relazioni+rel_increment){
+                    System.out.println("CREAZIONE GRAFO");
+                    //call to methods for initializes Graph and structures
+                    initGraph();
+                    FileGenerator.graphFileGenerator(relationsGraph);
+                    File jsonFile = FileGenerator.jsonFilegenerator();
+                    File txtFile = FileGenerator.txtFileGenerator();
+                    BufferedWriter writer = null;
+                    try {
+                        writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                        writer.append('[');
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    //show relationsGraphs: if you need uncomment below
+                    //showGraph();
+                    clear();
+                    initStructures();
+                    for (int i = 0; i <= 1; i++) {
+                        if (i==0){
+                            //System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+ "modalità classica");
+                            randomDeviation=false;
+                            for (q= start_q; q <= q_max; q++){
+
+                                for(int j=0; j<=n_of_time_increment; j++ ){
+                                    if (j==0){
+                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
+                                        CONST_T = start_time;
+                                        resetCoalitions();
+                                        resetPartition();
+                                        refreshUtility();
+
+                                        //run algorithm to search equilibrium
+                                        coreStable = calculateQStability(q);
+
+                                        if (coreStable) {
+                                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                                        }
+                                        else {
+                                            System.out.println("Eseguite " + deviations + " deviazioni");
+                                        }
+
+                                        try {
+                                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
+                                            writer.append(',');
+                                            writer.close();
+                                            writer = new BufferedWriter(new FileWriter(txtFile, true));
+                                            writer.write("\n\n**ESECUZIONE CON k= " + n_relazioni  + "archi, " + "q=" +q+", tempo= "+CONST_T +" con mosse classiche "+
+                                                    "\n----STATO INIZIALE----\n"
+                                                    + initialStatus.toString()
+                                                    + "\n----ULTIMO STATO----\n"
+                                                    + status.toString());
+                                            writer.close();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                    else{
+                                        CONST_T = CONST_T+time_increment;
+                                        resetCoalitions();
+                                        resetPartition();
+                                        refreshUtility();
+
+                                        //run algorithm to search equilibrium
+                                        coreStable = calculateQStability(q);
+
+                                        if (coreStable) {
+                                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                                        }
+                                        else {
+                                            System.out.println("Eseguite " + deviations + " deviazioni");
+                                        }
+
+
+                                        try {
+                                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
+                                            writer.append(',');
+                                            writer.close();
+                                            writer = new BufferedWriter(new FileWriter(txtFile, true));
+                                            writer.write("\n\n**ESECUZIONE CON k= " + n_relazioni  + "archi, " + "q=" +q+", tempo= "+CONST_T +" con mosse classiche "+
+                                                    "\n----STATO INIZIALE----\n"
+                                                    + initialStatus.toString()
+                                                    + "\n----ULTIMO STATO----\n"
+                                                    + status.toString());
+                                            writer.close();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        else{
+                            System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+ "modalità random");
+                            randomDeviation=true;
+                            for (q=start_q; q <= q_max; q++  ){
+
+                                for(int j=0; j<=n_of_time_increment; j++ ){
+                                    if (j==0){
+                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
+                                        CONST_T = start_time;
+                                        resetCoalitions();
+                                        resetPartition();
+                                        refreshUtility();
+
+                                        //run algorithm to search equilibrium
+                                        coreStable = calculateQStability(q);
+
+                                        if (coreStable) {
+                                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                                        }
+                                        else {
+                                            System.out.println("Eseguite " + deviations + " deviazioni");
+                                        }
+
+                                        try {
+                                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
+                                            writer.append(',');
+                                            writer.close();
+                                            writer = new BufferedWriter(new FileWriter(txtFile, true));
+                                            writer.write("\n\n**ESECUZIONE CON k= " + n_relazioni  + "archi, " + "q=" +q+", tempo= "+CONST_T +" con mosse random "+
+                                                    "\n----STATO INIZIALE----\n"
+                                                    + initialStatus.toString()
+                                                    + "\n----ULTIMO STATO----\n"
+                                                    + status.toString());
+                                            writer.close();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                    else{
+                                        CONST_T = CONST_T+time_increment;
+                                        resetCoalitions();
+                                        resetPartition();
+                                        refreshUtility();
+
+                                        //run algorithm to search equilibrium
+                                        coreStable = calculateQStability(q);
+
+                                         if (coreStable) {
+                                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                                         }
+                                         else {
+                                            System.out.println("Eseguite " + deviations + " deviazioni");
+                                         }
+
+                                        try {
+                                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
+                                            writer.append(',');
+                                            writer.close();
+                                            writer = new BufferedWriter(new FileWriter(txtFile, true));
+                                            writer.write("\n\n**ESECUZIONE CON k= " + n_relazioni  + "archi, " + "q=" +q+", tempo= "+CONST_T +" con mosse random "+
+                                                    "\n----STATO INIZIALE----\n"
+                                                    + initialStatus.toString()
+                                                    + "\n----ULTIMO STATO----\n"
+                                                    + status.toString());
+                                            writer.close();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+
+
+                        //run algorithm to search equilibrium
+                        //coreStable = calculateQStability(q);
+
+                       /* if (coreStable) {
+                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
+                        } else {
+                            System.out.println("Eseguite " + deviations + " deviazioni");
+                        }*/
+
+                        /*try {
+                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, dynamicMode, q, CONST_T));
+                            writer.append(',');
+                            writer.close();
+                            writer = new BufferedWriter(new FileWriter(txtFile, true));
+                            writer.write("\n\n****************ISTANZA N. " + i + "***************\n" + "\n----STATO INIZIALE----\n"
+                                    + initialStatus.toString()
+                                    + "\n----ULTIMO STATO----\n"
+                                    + status.toString());
+                            writer.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }*/
+                    }
+                    try {
+                        writer = new BufferedWriter(new FileWriter(jsonFile, true));
+                        writer.append("{\"END OF FILE:\" : true}");
+                        writer.append(']');
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+
+
+
+
+
+
     }
 
     static void clear(){
@@ -162,6 +475,7 @@ public class TestingMain {
 
         long startTime = System.currentTimeMillis();
         long elapsedTime = 0L;
+        existsdeviation=true;
         while(existsdeviation){
             if (elapsedTime < CONST_T*60*1000){
                 existsdeviation=false;
@@ -169,10 +483,11 @@ public class TestingMain {
 
                 //**RANDOM**/
                 if (randomDeviation){
-
+                    //System.out.println("Ricerca random");
                     getRandomSubset(agentlist);
 
                     if(existsdeviation){
+                        //System.out.println("Deviazione di una coalizione di dimensione "+newCoalition.size()+"\n"+ newCoalition);
                         deviation(newCoalition);
                         deviations++;
                         deviation_avarage=deviation_avarage+deviations;
@@ -185,7 +500,7 @@ public class TestingMain {
                 }
                 //**END RANDOM**/
                 else{
-
+                    //System.out.println("Ricenrca classica");
                     if (q==2)
                         get2subset(agentlist);
                     else
@@ -202,6 +517,7 @@ public class TestingMain {
                         }
                     }
                     if(existsdeviation){
+                        //System.out.println("Deviazione di una coalizione di dimensione "+newCoalition.size()+"\n"+ newCoalition);
                         deviation(newCoalition);
                         deviations++;
                         deviation_avarage=deviation_avarage+deviations;
@@ -259,23 +575,32 @@ public class TestingMain {
             Random r = new Random();
 
             //random position of combination in [0, (n-k)]
-            int randomPoistion = r.nextInt((int) maxPosition-1);
-            System.out.println("Il num random è: "+randomPoistion);
+            int randomPostion = r.nextInt((int) maxPosition-1);
+            //System.out.println("Il num random è: "+randomPostion);
             exclusions.clear();
             //Search for a location in [0 , (n-k)] that has not been tried yet
-            while(positions.get(k)[randomPoistion]) {
-                exclusions.add(randomPoistion);
-                randomPoistion = RandomInt.randomIntWithExclusion(0, (int)maxPosition-1, exclusions);
+
+            long stTime = System.currentTimeMillis();
+            long elTime = 0L;
+            while(positions.get(k)[randomPostion]) {
+                exclusions.add(randomPostion);
+                randomPostion = RandomInt.randomIntWithExclusion(0, (int)maxPosition-1, exclusions);
+                if (elTime > 5*60*1000){
+                    found =false;
+                    existsdeviation=false;
+                    return;
+                }
+                elTime = (new Date()).getTime() - stTime;
             }
-            Long [] decodedSet = Codifier.decode(n, k, randomPoistion);
+            Long [] decodedSet = Codifier.decode(n, k, randomPostion);
             ArrayList<Agent> totest= new ArrayList<Agent>();
             for (int i=0; i<= decodedSet.length-1; i++){
                 totest.add(  new Agent(decodedSet[i].intValue())  );
             }
 
-            System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPoistion+"\nset: "+totest.toString());
+            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
             for (int i=0; i < counter.length; i++){
-                System.out.println(counter[i]+", ");
+            //    System.out.println(counter[i]+", ");
             }
 
             for (Agent a : totest) {
@@ -284,14 +609,14 @@ public class TestingMain {
                     found=false;
                     totest.clear();
                     counter[k]--;
-                    positions.get(k)[randomPoistion]=true;
+                    positions.get(k)[randomPostion]=true;
                     break;
                 }
                 found=true;
             }
-            System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPoistion+"\nset: "+totest.toString());
+            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
             for (int i=0; i < counter.length; i++){
-                System.out.println(counter[i]+", ");
+            //    System.out.println(counter[i]+", ");
             }
 
             if(found){
@@ -304,6 +629,7 @@ public class TestingMain {
     }
 
     private static boolean existsSubset(long[] counter){
+        //System.out.println(Arrays.toString(counter));
         for (int i=2; i<= counter.length-1; i++){
             if (counter[i] > 0)
                 return true;
@@ -381,7 +707,7 @@ public class TestingMain {
         //successful stop clause
         if (!found){
             if ( current.size() == k && current.size() > 1 ) {
-                System.out.println(current.size());
+            //    System.out.println(current.size());
                 ArrayList<Agent> totest = new ArrayList<Agent>();
                 found = true;
                 for (Integer a : current)
@@ -520,8 +846,10 @@ public class TestingMain {
         //Agent[] coalition = coalitions[j];
         ArrayList<Agent> coalition = coalitions[j];
         for (Agent a : coalition) {
-            if (a == null || a.getID() == i)
+
+            if (a == null || ( a.getID() != null && a.getID() == i  ))
                 continue;
+
             coalition_cardinality++;
             if (relationsGraph.containsEdge(i, a.getID())) {
                 Edge e = relationsGraph.getEdge(i, a.getID());
@@ -578,6 +906,35 @@ public class TestingMain {
             for (Agent a : coal)
                 a.setUtility(calculateUtility(a.getID()));
     }
+
+    /**
+     * It reset coalition as startingCoalition
+     */
+    static void resetCoalitions() {
+        for (int i=0; i<=coalitions.length-1; i++){
+            coalitions[i].clear();
+        }
+        for (int i=1; i<=startingCoalitions.length-1; i++) {
+            if (startingCoalitions[i]==null)
+                continue;
+            for (Agent a : startingCoalitions[i]){
+                coalitions[i].add(new Agent(a.getID(), a.getUtility()));
+            }
+
+        }
+    }
+
+
+    /**
+     * It reset partition as startingPartition
+     */
+    static void resetPartition() {
+        partition.clear();
+        for (   Map.Entry<Integer, Integer> entry : startingPartition.entrySet()  ){
+            partition.put(entry.getKey(), entry.getValue());
+        }
+    }
+
 
     /**
      * It will create a reletionsGraph visualizazion through GraphDrawer class.

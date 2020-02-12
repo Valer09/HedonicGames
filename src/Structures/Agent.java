@@ -8,6 +8,11 @@ public class Agent {
         this.i=i;
     }
 
+    public Agent (int i, double u){
+        this.i=i;
+        this.utility=u;
+    }
+
     /**
      * getID
      * @return ID of agent
