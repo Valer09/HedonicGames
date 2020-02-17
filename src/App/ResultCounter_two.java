@@ -1,4 +1,4 @@
-package Testing;
+package App;
 
 import JsonOrg.JSONArray;
 import JsonOrg.JSONObject;
@@ -67,9 +67,7 @@ public class ResultCounter_two {
             System.out.println("---- K: "+entry.getKey()+" ----"+"\n");
             System.out.println("---- K: "+entry.getKey()+" ----"+"\n");
         }*/
-        for (Map.Entry<Integer, List<Record>> entry : table.entrySet()){
-            int n;
-        }
+
 
     }
 }

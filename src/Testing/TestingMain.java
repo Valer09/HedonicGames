@@ -4,7 +4,6 @@ import Generators.*;
 import Random.RandomInt;
 import Structures.*;
 import org.jgrapht.Graph;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,6 +12,7 @@ import java.util.*;
 //import com.google.common.graph.Graphs;
 
 public class TestingMain {
+    static int countertemp=0;
     static int n, n_max, n_relazioni, n_rel_max, n_istanze, start_q ,q, q_max, n_grafi, rel_increment,n_of_time_increment;
     static double CONST_T , time_increment, start_time;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
@@ -140,8 +140,6 @@ public class TestingMain {
             }
             System.out.println("MEDIA DELLE DEVIAZIONI: " + ((int) (deviation_avarage)) / (n_istanze * n_grafi));
 
-
-
         }
 
 
@@ -230,7 +228,6 @@ public class TestingMain {
                 }
                 okInput = false;
 
-
                 for (n_relazioni=n_relazioni;  n_relazioni <= n_rel_max; n_relazioni=n_relazioni+rel_increment){
                     System.out.println("CREAZIONE GRAFO");
                     //call to methods for initializes Graph and structures
@@ -255,7 +252,6 @@ public class TestingMain {
                             //System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+ "modalità classica");
                             randomDeviation=false;
                             for (q= start_q; q <= q_max; q++){
-
                                 for(int j=0; j<=n_of_time_increment; j++ ){
                                     if (j==0){
                                         System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
@@ -263,6 +259,9 @@ public class TestingMain {
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
+                                        found=false;
+                                        status = new MFCoreStatus(partition);
+                                        status.set(false,partition,coalitions,agents);
 
                                         //run algorithm to search equilibrium
                                         coreStable = calculateQStability(q);
@@ -273,7 +272,6 @@ public class TestingMain {
                                         else {
                                             System.out.println("Eseguite " + deviations + " deviazioni");
                                         }
-
                                         try {
                                             writer = new BufferedWriter(new FileWriter(jsonFile, true));
                                             writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
@@ -295,6 +293,9 @@ public class TestingMain {
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
+                                        found=false;
+                                        status = new MFCoreStatus(partition);
+                                        status.set(false,partition,coalitions,agents);
 
                                         //run algorithm to search equilibrium
                                         coreStable = calculateQStability(q);
@@ -305,8 +306,6 @@ public class TestingMain {
                                         else {
                                             System.out.println("Eseguite " + deviations + " deviazioni");
                                         }
-
-
                                         try {
                                             writer = new BufferedWriter(new FileWriter(jsonFile, true));
                                             writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
@@ -338,6 +337,9 @@ public class TestingMain {
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
+                                        found=false;
+                                        status = new MFCoreStatus(partition);
+                                        status.set(false,partition,coalitions,agents);
 
                                         //run algorithm to search equilibrium
                                         coreStable = calculateQStability(q);
@@ -370,6 +372,9 @@ public class TestingMain {
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
+                                        found=false;
+                                        status = new MFCoreStatus(partition);
+                                        status.set(false,partition,coalitions,agents);
 
                                         //run algorithm to search equilibrium
                                         coreStable = calculateQStability(q);
@@ -396,40 +401,10 @@ public class TestingMain {
                                         } catch (IOException e) {
                                             e.printStackTrace();
                                         }
-
                                     }
-
                                 }
-
                             }
-
                         }
-
-
-
-                        //run algorithm to search equilibrium
-                        //coreStable = calculateQStability(q);
-
-                       /* if (coreStable) {
-                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
-                        } else {
-                            System.out.println("Eseguite " + deviations + " deviazioni");
-                        }*/
-
-                        /*try {
-                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
-                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, dynamicMode, q, CONST_T));
-                            writer.append(',');
-                            writer.close();
-                            writer = new BufferedWriter(new FileWriter(txtFile, true));
-                            writer.write("\n\n****************ISTANZA N. " + i + "***************\n" + "\n----STATO INIZIALE----\n"
-                                    + initialStatus.toString()
-                                    + "\n----ULTIMO STATO----\n"
-                                    + status.toString());
-                            writer.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }*/
                     }
                     try {
                         writer = new BufferedWriter(new FileWriter(jsonFile, true));
@@ -441,13 +416,7 @@ public class TestingMain {
                     }
                 }
             }
-
-
-
-
-
-
-
+        System.out.println("TOTALE: "+countertemp);
     }
 
     static void clear(){
@@ -531,7 +500,9 @@ public class TestingMain {
 
             }else{
                 System.out.println("Equilibrio non trovato nel tempo utile");
+                status.setCoreStable(false);
                 return false;
+
             }
         }
         return true;
@@ -582,25 +553,34 @@ public class TestingMain {
 
             long stTime = System.currentTimeMillis();
             long elTime = 0L;
-            while(positions.get(k)[randomPostion]) {
+            boolean loop=false;
+            while(positions.get(k)[randomPostion] ) {
+
                 exclusions.add(randomPostion);
                 randomPostion = RandomInt.randomIntWithExclusion(0, (int)maxPosition-1, exclusions);
-                if (elTime > 5*60*1000){
-                    found =false;
-                    existsdeviation=false;
-                    return;
+                //System.out.println(counter[k]);
+                if (counter[k] < maxPosition*0.001){
+                    HashMap<Integer, Integer> remainingPositionsIDX = new HashMap<Integer, Integer>();
+                    int count=0;
+                    for (int i=0; i <=positions.get(k).length-1; i++ ){
+                        if (!positions.get(k)[i]){
+                            count++;
+                            remainingPositionsIDX.put(count,i);
+                        }
+                    }
+                    randomPostion=remainingPositionsIDX.get(RandomInt.randomIntWithExclusion(0,remainingPositionsIDX.size(),0));
+                    countertemp++;
+                    System.out.println("Loop: rimasto la millesima parte del coeff binomiale. Cosidero non trovata deviazione per questo k");
+                    System.out.println(countertemp);
                 }
                 elTime = (new Date()).getTime() - stTime;
             }
+            if (loop)
+                continue;
             Long [] decodedSet = Codifier.decode(n, k, randomPostion);
             ArrayList<Agent> totest= new ArrayList<Agent>();
             for (int i=0; i<= decodedSet.length-1; i++){
                 totest.add(  new Agent(decodedSet[i].intValue())  );
-            }
-
-            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
-            for (int i=0; i < counter.length; i++){
-            //    System.out.println(counter[i]+", ");
             }
 
             for (Agent a : totest) {
@@ -613,10 +593,6 @@ public class TestingMain {
                     break;
                 }
                 found=true;
-            }
-            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
-            for (int i=0; i < counter.length; i++){
-            //    System.out.println(counter[i]+", ");
             }
 
             if(found){

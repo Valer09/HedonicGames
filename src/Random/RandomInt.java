@@ -21,7 +21,7 @@ public class RandomInt {
     public static Integer randomIntWithExclusion(int start, int end,List<Integer> exclusions){
         Random randomGenerator = new Random();
         Collections.sort(exclusions);
-        System.out.println("Provando a generare il numero nel range");
+        //System.out.println("Provando a generare il numero nel range");
         Integer rdm=0;
         boolean exists=true;
         //System.out.println(exclusions.size()+ " è la taglia della lista esclusioni");
@@ -35,9 +35,8 @@ public class RandomInt {
             else
             random++;
         }
-        System.out.println("Generato numero nel range");
+        //System.out.println("Generato numero nel range");
         return random;
-
     }
 
     /**
@@ -50,14 +49,11 @@ public class RandomInt {
     public static Integer randomIntWithExclusion(int start, int end, Integer exclusions){
         Random randomGenerator = new Random();
         //System.out.println(exclusions.size()+ " è la taglia della lista esclusioni");
-        int random = randomGenerator.nextInt(end);
+        int random = randomGenerator.nextInt(end+1);
         while (random == exclusions) {
-            random = randomGenerator.nextInt(end);
+            random = randomGenerator.nextInt(end+1);
         }
         return random;
-
     }
-
-
 }
 
