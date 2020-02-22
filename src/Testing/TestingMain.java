@@ -677,7 +677,7 @@ public class TestingMain {
         }
     }
 
-    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
+    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current) {
         if (existsdeviation)
             return;
         //successful stop clause
@@ -708,15 +708,15 @@ public class TestingMain {
         Integer x = superSet.get(idx);
         current.add(x);
         //"guess" x is in the subset
-        getSubsets(superSet, k, idx+1, current, solution);
+        getSubsets(superSet, k, idx+1, current);
         current.remove(x);
         //"guess" x is not in the subset
-        getSubsets(superSet, k, idx+1, current, solution);
+        getSubsets(superSet, k, idx+1, current);
     }
 
     public static List<Set<Integer>> getSubsets(List<Integer> superSet, int k) {
         List<Set<Integer>> res = new ArrayList<>();
-        getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
+        getSubsets(superSet, k, 0, new HashSet<Integer>());
         return res;
     }
 

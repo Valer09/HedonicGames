@@ -1,17 +1,11 @@
 package Generators;
 
-import Interfaces.Status;
-import JsonOrg.JSONArray;
 import JsonOrg.JSONObject;
 import Structures.Edge;
 import Structures.MFCoreStatus;
 import org.jgrapht.Graph;
 import org.jgrapht.io.*;
-
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,7 +49,6 @@ public class FileGenerator {
         GraphExporter<Integer, Edge> exporter = new DOTExporter<Integer, Edge>(vertexIdProvider,vertexLabelProvider,edgeLabelProvider);
 
         try {
-
             int i=0;
             File out = new File("output/graphs/g"+i+".gv");
             while (out.exists()){
@@ -68,7 +61,6 @@ public class FileGenerator {
             e.printStackTrace();
         }
     }
-
     public static String generateJsonFromStatus(MFCoreStatus startingStatus, MFCoreStatus status, int i){
         JSONObject jsonString= new JSONObject();
         jsonString.
@@ -78,9 +70,7 @@ public class FileGenerator {
                 put("STARTING COALITION: ", startingStatus.getCoalitions()).
                 put("LAST PARTITION", status.getCoalitionStructure()).
                 put("LAST COALITION", status.getCoalitions());
-
         return jsonString.toString();
-
     }
 
     public static String generateJsonFromStatusRdm(MFCoreStatus startingStatus, MFCoreStatus status, int i, int n_relazioni, boolean dynamicMode, int q, double CONST_T){
@@ -95,11 +85,8 @@ public class FileGenerator {
                 put("STARTING COALITION: ", startingStatus.getCoalitions()).
                 put("LAST PARTITION", status.getCoalitionStructure()).
                 put("LAST COALITION", status.getCoalitions());
-
         return jsonString.toString();
-
     }
-
     public static File jsonFilegenerator(){
             int k=0;
             File tmpDir = new File("output/executions/json/g0.json");
@@ -109,7 +96,6 @@ public class FileGenerator {
         }
             return tmpDir;
     }
-
     public static File txtFileGenerator(){
         int k=0;
         File tmpDir = new File("output/executions/text/g0.txt");
