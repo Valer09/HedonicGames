@@ -254,8 +254,8 @@ public class TestingMain {
                             for (q= start_q; q <= q_max; q++){
                                 for(int j=0; j<=n_of_time_increment; j++ ){
                                     if (j==0){
-                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                         CONST_T = start_time;
+                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
@@ -332,8 +332,8 @@ public class TestingMain {
 
                                 for(int j=0; j<=n_of_time_increment; j++ ){
                                     if (j==0){
-                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                         CONST_T = start_time;
+                                        System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità random");
                                         resetCoalitions();
                                         resetPartition();
                                         refreshUtility();
