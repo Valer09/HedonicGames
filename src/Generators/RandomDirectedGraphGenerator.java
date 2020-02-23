@@ -2,6 +2,7 @@ package Generators;
 
 import Graphs.DirectedWeightedGraph;
 import Structures.Edge;
+import org.jgrapht.Graph;
 import org.jgrapht.graph.*;
 import org.jgrapht.traverse.DepthFirstIterator;
 import Random.RandomInt;
@@ -49,6 +50,7 @@ public class RandomDirectedGraphGenerator {
             exclusions.add(u);
             v= RandomInt.randomIntWithExclusion(1,nv,exclusions);
 
+            //Warning this check works because equals definition in Integer java class.
             if (graph.containsEdge(u,v))
                 continue;
             else

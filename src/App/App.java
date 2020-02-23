@@ -14,7 +14,7 @@ import java.util.*;
 //import com.google.common.graph.Graphs;
 
 public class App {
-
+    static int countertemp=0;
     static int n, n_max, n_relazioni, n_rel_max, n_istanze, start_q ,q, q_max, n_grafi, rel_increment,n_of_time_increment;
     static double CONST_T , time_increment, start_time;
     static RandomDirectedGraphGenerator relationsGraphGenerator;
@@ -142,8 +142,6 @@ public class App {
             }
             System.out.println("MEDIA DELLE DEVIAZIONI: " + ((int) (deviation_avarage)) / (n_istanze * n_grafi));
 
-
-
         }
 
 
@@ -232,7 +230,6 @@ public class App {
             }
             okInput = false;
 
-
             for (n_relazioni=n_relazioni;  n_relazioni <= n_rel_max; n_relazioni=n_relazioni+rel_increment){
                 System.out.println("CREAZIONE GRAFO");
                 //call to methods for initializes Graph and structures
@@ -257,14 +254,16 @@ public class App {
                         //System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+ "modalità classica");
                         randomDeviation=false;
                         for (q= start_q; q <= q_max; q++){
-
                             for(int j=0; j<=n_of_time_increment; j++ ){
                                 if (j==0){
-                                    System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                     CONST_T = start_time;
+                                    System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                     resetCoalitions();
                                     resetPartition();
                                     refreshUtility();
+                                    found=false;
+                                    status = new MFCoreStatus(partition);
+                                    status.set(false,partition,coalitions,agents);
 
                                     //run algorithm to search equilibrium
                                     coreStable = calculateQStability(q);
@@ -275,7 +274,6 @@ public class App {
                                     else {
                                         System.out.println("Eseguite " + deviations + " deviazioni");
                                     }
-
                                     try {
                                         writer = new BufferedWriter(new FileWriter(jsonFile, true));
                                         writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
@@ -297,6 +295,9 @@ public class App {
                                     resetCoalitions();
                                     resetPartition();
                                     refreshUtility();
+                                    found=false;
+                                    status = new MFCoreStatus(partition);
+                                    status.set(false,partition,coalitions,agents);
 
                                     //run algorithm to search equilibrium
                                     coreStable = calculateQStability(q);
@@ -307,8 +308,6 @@ public class App {
                                     else {
                                         System.out.println("Eseguite " + deviations + " deviazioni");
                                     }
-
-
                                     try {
                                         writer = new BufferedWriter(new FileWriter(jsonFile, true));
                                         writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, randomDeviation, q, CONST_T));
@@ -335,11 +334,14 @@ public class App {
 
                             for(int j=0; j<=n_of_time_increment; j++ ){
                                 if (j==0){
-                                    System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità classica");
                                     CONST_T = start_time;
+                                    System.out.println("ESECUZIONE con "+n_relazioni+" relazioni, "+"q= "+q+", tempo= "+CONST_T+ "modalità random");
                                     resetCoalitions();
                                     resetPartition();
                                     refreshUtility();
+                                    found=false;
+                                    status = new MFCoreStatus(partition);
+                                    status.set(false,partition,coalitions,agents);
 
                                     //run algorithm to search equilibrium
                                     coreStable = calculateQStability(q);
@@ -372,6 +374,9 @@ public class App {
                                     resetCoalitions();
                                     resetPartition();
                                     refreshUtility();
+                                    found=false;
+                                    status = new MFCoreStatus(partition);
+                                    status.set(false,partition,coalitions,agents);
 
                                     //run algorithm to search equilibrium
                                     coreStable = calculateQStability(q);
@@ -398,40 +403,10 @@ public class App {
                                     } catch (IOException e) {
                                         e.printStackTrace();
                                     }
-
                                 }
-
                             }
-
                         }
-
                     }
-
-
-
-                    //run algorithm to search equilibrium
-                    //coreStable = calculateQStability(q);
-
-                       /* if (coreStable) {
-                            System.out.println("Trovato Equilibrio dopo " + deviations + " deviazioni");
-                        } else {
-                            System.out.println("Eseguite " + deviations + " deviazioni");
-                        }*/
-
-                        /*try {
-                            writer = new BufferedWriter(new FileWriter(jsonFile, true));
-                            writer.append(FileGenerator.generateJsonFromStatusRdm(initialStatus, status, i, n_relazioni, dynamicMode, q, CONST_T));
-                            writer.append(',');
-                            writer.close();
-                            writer = new BufferedWriter(new FileWriter(txtFile, true));
-                            writer.write("\n\n****************ISTANZA N. " + i + "***************\n" + "\n----STATO INIZIALE----\n"
-                                    + initialStatus.toString()
-                                    + "\n----ULTIMO STATO----\n"
-                                    + status.toString());
-                            writer.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }*/
                 }
                 try {
                     writer = new BufferedWriter(new FileWriter(jsonFile, true));
@@ -443,13 +418,7 @@ public class App {
                 }
             }
         }
-
-
-
-
-
-
-
+        System.out.println("TOTALE: "+countertemp);
     }
 
     static void clear(){
@@ -533,7 +502,9 @@ public class App {
 
             }else{
                 System.out.println("Equilibrio non trovato nel tempo utile");
+                status.setCoreStable(false);
                 return false;
+
             }
         }
         return true;
@@ -585,14 +556,24 @@ public class App {
             long stTime = System.currentTimeMillis();
             long elTime = 0L;
             boolean loop=false;
-            while(positions.get(k)[randomPostion] && !loop) {
+            while(positions.get(k)[randomPostion] ) {
+
                 exclusions.add(randomPostion);
                 randomPostion = RandomInt.randomIntWithExclusion(0, (int)maxPosition-1, exclusions);
-                System.out.println(counter);
+                //System.out.println(counter[k]);
                 if (counter[k] < maxPosition*0.001){
-                    loop=true;
-                    counter[k]=0;
+                    HashMap<Integer, Integer> remainingPositionsIDX = new HashMap<Integer, Integer>();
+                    int count=0;
+                    for (int i=0; i <=positions.get(k).length-1; i++ ){
+                        if (!positions.get(k)[i]){
+                            count++;
+                            remainingPositionsIDX.put(count,i);
+                        }
+                    }
+                    randomPostion=remainingPositionsIDX.get(RandomInt.randomIntWithExclusion(0,remainingPositionsIDX.size(),0));
+                    countertemp++;
                     System.out.println("Loop: rimasto la millesima parte del coeff binomiale. Cosidero non trovata deviazione per questo k");
+                    System.out.println(countertemp);
                 }
                 elTime = (new Date()).getTime() - stTime;
             }
@@ -604,11 +585,6 @@ public class App {
                 totest.add(  new Agent(decodedSet[i].intValue())  );
             }
 
-            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
-           /* for (int i=0; i < counter.length; i++){
-            //    System.out.println(counter[i]+", ");
-            }*/
-
             for (Agent a : totest) {
                 a.setUtility(calculateUtility(a.getID(),totest));
                 if (a.getUtility() <= agents[a.getID()].getUtility() ) {
@@ -619,10 +595,6 @@ public class App {
                     break;
                 }
                 found=true;
-            }
-            //System.out.println("q: "+q+"\nk: "+k+"\nrndPos: "+randomPostion+"\nset: "+totest.toString());
-            for (int i=0; i < counter.length; i++){
-                //    System.out.println(counter[i]+", ");
             }
 
             if(found){
@@ -707,7 +679,7 @@ public class App {
         }
     }
 
-    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current,List<Set<Integer>> solution) {
+    private static void getSubsets(List<Integer> superSet, int k, int idx, Set<Integer> current) {
         if (existsdeviation)
             return;
         //successful stop clause
@@ -738,15 +710,15 @@ public class App {
         Integer x = superSet.get(idx);
         current.add(x);
         //"guess" x is in the subset
-        getSubsets(superSet, k, idx+1, current, solution);
+        getSubsets(superSet, k, idx+1, current);
         current.remove(x);
         //"guess" x is not in the subset
-        getSubsets(superSet, k, idx+1, current, solution);
+        getSubsets(superSet, k, idx+1, current);
     }
 
     public static List<Set<Integer>> getSubsets(List<Integer> superSet, int k) {
         List<Set<Integer>> res = new ArrayList<>();
-        getSubsets(superSet, k, 0, new HashSet<Integer>(), res);
+        getSubsets(superSet, k, 0, new HashSet<Integer>());
         return res;
     }
 
