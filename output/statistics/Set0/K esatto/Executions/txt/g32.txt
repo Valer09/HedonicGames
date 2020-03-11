@@ -1,0 +1,3420 @@
+
+
+****************ISTANZA N. 1***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C10 ; 
+A3 -> C4 ; 
+A4 -> C7 ; 
+A5 -> C12 ; 
+A6 -> C10 ; 
+A7 -> C9 ; 
+A8 -> C5 ; 
+A9 -> C6 ; 
+A10 -> C12 ; 
+A11 -> C4 ; 
+A12 -> C5 ; 
+A13 -> C11 ; 
+A14 -> C11 ; 
+A15 -> C2 ; 
+A16 -> C11 ; 
+A17 -> C3 ; 
+A18 -> C5 ; 
+A19 -> C9 ; 
+A20 -> C9 ; 
+A21 -> C11 ; 
+A22 -> C6 ; 
+A23 -> C5 ; 
+A24 -> C9 ; 
+A25 -> C12 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A15, 
+C3: A17, 
+C4: A3, A11, 
+C5: A8, A12, A18, A23, 
+C6: A9, A22, 
+C7: A4, 
+C8: A1, 
+C9: A7, A19, A20, A24, 
+C10: A2, A6, 
+C11: A13, A14, A16, A21, 
+C12: A5, A10, A25, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 8.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 39.0
+Agent: 6; Utility: 63.0
+Agent: 7; Utility: 52.666666666666664
+Agent: 8; Utility: 45.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 48.0
+Agent: 11; Utility: 22.0
+Agent: 12; Utility: 28.0
+Agent: 13; Utility: 45.0
+Agent: 14; Utility: 42.666666666666664
+Agent: 15; Utility: 0.0
+Agent: 16; Utility: 18.333333333333332
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 26.333333333333332
+Agent: 19; Utility: 56.333333333333336
+Agent: 20; Utility: 22.666666666666668
+Agent: 21; Utility: 59.666666666666664
+Agent: 22; Utility: 44.0
+Agent: 23; Utility: 50.666666666666664
+Agent: 24; Utility: 59.666666666666664
+Agent: 25; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C9 ; 
+A2 -> C14 ; 
+A3 -> C2 ; 
+A4 -> C9 ; 
+A5 -> C11 ; 
+A6 -> C3 ; 
+A7 -> C11 ; 
+A8 -> C6 ; 
+A9 -> C10 ; 
+A10 -> C1 ; 
+A11 -> C1 ; 
+A12 -> C8 ; 
+A13 -> C9 ; 
+A14 -> C4 ; 
+A15 -> C11 ; 
+A16 -> C13 ; 
+A17 -> C6 ; 
+A18 -> C4 ; 
+A19 -> C8 ; 
+A20 -> C10 ; 
+A21 -> C3 ; 
+A22 -> C4 ; 
+A23 -> C14 ; 
+A24 -> C2 ; 
+A25 -> C13 ; 
+}
+COALITIONS: 
+
+C1: A10, A11, 
+C2: A3, A24, 
+C3: A21, A6, 
+C4: A18, A22, A14, 
+C5: 
+C6: A17, A8, 
+C7: 
+C8: A19, A12, 
+C9: A1, A4, A13, 
+C10: A20, A9, 
+C11: A5, A7, A15, 
+C12: 
+C13: A16, A25, 
+C14: A2, A23, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 77.5
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 76.5
+Agent: 5; Utility: 26.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 81.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 71.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 97.5
+Agent: 14; Utility: 78.0
+Agent: 15; Utility: 58.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 53.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 34.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 47.5
+Agent: 23; Utility: 91.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 2***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C4 ; 
+A3 -> C2 ; 
+A4 -> C3 ; 
+A5 -> C8 ; 
+A6 -> C9 ; 
+A7 -> C10 ; 
+A8 -> C12 ; 
+A9 -> C9 ; 
+A10 -> C4 ; 
+A11 -> C8 ; 
+A12 -> C3 ; 
+A13 -> C3 ; 
+A14 -> C5 ; 
+A15 -> C8 ; 
+A16 -> C11 ; 
+A17 -> C3 ; 
+A18 -> C8 ; 
+A19 -> C9 ; 
+A20 -> C11 ; 
+A21 -> C10 ; 
+A22 -> C9 ; 
+A23 -> C4 ; 
+A24 -> C11 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A3, 
+C3: A4, A12, A13, A17, 
+C4: A2, A10, A23, 
+C5: A14, 
+C6: 
+C7: 
+C8: A1, A5, A11, A15, A18, 
+C9: A6, A9, A19, A22, A25, 
+C10: A7, A21, 
+C11: A16, A20, A24, 
+C12: A8, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 22.0
+Agent: 2; Utility: 59.5
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 40.0
+Agent: 5; Utility: 23.5
+Agent: 6; Utility: 60.25
+Agent: 7; Utility: 63.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 46.5
+Agent: 10; Utility: 16.0
+Agent: 11; Utility: 27.0
+Agent: 12; Utility: 20.666666666666668
+Agent: 13; Utility: 47.666666666666664
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 54.5
+Agent: 16; Utility: 3.0
+Agent: 17; Utility: 24.666666666666668
+Agent: 18; Utility: 8.5
+Agent: 19; Utility: 40.75
+Agent: 20; Utility: 49.0
+Agent: 21; Utility: 17.0
+Agent: 22; Utility: 40.75
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 35.0
+Agent: 25; Utility: 55.5
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C12 ; 
+A2 -> C8 ; 
+A3 -> C2 ; 
+A4 -> C13 ; 
+A5 -> C3 ; 
+A6 -> C9 ; 
+A7 -> C4 ; 
+A8 -> C8 ; 
+A9 -> C7 ; 
+A10 -> C11 ; 
+A11 -> C11 ; 
+A12 -> C14 ; 
+A13 -> C12 ; 
+A14 -> C6 ; 
+A15 -> C3 ; 
+A16 -> C1 ; 
+A17 -> C8 ; 
+A18 -> C4 ; 
+A19 -> C14 ; 
+A20 -> C13 ; 
+A21 -> C9 ; 
+A22 -> C7 ; 
+A23 -> C3 ; 
+A24 -> C2 ; 
+A25 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A16, A25, 
+C2: A3, A24, 
+C3: A5, A23, A15, 
+C4: A18, A7, 
+C5: 
+C6: A14, 
+C7: A22, A9, 
+C8: A17, A2, A8, 
+C9: A21, A6, 
+C10: 
+C11: A10, A11, 
+C12: A1, A13, 
+C13: A4, A20, 
+C14: A19, A12, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 55.5
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 31.0
+Agent: 5; Utility: 57.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 75.5
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 82.5
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 84.5
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 44.0
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 3***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C11 ; 
+A2 -> C1 ; 
+A3 -> C5 ; 
+A4 -> C11 ; 
+A5 -> C8 ; 
+A6 -> C6 ; 
+A7 -> C12 ; 
+A8 -> C5 ; 
+A9 -> C4 ; 
+A10 -> C4 ; 
+A11 -> C2 ; 
+A12 -> C10 ; 
+A13 -> C10 ; 
+A14 -> C10 ; 
+A15 -> C7 ; 
+A16 -> C3 ; 
+A17 -> C8 ; 
+A18 -> C10 ; 
+A19 -> C12 ; 
+A20 -> C3 ; 
+A21 -> C3 ; 
+A22 -> C2 ; 
+A23 -> C7 ; 
+A24 -> C6 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A2, 
+C2: A11, A22, 
+C3: A16, A20, A21, 
+C4: A9, A10, 
+C5: A3, A8, 
+C6: A6, A24, 
+C7: A15, A23, 
+C8: A5, A17, 
+C9: A25, 
+C10: A12, A13, A14, A18, 
+C11: A1, A4, 
+C12: A7, A19, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 58.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 80.0
+Agent: 5; Utility: 18.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 10.0
+Agent: 10; Utility: 40.0
+Agent: 11; Utility: 3.0
+Agent: 12; Utility: 48.0
+Agent: 13; Utility: 45.666666666666664
+Agent: 14; Utility: 44.333333333333336
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 3.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 21.0
+Agent: 19; Utility: 74.0
+Agent: 20; Utility: 57.0
+Agent: 21; Utility: 61.0
+Agent: 22; Utility: 0.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 54.0
+Agent: 25; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C11 ; 
+A2 -> C7 ; 
+A3 -> C9 ; 
+A4 -> C7 ; 
+A5 -> C2 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C4 ; 
+A9 -> C15 ; 
+A10 -> C5 ; 
+A11 -> C5 ; 
+A12 -> C8 ; 
+A13 -> C11 ; 
+A14 -> C10 ; 
+A15 -> C2 ; 
+A16 -> C3 ; 
+A17 -> C4 ; 
+A18 -> C1 ; 
+A19 -> C8 ; 
+A20 -> C7 ; 
+A21 -> C6 ; 
+A22 -> C15 ; 
+A23 -> C2 ; 
+A24 -> C9 ; 
+A25 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A18, A7, 
+C2: A5, A23, A15, 
+C3: A16, A25, 
+C4: A17, A8, 
+C5: A10, A11, 
+C6: A21, A6, 
+C7: A2, A4, A20, 
+C8: A19, A12, 
+C9: A3, A24, 
+C10: A14, 
+C11: A1, A13, 
+C12: 
+C13: 
+C14: 
+C15: A22, A9, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 57.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 82.5
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 44.0
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 4***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C3 ; 
+A3 -> C4 ; 
+A4 -> C4 ; 
+A5 -> C2 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C8 ; 
+A9 -> C6 ; 
+A10 -> C9 ; 
+A11 -> C11 ; 
+A12 -> C12 ; 
+A13 -> C7 ; 
+A14 -> C12 ; 
+A15 -> C9 ; 
+A16 -> C10 ; 
+A17 -> C5 ; 
+A18 -> C9 ; 
+A19 -> C9 ; 
+A20 -> C9 ; 
+A21 -> C11 ; 
+A22 -> C6 ; 
+A23 -> C2 ; 
+A24 -> C8 ; 
+A25 -> C7 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A1, A5, A7, A23, 
+C3: A2, 
+C4: A3, A4, 
+C5: A17, 
+C6: A6, A9, A22, 
+C7: A13, A25, 
+C8: A8, A24, 
+C9: A10, A15, A18, A19, A20, 
+C10: A16, 
+C11: A11, A21, 
+C12: A12, A14, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 42.333333333333336
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 73.0
+Agent: 4; Utility: 45.0
+Agent: 5; Utility: 20.666666666666668
+Agent: 6; Utility: 46.0
+Agent: 7; Utility: 35.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 45.5
+Agent: 10; Utility: 57.75
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 82.0
+Agent: 13; Utility: 45.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 28.75
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 40.5
+Agent: 19; Utility: 41.75
+Agent: 20; Utility: 50.75
+Agent: 21; Utility: 89.0
+Agent: 22; Utility: 22.0
+Agent: 23; Utility: 51.666666666666664
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 2.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C6 ; 
+A2 -> C13 ; 
+A3 -> C2 ; 
+A4 -> C13 ; 
+A5 -> C8 ; 
+A6 -> C11 ; 
+A7 -> C4 ; 
+A8 -> C5 ; 
+A9 -> C7 ; 
+A10 -> C4 ; 
+A11 -> C4 ; 
+A12 -> C1 ; 
+A13 -> C6 ; 
+A14 -> C10 ; 
+A15 -> C8 ; 
+A16 -> C7 ; 
+A17 -> C5 ; 
+A18 -> C3 ; 
+A19 -> C1 ; 
+A20 -> C13 ; 
+A21 -> C11 ; 
+A22 -> C1 ; 
+A23 -> C3 ; 
+A24 -> C2 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A19, A22, A12, 
+C2: A3, A24, 
+C3: A18, A23, 
+C4: A7, A10, A11, 
+C5: A17, A8, 
+C6: A1, A13, 
+C7: A16, A9, 
+C8: A5, A15, 
+C9: 
+C10: A25, A14, 
+C11: A21, A6, 
+C12: 
+C13: A2, A4, A20, 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 53.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 42.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 62.0
+Agent: 10; Utility: 78.5
+Agent: 11; Utility: 75.5
+Agent: 12; Utility: 54.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 65.0
+Agent: 15; Utility: 94.0
+Agent: 16; Utility: 68.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 38.0
+Agent: 19; Utility: 93.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 82.0
+Agent: 23; Utility: 85.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 53.0
+
+
+****************ISTANZA N. 5***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C12 ; 
+A3 -> C10 ; 
+A4 -> C10 ; 
+A5 -> C7 ; 
+A6 -> C2 ; 
+A7 -> C4 ; 
+A8 -> C5 ; 
+A9 -> C3 ; 
+A10 -> C12 ; 
+A11 -> C7 ; 
+A12 -> C4 ; 
+A13 -> C8 ; 
+A14 -> C5 ; 
+A15 -> C2 ; 
+A16 -> C5 ; 
+A17 -> C5 ; 
+A18 -> C3 ; 
+A19 -> C9 ; 
+A20 -> C6 ; 
+A21 -> C10 ; 
+A22 -> C10 ; 
+A23 -> C5 ; 
+A24 -> C8 ; 
+A25 -> C6 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A6, A15, 
+C3: A9, A18, 
+C4: A7, A12, 
+C5: A8, A14, A16, A17, A23, 
+C6: A20, A25, 
+C7: A5, A11, 
+C8: A1, A13, A24, 
+C9: A19, 
+C10: A3, A4, A21, A22, 
+C11: 
+C12: A2, A10, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 93.5
+Agent: 2; Utility: 67.0
+Agent: 3; Utility: 54.333333333333336
+Agent: 4; Utility: 52.666666666666664
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 48.0
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 38.75
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 25.0
+Agent: 11; Utility: 7.0
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 89.0
+Agent: 14; Utility: 42.0
+Agent: 15; Utility: 0.0
+Agent: 16; Utility: 39.0
+Agent: 17; Utility: 47.0
+Agent: 18; Utility: 68.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 37.666666666666664
+Agent: 22; Utility: 28.666666666666668
+Agent: 23; Utility: 9.75
+Agent: 24; Utility: 61.5
+Agent: 25; Utility: 31.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C13 ; 
+A3 -> C11 ; 
+A4 -> C13 ; 
+A5 -> C4 ; 
+A6 -> C15 ; 
+A7 -> C10 ; 
+A8 -> C7 ; 
+A9 -> C6 ; 
+A10 -> C3 ; 
+A11 -> C3 ; 
+A12 -> C6 ; 
+A13 -> C8 ; 
+A14 -> C6 ; 
+A15 -> C2 ; 
+A16 -> C5 ; 
+A17 -> C7 ; 
+A18 -> C10 ; 
+A19 -> C1 ; 
+A20 -> C13 ; 
+A21 -> C15 ; 
+A22 -> C1 ; 
+A23 -> C2 ; 
+A24 -> C11 ; 
+A25 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A19, A22, 
+C2: A23, A15, 
+C3: A10, A11, 
+C4: A5, 
+C5: A16, A25, 
+C6: A9, A12, A14, 
+C7: A17, A8, 
+C8: A1, A13, 
+C9: 
+C10: A18, A7, 
+C11: A3, A24, 
+C12: 
+C13: A2, A4, A20, 
+C14: 
+C15: A21, A6, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 40.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 61.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 17.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 89.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 78.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 6***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C11 ; 
+A2 -> C3 ; 
+A3 -> C2 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C10 ; 
+A7 -> C8 ; 
+A8 -> C1 ; 
+A9 -> C12 ; 
+A10 -> C10 ; 
+A11 -> C8 ; 
+A12 -> C3 ; 
+A13 -> C10 ; 
+A14 -> C7 ; 
+A15 -> C10 ; 
+A16 -> C12 ; 
+A17 -> C9 ; 
+A18 -> C4 ; 
+A19 -> C10 ; 
+A20 -> C3 ; 
+A21 -> C10 ; 
+A22 -> C1 ; 
+A23 -> C5 ; 
+A24 -> C8 ; 
+A25 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A5, A8, A22, 
+C2: A3, 
+C3: A2, A12, A20, 
+C4: A18, 
+C5: A23, A25, 
+C6: A4, 
+C7: A14, 
+C8: A7, A11, A24, 
+C9: A17, 
+C10: A6, A10, A13, A15, A19, A21, 
+C11: A1, 
+C12: A9, A16, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 5.5
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 43.0
+Agent: 7; Utility: 50.0
+Agent: 8; Utility: 48.0
+Agent: 9; Utility: 62.0
+Agent: 10; Utility: 62.2
+Agent: 11; Utility: 42.5
+Agent: 12; Utility: 61.5
+Agent: 13; Utility: 35.8
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 44.2
+Agent: 16; Utility: 68.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 53.0
+Agent: 20; Utility: 45.5
+Agent: 21; Utility: 60.4
+Agent: 22; Utility: 70.0
+Agent: 23; Utility: 0.0
+Agent: 24; Utility: 68.0
+Agent: 25; Utility: 50.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C13 ; 
+A2 -> C6 ; 
+A3 -> C15 ; 
+A4 -> C10 ; 
+A5 -> C2 ; 
+A6 -> C5 ; 
+A7 -> C3 ; 
+A8 -> C11 ; 
+A9 -> C2 ; 
+A10 -> C4 ; 
+A11 -> C4 ; 
+A12 -> C7 ; 
+A13 -> C13 ; 
+A14 -> C1 ; 
+A15 -> C2 ; 
+A16 -> C12 ; 
+A17 -> C11 ; 
+A18 -> C9 ; 
+A19 -> C7 ; 
+A20 -> C10 ; 
+A21 -> C5 ; 
+A22 -> C9 ; 
+A23 -> C6 ; 
+A24 -> C15 ; 
+A25 -> C12 ; 
+}
+COALITIONS: 
+
+C1: A14, 
+C2: A5, A9, A15, 
+C3: A7, 
+C4: A10, A11, 
+C5: A21, A6, 
+C6: A2, A23, 
+C7: A19, A12, 
+C8: 
+C9: A18, A22, 
+C10: A4, A20, 
+C11: A17, A8, 
+C12: A16, A25, 
+C13: A1, A13, 
+C14: 
+C15: A3, A24, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 31.0
+Agent: 5; Utility: 70.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 35.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 66.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 91.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 7***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C11 ; 
+A3 -> C11 ; 
+A4 -> C12 ; 
+A5 -> C11 ; 
+A6 -> C3 ; 
+A7 -> C6 ; 
+A8 -> C5 ; 
+A9 -> C10 ; 
+A10 -> C6 ; 
+A11 -> C6 ; 
+A12 -> C6 ; 
+A13 -> C7 ; 
+A14 -> C9 ; 
+A15 -> C9 ; 
+A16 -> C12 ; 
+A17 -> C7 ; 
+A18 -> C6 ; 
+A19 -> C3 ; 
+A20 -> C8 ; 
+A21 -> C11 ; 
+A22 -> C12 ; 
+A23 -> C4 ; 
+A24 -> C3 ; 
+A25 -> C7 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: 
+C3: A6, A19, A24, 
+C4: A23, 
+C5: A1, A8, 
+C6: A7, A10, A11, A12, A18, 
+C7: A13, A17, A25, 
+C8: A20, 
+C9: A14, A15, 
+C10: A9, 
+C11: A2, A3, A5, A21, 
+C12: A4, A16, A22, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 48.0
+Agent: 3; Utility: 50.0
+Agent: 4; Utility: 42.0
+Agent: 5; Utility: 38.666666666666664
+Agent: 6; Utility: 35.5
+Agent: 7; Utility: 35.75
+Agent: 8; Utility: 96.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 56.25
+Agent: 11; Utility: 71.75
+Agent: 12; Utility: 10.0
+Agent: 13; Utility: 37.5
+Agent: 14; Utility: 1.0
+Agent: 15; Utility: 48.0
+Agent: 16; Utility: 65.0
+Agent: 17; Utility: 33.5
+Agent: 18; Utility: 40.5
+Agent: 19; Utility: 60.5
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 20.0
+Agent: 22; Utility: 35.0
+Agent: 23; Utility: 0.0
+Agent: 24; Utility: 66.5
+Agent: 25; Utility: 47.5
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C14 ; 
+A2 -> C12 ; 
+A3 -> C5 ; 
+A4 -> C14 ; 
+A5 -> C9 ; 
+A6 -> C4 ; 
+A7 -> C13 ; 
+A8 -> C7 ; 
+A9 -> C1 ; 
+A10 -> C6 ; 
+A11 -> C6 ; 
+A12 -> C2 ; 
+A13 -> C14 ; 
+A14 -> C10 ; 
+A15 -> C13 ; 
+A16 -> C12 ; 
+A17 -> C7 ; 
+A18 -> C11 ; 
+A19 -> C3 ; 
+A20 -> C13 ; 
+A21 -> C4 ; 
+A22 -> C1 ; 
+A23 -> C9 ; 
+A24 -> C3 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A22, A9, 
+C2: A12, 
+C3: A19, A24, 
+C4: A21, A6, 
+C5: A3, 
+C6: A10, A11, 
+C7: A17, A8, 
+C8: 
+C9: A5, A23, A25, 
+C10: A14, 
+C11: A18, 
+C12: A16, A2, 
+C13: A20, A7, A15, 
+C14: A1, A4, A13, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 77.5
+Agent: 2; Utility: 68.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 76.5
+Agent: 5; Utility: 70.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 80.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 97.5
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 15.0
+Agent: 16; Utility: 49.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 95.0
+Agent: 20; Utility: 37.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 44.0
+Agent: 23; Utility: 16.5
+Agent: 24; Utility: 79.0
+Agent: 25; Utility: 25.0
+
+
+****************ISTANZA N. 8***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C4 ; 
+A3 -> C1 ; 
+A4 -> C9 ; 
+A5 -> C1 ; 
+A6 -> C12 ; 
+A7 -> C7 ; 
+A8 -> C6 ; 
+A9 -> C6 ; 
+A10 -> C7 ; 
+A11 -> C4 ; 
+A12 -> C6 ; 
+A13 -> C2 ; 
+A14 -> C5 ; 
+A15 -> C3 ; 
+A16 -> C12 ; 
+A17 -> C1 ; 
+A18 -> C10 ; 
+A19 -> C12 ; 
+A20 -> C8 ; 
+A21 -> C9 ; 
+A22 -> C5 ; 
+A23 -> C8 ; 
+A24 -> C9 ; 
+A25 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A3, A5, A17, 
+C2: A13, 
+C3: A1, A15, A25, 
+C4: A2, A11, 
+C5: A14, A22, 
+C6: A8, A9, A12, 
+C7: A7, A10, 
+C8: A20, A23, 
+C9: A4, A21, A24, 
+C10: A18, 
+C11: 
+C12: A6, A16, A19, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 4.5
+Agent: 2; Utility: 70.0
+Agent: 3; Utility: 17.0
+Agent: 4; Utility: 61.0
+Agent: 5; Utility: 24.0
+Agent: 6; Utility: 81.0
+Agent: 7; Utility: 50.0
+Agent: 8; Utility: 90.0
+Agent: 9; Utility: 42.5
+Agent: 10; Utility: 79.0
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 62.0
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 66.0
+Agent: 15; Utility: 35.5
+Agent: 16; Utility: 75.5
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 17.0
+Agent: 20; Utility: 97.0
+Agent: 21; Utility: 30.5
+Agent: 22; Utility: 35.0
+Agent: 23; Utility: 19.0
+Agent: 24; Utility: 35.5
+Agent: 25; Utility: 9.5
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C7 ; 
+A2 -> C13 ; 
+A3 -> C10 ; 
+A4 -> C13 ; 
+A5 -> C6 ; 
+A6 -> C15 ; 
+A7 -> C11 ; 
+A8 -> C3 ; 
+A9 -> C8 ; 
+A10 -> C4 ; 
+A11 -> C4 ; 
+A12 -> C8 ; 
+A13 -> C7 ; 
+A14 -> C8 ; 
+A15 -> C2 ; 
+A16 -> C5 ; 
+A17 -> C3 ; 
+A18 -> C11 ; 
+A19 -> C1 ; 
+A20 -> C13 ; 
+A21 -> C15 ; 
+A22 -> C1 ; 
+A23 -> C2 ; 
+A24 -> C10 ; 
+A25 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A19, A22, 
+C2: A23, A15, 
+C3: A17, A8, 
+C4: A10, A11, 
+C5: A16, A25, 
+C6: A5, 
+C7: A1, A13, 
+C8: A9, A12, A14, 
+C9: 
+C10: A3, A24, 
+C11: A18, A7, 
+C12: 
+C13: A2, A4, A20, 
+C14: 
+C15: A21, A6, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 40.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 61.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 17.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 89.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 78.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 9***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C1 ; 
+A3 -> C8 ; 
+A4 -> C12 ; 
+A5 -> C12 ; 
+A6 -> C8 ; 
+A7 -> C11 ; 
+A8 -> C4 ; 
+A9 -> C10 ; 
+A10 -> C1 ; 
+A11 -> C6 ; 
+A12 -> C10 ; 
+A13 -> C6 ; 
+A14 -> C2 ; 
+A15 -> C8 ; 
+A16 -> C2 ; 
+A17 -> C2 ; 
+A18 -> C3 ; 
+A19 -> C6 ; 
+A20 -> C8 ; 
+A21 -> C7 ; 
+A22 -> C1 ; 
+A23 -> C3 ; 
+A24 -> C8 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A1, A2, A10, A22, 
+C2: A14, A16, A17, 
+C3: A18, A23, 
+C4: A8, 
+C5: 
+C6: A11, A13, A19, 
+C7: A21, 
+C8: A3, A6, A15, A20, A24, 
+C9: 
+C10: A9, A12, A25, 
+C11: A7, 
+C12: A4, A5, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 28.333333333333332
+Agent: 2; Utility: 52.666666666666664
+Agent: 3; Utility: 50.75
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 45.0
+Agent: 6; Utility: 32.75
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 31.0
+Agent: 10; Utility: 48.333333333333336
+Agent: 11; Utility: 53.5
+Agent: 12; Utility: 62.5
+Agent: 13; Utility: 48.0
+Agent: 14; Utility: 12.5
+Agent: 15; Utility: 44.5
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 37.5
+Agent: 18; Utility: 38.0
+Agent: 19; Utility: 47.5
+Agent: 20; Utility: 36.5
+Agent: 21; Utility: 0.0
+Agent: 22; Utility: 53.0
+Agent: 23; Utility: 85.0
+Agent: 24; Utility: 44.0
+Agent: 25; Utility: 43.5
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C12 ; 
+A2 -> C9 ; 
+A3 -> C11 ; 
+A4 -> C9 ; 
+A5 -> C7 ; 
+A6 -> C4 ; 
+A7 -> C5 ; 
+A8 -> C2 ; 
+A9 -> C3 ; 
+A10 -> C5 ; 
+A11 -> C5 ; 
+A12 -> C15 ; 
+A13 -> C12 ; 
+A14 -> C6 ; 
+A15 -> C7 ; 
+A16 -> C1 ; 
+A17 -> C2 ; 
+A18 -> C8 ; 
+A19 -> C15 ; 
+A20 -> C9 ; 
+A21 -> C4 ; 
+A22 -> C8 ; 
+A23 -> C7 ; 
+A24 -> C11 ; 
+A25 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A16, A25, 
+C2: A17, A8, 
+C3: A9, 
+C4: A21, A6, 
+C5: A7, A10, A11, 
+C6: A14, 
+C7: A5, A23, A15, 
+C8: A18, A22, 
+C9: A2, A4, A20, 
+C10: 
+C11: A3, A24, 
+C12: A1, A13, 
+C13: 
+C14: 
+C15: A19, A12, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 57.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 42.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 78.5
+Agent: 11; Utility: 75.5
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 82.5
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 10***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C10 ; 
+A3 -> C4 ; 
+A4 -> C2 ; 
+A5 -> C3 ; 
+A6 -> C3 ; 
+A7 -> C3 ; 
+A8 -> C8 ; 
+A9 -> C10 ; 
+A10 -> C4 ; 
+A11 -> C8 ; 
+A12 -> C1 ; 
+A13 -> C7 ; 
+A14 -> C8 ; 
+A15 -> C3 ; 
+A16 -> C7 ; 
+A17 -> C10 ; 
+A18 -> C4 ; 
+A19 -> C7 ; 
+A20 -> C10 ; 
+A21 -> C11 ; 
+A22 -> C4 ; 
+A23 -> C11 ; 
+A24 -> C8 ; 
+A25 -> C11 ; 
+}
+COALITIONS: 
+
+C1: A12, 
+C2: A1, A4, 
+C3: A5, A6, A7, A15, 
+C4: A3, A10, A18, A22, 
+C5: 
+C6: 
+C7: A13, A16, A19, 
+C8: A8, A11, A14, A24, 
+C9: 
+C10: A2, A9, A17, A20, 
+C11: A21, A23, A25, 
+C12: 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 58.0
+Agent: 2; Utility: 8.666666666666666
+Agent: 3; Utility: 20.0
+Agent: 4; Utility: 80.0
+Agent: 5; Utility: 44.666666666666664
+Agent: 6; Utility: 33.333333333333336
+Agent: 7; Utility: 87.33333333333333
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 49.666666666666664
+Agent: 10; Utility: 32.0
+Agent: 11; Utility: 22.333333333333332
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 31.5
+Agent: 14; Utility: 45.666666666666664
+Agent: 15; Utility: 38.666666666666664
+Agent: 16; Utility: 73.0
+Agent: 17; Utility: 31.0
+Agent: 18; Utility: 62.666666666666664
+Agent: 19; Utility: 33.5
+Agent: 20; Utility: 69.33333333333333
+Agent: 21; Utility: 40.5
+Agent: 22; Utility: 54.666666666666664
+Agent: 23; Utility: 11.5
+Agent: 24; Utility: 22.666666666666668
+Agent: 25; Utility: 32.5
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C15 ; 
+A2 -> C11 ; 
+A3 -> C9 ; 
+A4 -> C13 ; 
+A5 -> C7 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C10 ; 
+A9 -> C10 ; 
+A10 -> C3 ; 
+A11 -> C3 ; 
+A12 -> C12 ; 
+A13 -> C15 ; 
+A14 -> C4 ; 
+A15 -> C7 ; 
+A16 -> C2 ; 
+A17 -> C1 ; 
+A18 -> C4 ; 
+A19 -> C12 ; 
+A20 -> C4 ; 
+A21 -> C5 ; 
+A22 -> C10 ; 
+A23 -> C11 ; 
+A24 -> C9 ; 
+A25 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A17, A7, 
+C2: A16, A25, 
+C3: A10, A11, 
+C4: A18, A20, A14, 
+C5: A21, A6, 
+C6: 
+C7: A5, A15, 
+C8: 
+C9: A3, A24, 
+C10: A22, A8, A9, 
+C11: A2, A23, 
+C12: A19, A12, 
+C13: A4, 
+C14: 
+C15: A1, A13, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 53.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 91.0
+Agent: 8; Utility: 80.5
+Agent: 9; Utility: 57.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 54.5
+Agent: 15; Utility: 94.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 63.0
+Agent: 18; Utility: 22.5
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 32.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 68.0
+Agent: 23; Utility: 91.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 11***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C3 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C9 ; 
+A6 -> C4 ; 
+A7 -> C2 ; 
+A8 -> C2 ; 
+A9 -> C5 ; 
+A10 -> C11 ; 
+A11 -> C6 ; 
+A12 -> C9 ; 
+A13 -> C12 ; 
+A14 -> C6 ; 
+A15 -> C6 ; 
+A16 -> C5 ; 
+A17 -> C2 ; 
+A18 -> C5 ; 
+A19 -> C5 ; 
+A20 -> C9 ; 
+A21 -> C11 ; 
+A22 -> C5 ; 
+A23 -> C1 ; 
+A24 -> C11 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A1, A23, 
+C2: A4, A7, A8, A17, 
+C3: A2, 
+C4: A6, 
+C5: A9, A16, A18, A19, A22, 
+C6: A3, A11, A14, A15, 
+C7: 
+C8: 
+C9: A5, A12, A20, A25, 
+C10: 
+C11: A10, A21, A24, 
+C12: A13, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 5.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 11.666666666666666
+Agent: 4; Utility: 30.666666666666668
+Agent: 5; Utility: 57.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 35.333333333333336
+Agent: 8; Utility: 45.0
+Agent: 9; Utility: 62.0
+Agent: 10; Utility: 42.0
+Agent: 11; Utility: 42.333333333333336
+Agent: 12; Utility: 59.333333333333336
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 13.333333333333334
+Agent: 15; Utility: 65.66666666666667
+Agent: 16; Utility: 83.5
+Agent: 17; Utility: 49.666666666666664
+Agent: 18; Utility: 65.75
+Agent: 19; Utility: 49.25
+Agent: 20; Utility: 12.0
+Agent: 21; Utility: 23.5
+Agent: 22; Utility: 59.25
+Agent: 23; Utility: 47.0
+Agent: 24; Utility: 33.0
+Agent: 25; Utility: 22.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C7 ; 
+A3 -> C13 ; 
+A4 -> C7 ; 
+A5 -> C4 ; 
+A6 -> C2 ; 
+A7 -> C10 ; 
+A8 -> C8 ; 
+A9 -> C11 ; 
+A10 -> C9 ; 
+A11 -> C9 ; 
+A12 -> C1 ; 
+A13 -> C3 ; 
+A14 -> C4 ; 
+A15 -> C6 ; 
+A16 -> C5 ; 
+A17 -> C8 ; 
+A18 -> C10 ; 
+A19 -> C1 ; 
+A20 -> C11 ; 
+A21 -> C2 ; 
+A22 -> C5 ; 
+A23 -> C6 ; 
+A24 -> C13 ; 
+A25 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A19, A12, 
+C2: A21, A6, 
+C3: A1, A13, 
+C4: A5, A25, A14, 
+C5: A16, A22, 
+C6: A23, A15, 
+C7: A2, A4, 
+C8: A17, A8, 
+C9: A10, A11, 
+C10: A18, A7, 
+C11: A20, A9, 
+C12: 
+C13: A3, A24, 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 91.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 39.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 71.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 58.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 34.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 55.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 26.5
+
+
+****************ISTANZA N. 12***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C11 ; 
+A2 -> C10 ; 
+A3 -> C3 ; 
+A4 -> C4 ; 
+A5 -> C7 ; 
+A6 -> C2 ; 
+A7 -> C6 ; 
+A8 -> C8 ; 
+A9 -> C6 ; 
+A10 -> C6 ; 
+A11 -> C10 ; 
+A12 -> C4 ; 
+A13 -> C6 ; 
+A14 -> C4 ; 
+A15 -> C2 ; 
+A16 -> C12 ; 
+A17 -> C7 ; 
+A18 -> C8 ; 
+A19 -> C6 ; 
+A20 -> C4 ; 
+A21 -> C11 ; 
+A22 -> C1 ; 
+A23 -> C4 ; 
+A24 -> C4 ; 
+A25 -> C12 ; 
+}
+COALITIONS: 
+
+C1: A22, 
+C2: A6, A15, 
+C3: A3, 
+C4: A4, A12, A14, A20, A23, A24, 
+C5: 
+C6: A7, A9, A10, A13, A19, 
+C7: A5, A17, 
+C8: A8, A18, 
+C9: 
+C10: A2, A11, 
+C11: A1, A21, 
+C12: A16, A25, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 70.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 17.0
+Agent: 5; Utility: 18.0
+Agent: 6; Utility: 48.0
+Agent: 7; Utility: 12.5
+Agent: 8; Utility: 42.0
+Agent: 9; Utility: 50.25
+Agent: 10; Utility: 67.5
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 36.6
+Agent: 13; Utility: 5.5
+Agent: 14; Utility: 25.6
+Agent: 15; Utility: 0.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 59.75
+Agent: 20; Utility: 29.6
+Agent: 21; Utility: 31.0
+Agent: 22; Utility: 0.0
+Agent: 23; Utility: 16.2
+Agent: 24; Utility: 36.2
+Agent: 25; Utility: 58.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C4 ; 
+A3 -> C3 ; 
+A4 -> C10 ; 
+A5 -> C4 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C7 ; 
+A9 -> C7 ; 
+A10 -> C11 ; 
+A11 -> C11 ; 
+A12 -> C9 ; 
+A13 -> C5 ; 
+A14 -> C14 ; 
+A15 -> C7 ; 
+A16 -> C12 ; 
+A17 -> C2 ; 
+A18 -> C1 ; 
+A19 -> C9 ; 
+A20 -> C10 ; 
+A21 -> C6 ; 
+A22 -> C1 ; 
+A23 -> C4 ; 
+A24 -> C3 ; 
+A25 -> C12 ; 
+}
+COALITIONS: 
+
+C1: A18, A22, 
+C2: A17, A7, 
+C3: A3, A24, 
+C4: A2, A5, A23, 
+C5: A1, A13, 
+C6: A21, A6, 
+C7: A8, A9, A15, 
+C8: 
+C9: A19, A12, 
+C10: A4, A20, 
+C11: A10, A11, 
+C12: A16, A25, 
+C13: 
+C14: A14, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 45.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 31.0
+Agent: 5; Utility: 44.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 91.0
+Agent: 8; Utility: 85.5
+Agent: 9; Utility: 46.5
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 68.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 63.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 62.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 13***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C2 ; 
+A3 -> C8 ; 
+A4 -> C1 ; 
+A5 -> C10 ; 
+A6 -> C3 ; 
+A7 -> C3 ; 
+A8 -> C9 ; 
+A9 -> C12 ; 
+A10 -> C4 ; 
+A11 -> C7 ; 
+A12 -> C3 ; 
+A13 -> C10 ; 
+A14 -> C12 ; 
+A15 -> C9 ; 
+A16 -> C10 ; 
+A17 -> C5 ; 
+A18 -> C1 ; 
+A19 -> C6 ; 
+A20 -> C10 ; 
+A21 -> C9 ; 
+A22 -> C11 ; 
+A23 -> C12 ; 
+A24 -> C7 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A4, A18, 
+C2: A2, 
+C3: A6, A7, A12, 
+C4: A10, 
+C5: A1, A17, 
+C6: A19, 
+C7: A11, A24, 
+C8: A3, 
+C9: A8, A15, A21, A25, 
+C10: A5, A13, A16, A20, 
+C11: A22, 
+C12: A9, A14, A23, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 35.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 53.0
+Agent: 5; Utility: 35.0
+Agent: 6; Utility: 11.0
+Agent: 7; Utility: 49.5
+Agent: 8; Utility: 64.0
+Agent: 9; Utility: 27.0
+Agent: 10; Utility: 0.0
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 18.0
+Agent: 13; Utility: 45.666666666666664
+Agent: 14; Utility: 48.0
+Agent: 15; Utility: 57.666666666666664
+Agent: 16; Utility: 44.333333333333336
+Agent: 17; Utility: 71.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 40.666666666666664
+Agent: 21; Utility: 29.666666666666668
+Agent: 22; Utility: 0.0
+Agent: 23; Utility: 16.5
+Agent: 24; Utility: 68.0
+Agent: 25; Utility: 21.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C6 ; 
+A2 -> C3 ; 
+A3 -> C4 ; 
+A4 -> C3 ; 
+A5 -> C10 ; 
+A6 -> C2 ; 
+A7 -> C14 ; 
+A8 -> C11 ; 
+A9 -> C5 ; 
+A10 -> C9 ; 
+A11 -> C9 ; 
+A12 -> C5 ; 
+A13 -> C6 ; 
+A14 -> C5 ; 
+A15 -> C13 ; 
+A16 -> C1 ; 
+A17 -> C11 ; 
+A18 -> C14 ; 
+A19 -> C8 ; 
+A20 -> C3 ; 
+A21 -> C2 ; 
+A22 -> C8 ; 
+A23 -> C13 ; 
+A24 -> C4 ; 
+A25 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A16, A25, 
+C2: A21, A6, 
+C3: A2, A4, A20, 
+C4: A3, A24, 
+C5: A9, A12, A14, 
+C6: A1, A13, 
+C7: 
+C8: A19, A22, 
+C9: A10, A11, 
+C10: A5, 
+C11: A17, A8, 
+C12: 
+C13: A23, A15, 
+C14: A18, A7, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 40.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 61.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 17.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 89.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 78.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 14***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C5 ; 
+A3 -> C9 ; 
+A4 -> C2 ; 
+A5 -> C8 ; 
+A6 -> C5 ; 
+A7 -> C4 ; 
+A8 -> C6 ; 
+A9 -> C10 ; 
+A10 -> C11 ; 
+A11 -> C3 ; 
+A12 -> C7 ; 
+A13 -> C12 ; 
+A14 -> C2 ; 
+A15 -> C8 ; 
+A16 -> C11 ; 
+A17 -> C4 ; 
+A18 -> C2 ; 
+A19 -> C12 ; 
+A20 -> C6 ; 
+A21 -> C3 ; 
+A22 -> C2 ; 
+A23 -> C1 ; 
+A24 -> C9 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A23, 
+C2: A4, A14, A18, A22, 
+C3: A1, A11, A21, 
+C4: A7, A17, 
+C5: A2, A6, 
+C6: A8, A20, 
+C7: A12, 
+C8: A5, A15, 
+C9: A3, A24, 
+C10: A9, A25, 
+C11: A10, A16, 
+C12: A13, A19, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 8.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 32.0
+Agent: 5; Utility: 53.0
+Agent: 6; Utility: 63.0
+Agent: 7; Utility: 91.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 30.0
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 52.0
+Agent: 15; Utility: 94.0
+Agent: 16; Utility: 88.0
+Agent: 17; Utility: 63.0
+Agent: 18; Utility: 35.333333333333336
+Agent: 19; Utility: 59.0
+Agent: 20; Utility: 94.0
+Agent: 21; Utility: 60.0
+Agent: 22; Utility: 36.666666666666664
+Agent: 23; Utility: 0.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 50.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C2 ; 
+A3 -> C9 ; 
+A4 -> C13 ; 
+A5 -> C2 ; 
+A6 -> C1 ; 
+A7 -> C11 ; 
+A8 -> C6 ; 
+A9 -> C6 ; 
+A10 -> C16 ; 
+A11 -> C16 ; 
+A12 -> C3 ; 
+A13 -> C4 ; 
+A14 -> C7 ; 
+A15 -> C6 ; 
+A16 -> C8 ; 
+A17 -> C11 ; 
+A18 -> C10 ; 
+A19 -> C3 ; 
+A20 -> C13 ; 
+A21 -> C1 ; 
+A22 -> C10 ; 
+A23 -> C2 ; 
+A24 -> C9 ; 
+A25 -> C8 ; 
+}
+COALITIONS: 
+
+C1: A21, A6, 
+C2: A2, A5, A23, 
+C3: A19, A12, 
+C4: A1, A13, 
+C5: 
+C6: A8, A9, A15, 
+C7: A14, 
+C8: A16, A25, 
+C9: A3, A24, 
+C10: A18, A22, 
+C11: A17, A7, 
+C12: 
+C13: A4, A20, 
+C14: 
+C15: 
+C16: A10, A11, 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 45.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 31.0
+Agent: 5; Utility: 44.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 91.0
+Agent: 8; Utility: 85.5
+Agent: 9; Utility: 46.5
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 68.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 63.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 62.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 15***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C2 ; 
+A3 -> C2 ; 
+A4 -> C11 ; 
+A5 -> C8 ; 
+A6 -> C9 ; 
+A7 -> C8 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C7 ; 
+A11 -> C8 ; 
+A12 -> C1 ; 
+A13 -> C6 ; 
+A14 -> C10 ; 
+A15 -> C7 ; 
+A16 -> C1 ; 
+A17 -> C3 ; 
+A18 -> C9 ; 
+A19 -> C5 ; 
+A20 -> C3 ; 
+A21 -> C7 ; 
+A22 -> C2 ; 
+A23 -> C8 ; 
+A24 -> C9 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A12, A16, 
+C2: A1, A2, A3, A22, 
+C3: A8, A9, A17, A20, 
+C4: 
+C5: A19, 
+C6: A13, 
+C7: A10, A15, A21, 
+C8: A5, A7, A11, A23, 
+C9: A6, A18, A24, 
+C10: A14, A25, 
+C11: A4, 
+C12: 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 39.333333333333336
+Agent: 2; Utility: 48.333333333333336
+Agent: 3; Utility: 20.333333333333332
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 20.666666666666668
+Agent: 6; Utility: 32.5
+Agent: 7; Utility: 43.333333333333336
+Agent: 8; Utility: 63.333333333333336
+Agent: 9; Utility: 50.0
+Agent: 10; Utility: 71.5
+Agent: 11; Utility: 40.333333333333336
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 65.0
+Agent: 15; Utility: 45.0
+Agent: 16; Utility: 16.0
+Agent: 17; Utility: 32.0
+Agent: 18; Utility: 33.5
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 74.33333333333333
+Agent: 21; Utility: 53.5
+Agent: 22; Utility: 38.333333333333336
+Agent: 23; Utility: 36.0
+Agent: 24; Utility: 49.0
+Agent: 25; Utility: 53.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C3 ; 
+A3 -> C11 ; 
+A4 -> C5 ; 
+A5 -> C6 ; 
+A6 -> C1 ; 
+A7 -> C6 ; 
+A8 -> C8 ; 
+A9 -> C5 ; 
+A10 -> C3 ; 
+A11 -> C3 ; 
+A12 -> C9 ; 
+A13 -> C4 ; 
+A14 -> C10 ; 
+A15 -> C6 ; 
+A16 -> C2 ; 
+A17 -> C8 ; 
+A18 -> C12 ; 
+A19 -> C9 ; 
+A20 -> C5 ; 
+A21 -> C1 ; 
+A22 -> C2 ; 
+A23 -> C12 ; 
+A24 -> C11 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A21, A6, 
+C2: A16, A22, 
+C3: A2, A10, A11, 
+C4: A1, A13, 
+C5: A4, A20, A9, 
+C6: A5, A7, A15, 
+C7: 
+C8: A17, A8, 
+C9: A19, A12, 
+C10: A14, A25, 
+C11: A3, A24, 
+C12: A18, A23, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 68.5
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 26.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 81.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 37.5
+Agent: 10; Utility: 51.5
+Agent: 11; Utility: 33.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 65.0
+Agent: 15; Utility: 58.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 38.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 17.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 55.0
+Agent: 23; Utility: 85.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 53.0
+
+
+****************ISTANZA N. 16***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C6 ; 
+A3 -> C12 ; 
+A4 -> C2 ; 
+A5 -> C7 ; 
+A6 -> C5 ; 
+A7 -> C7 ; 
+A8 -> C12 ; 
+A9 -> C1 ; 
+A10 -> C3 ; 
+A11 -> C2 ; 
+A12 -> C12 ; 
+A13 -> C12 ; 
+A14 -> C2 ; 
+A15 -> C7 ; 
+A16 -> C12 ; 
+A17 -> C1 ; 
+A18 -> C3 ; 
+A19 -> C11 ; 
+A20 -> C11 ; 
+A21 -> C7 ; 
+A22 -> C6 ; 
+A23 -> C7 ; 
+A24 -> C1 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: A9, A17, A24, 
+C2: A4, A11, A14, 
+C3: A10, A18, 
+C4: 
+C5: A6, 
+C6: A2, A22, 
+C7: A5, A7, A15, A21, A23, 
+C8: A1, 
+C9: 
+C10: A25, 
+C11: A19, A20, 
+C12: A3, A8, A12, A13, A16, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 56.0
+Agent: 3; Utility: 19.75
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 43.5
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 56.5
+Agent: 8; Utility: 33.5
+Agent: 9; Utility: 67.5
+Agent: 10; Utility: 51.0
+Agent: 11; Utility: 36.5
+Agent: 12; Utility: 61.25
+Agent: 13; Utility: 41.25
+Agent: 14; Utility: 4.5
+Agent: 15; Utility: 64.5
+Agent: 16; Utility: 63.25
+Agent: 17; Utility: 5.0
+Agent: 18; Utility: 66.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 44.0
+Agent: 21; Utility: 39.5
+Agent: 22; Utility: 45.0
+Agent: 23; Utility: 51.0
+Agent: 24; Utility: 37.5
+Agent: 25; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C12 ; 
+A3 -> C13 ; 
+A4 -> C12 ; 
+A5 -> C6 ; 
+A6 -> C11 ; 
+A7 -> C14 ; 
+A8 -> C7 ; 
+A9 -> C5 ; 
+A10 -> C9 ; 
+A11 -> C9 ; 
+A12 -> C3 ; 
+A13 -> C4 ; 
+A14 -> C10 ; 
+A15 -> C6 ; 
+A16 -> C8 ; 
+A17 -> C7 ; 
+A18 -> C14 ; 
+A19 -> C3 ; 
+A20 -> C12 ; 
+A21 -> C11 ; 
+A22 -> C8 ; 
+A23 -> C6 ; 
+A24 -> C13 ; 
+A25 -> C10 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: 
+C3: A19, A12, 
+C4: A1, A13, 
+C5: A9, 
+C6: A5, A23, A15, 
+C7: A17, A8, 
+C8: A16, A22, 
+C9: A10, A11, 
+C10: A25, A14, 
+C11: A21, A6, 
+C12: A2, A4, A20, 
+C13: A3, A24, 
+C14: A18, A7, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 57.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 65.0
+Agent: 15; Utility: 82.5
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 55.0
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 53.0
+
+
+****************ISTANZA N. 17***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C10 ; 
+A2 -> C3 ; 
+A3 -> C5 ; 
+A4 -> C4 ; 
+A5 -> C4 ; 
+A6 -> C1 ; 
+A7 -> C6 ; 
+A8 -> C8 ; 
+A9 -> C8 ; 
+A10 -> C8 ; 
+A11 -> C7 ; 
+A12 -> C10 ; 
+A13 -> C9 ; 
+A14 -> C7 ; 
+A15 -> C7 ; 
+A16 -> C6 ; 
+A17 -> C10 ; 
+A18 -> C5 ; 
+A19 -> C10 ; 
+A20 -> C2 ; 
+A21 -> C11 ; 
+A22 -> C12 ; 
+A23 -> C11 ; 
+A24 -> C5 ; 
+A25 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A6, 
+C2: A20, 
+C3: A2, A25, 
+C4: A4, A5, 
+C5: A3, A18, A24, 
+C6: A7, A16, 
+C7: A11, A14, A15, 
+C8: A8, A9, A10, 
+C9: A13, 
+C10: A1, A12, A17, A19, 
+C11: A21, A23, 
+C12: A22, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 25.666666666666668
+Agent: 2; Utility: 66.0
+Agent: 3; Utility: 79.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 45.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 12.0
+Agent: 8; Utility: 49.0
+Agent: 9; Utility: 16.5
+Agent: 10; Utility: 20.0
+Agent: 11; Utility: 52.5
+Agent: 12; Utility: 32.333333333333336
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 5.0
+Agent: 15; Utility: 51.0
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 62.333333333333336
+Agent: 18; Utility: 15.5
+Agent: 19; Utility: 86.66666666666667
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 81.0
+Agent: 22; Utility: 0.0
+Agent: 23; Utility: 23.0
+Agent: 24; Utility: 67.0
+Agent: 25; Utility: 25.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C7 ; 
+A3 -> C14 ; 
+A4 -> C11 ; 
+A5 -> C13 ; 
+A6 -> C8 ; 
+A7 -> C6 ; 
+A8 -> C2 ; 
+A9 -> C4 ; 
+A10 -> C9 ; 
+A11 -> C9 ; 
+A12 -> C10 ; 
+A13 -> C5 ; 
+A14 -> C4 ; 
+A15 -> C1 ; 
+A16 -> C3 ; 
+A17 -> C2 ; 
+A18 -> C4 ; 
+A19 -> C10 ; 
+A20 -> C6 ; 
+A21 -> C8 ; 
+A22 -> C7 ; 
+A23 -> C1 ; 
+A24 -> C14 ; 
+A25 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A23, A15, 
+C2: A17, A8, 
+C3: A16, A25, 
+C4: A18, A9, A14, 
+C5: A1, A13, 
+C6: A20, A7, 
+C7: A2, A22, 
+C8: A21, A6, 
+C9: A10, A11, 
+C10: A12, A19, 
+C11: A4, 
+C12: 
+C13: A5, 
+C14: A3, A24, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 56.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 93.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 9.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 62.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 41.5
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 24.0
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 45.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 18***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C10 ; 
+A3 -> C2 ; 
+A4 -> C11 ; 
+A5 -> C4 ; 
+A6 -> C12 ; 
+A7 -> C11 ; 
+A8 -> C12 ; 
+A9 -> C11 ; 
+A10 -> C9 ; 
+A11 -> C11 ; 
+A12 -> C11 ; 
+A13 -> C5 ; 
+A14 -> C2 ; 
+A15 -> C6 ; 
+A16 -> C3 ; 
+A17 -> C11 ; 
+A18 -> C2 ; 
+A19 -> C1 ; 
+A20 -> C7 ; 
+A21 -> C3 ; 
+A22 -> C9 ; 
+A23 -> C6 ; 
+A24 -> C1 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A19, A24, 
+C2: A3, A14, A18, 
+C3: A16, A21, 
+C4: A5, 
+C5: A1, A13, 
+C6: A15, A23, 
+C7: A20, 
+C8: 
+C9: A10, A22, A25, 
+C10: A2, 
+C11: A4, A7, A9, A11, A12, A17, 
+C12: A6, A8, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 29.5
+Agent: 4; Utility: 9.4
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 3.0
+Agent: 7; Utility: 25.2
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 43.8
+Agent: 10; Utility: 57.5
+Agent: 11; Utility: 56.0
+Agent: 12; Utility: 11.2
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 60.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 36.2
+Agent: 18; Utility: 23.0
+Agent: 19; Utility: 95.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 69.0
+Agent: 22; Utility: 57.5
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 79.0
+Agent: 25; Utility: 41.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C15 ; 
+A3 -> C12 ; 
+A4 -> C15 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C9 ; 
+A8 -> C11 ; 
+A9 -> C8 ; 
+A10 -> C9 ; 
+A11 -> C9 ; 
+A12 -> C6 ; 
+A13 -> C5 ; 
+A14 -> C7 ; 
+A15 -> C1 ; 
+A16 -> C4 ; 
+A17 -> C11 ; 
+A18 -> C13 ; 
+A19 -> C6 ; 
+A20 -> C15 ; 
+A21 -> C2 ; 
+A22 -> C13 ; 
+A23 -> C1 ; 
+A24 -> C12 ; 
+A25 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A23, A15, 
+C2: A21, A6, 
+C3: 
+C4: A16, A25, 
+C5: A1, A13, 
+C6: A19, A12, 
+C7: A14, 
+C8: A9, 
+C9: A7, A10, A11, 
+C10: 
+C11: A17, A8, 
+C12: A3, A24, 
+C13: A18, A22, 
+C14: 
+C15: A2, A4, A20, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 57.5
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 42.5
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 78.5
+Agent: 11; Utility: 75.5
+Agent: 12; Utility: 97.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 82.5
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 97.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 53.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 19***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C2 ; 
+A3 -> C8 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C1 ; 
+A7 -> C8 ; 
+A8 -> C9 ; 
+A9 -> C7 ; 
+A10 -> C6 ; 
+A11 -> C1 ; 
+A12 -> C4 ; 
+A13 -> C12 ; 
+A14 -> C6 ; 
+A15 -> C3 ; 
+A16 -> C6 ; 
+A17 -> C11 ; 
+A18 -> C7 ; 
+A19 -> C8 ; 
+A20 -> C10 ; 
+A21 -> C12 ; 
+A22 -> C5 ; 
+A23 -> C7 ; 
+A24 -> C3 ; 
+A25 -> C9 ; 
+}
+COALITIONS: 
+
+C1: A5, A6, A11, 
+C2: A2, 
+C3: A15, A24, 
+C4: A12, 
+C5: A1, A22, 
+C6: A4, A10, A14, A16, 
+C7: A9, A18, A23, 
+C8: A3, A7, A19, 
+C9: A8, A25, 
+C10: A20, 
+C11: A17, 
+C12: A13, A21, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 69.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 41.5
+Agent: 4; Utility: 42.333333333333336
+Agent: 5; Utility: 40.5
+Agent: 6; Utility: 40.0
+Agent: 7; Utility: 27.0
+Agent: 8; Utility: 53.0
+Agent: 9; Utility: 18.0
+Agent: 10; Utility: 11.666666666666666
+Agent: 11; Utility: 5.0
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 9.0
+Agent: 14; Utility: 30.333333333333332
+Agent: 15; Utility: 75.0
+Agent: 16; Utility: 41.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 53.0
+Agent: 19; Utility: 46.5
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 25.0
+Agent: 22; Utility: 40.0
+Agent: 23; Utility: 59.0
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 34.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C5 ; 
+A3 -> C15 ; 
+A4 -> C5 ; 
+A5 -> C2 ; 
+A6 -> C7 ; 
+A7 -> C11 ; 
+A8 -> C4 ; 
+A9 -> C3 ; 
+A10 -> C8 ; 
+A11 -> C8 ; 
+A12 -> C3 ; 
+A13 -> C1 ; 
+A14 -> C3 ; 
+A15 -> C6 ; 
+A16 -> C12 ; 
+A17 -> C4 ; 
+A18 -> C11 ; 
+A19 -> C9 ; 
+A20 -> C5 ; 
+A21 -> C7 ; 
+A22 -> C9 ; 
+A23 -> C6 ; 
+A24 -> C15 ; 
+A25 -> C12 ; 
+}
+COALITIONS: 
+
+C1: A1, A13, 
+C2: A5, 
+C3: A9, A12, A14, 
+C4: A17, A8, 
+C5: A2, A4, A20, 
+C6: A23, A15, 
+C7: A21, A6, 
+C8: A10, A11, 
+C9: A19, A22, 
+C10: 
+C11: A18, A7, 
+C12: A16, A25, 
+C13: 
+C14: 
+C15: A3, A24, 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 51.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 15.5
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 96.0
+Agent: 7; Utility: 58.0
+Agent: 8; Utility: 92.0
+Agent: 9; Utility: 40.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 61.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 17.0
+Agent: 15; Utility: 71.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 86.0
+Agent: 18; Utility: 55.0
+Agent: 19; Utility: 89.0
+Agent: 20; Utility: 39.5
+Agent: 21; Utility: 97.0
+Agent: 22; Utility: 78.0
+Agent: 23; Utility: 73.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0
+
+
+****************ISTANZA N. 20***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C9 ; 
+A3 -> C12 ; 
+A4 -> C7 ; 
+A5 -> C11 ; 
+A6 -> C10 ; 
+A7 -> C12 ; 
+A8 -> C12 ; 
+A9 -> C5 ; 
+A10 -> C8 ; 
+A11 -> C1 ; 
+A12 -> C10 ; 
+A13 -> C1 ; 
+A14 -> C1 ; 
+A15 -> C8 ; 
+A16 -> C5 ; 
+A17 -> C11 ; 
+A18 -> C12 ; 
+A19 -> C9 ; 
+A20 -> C3 ; 
+A21 -> C12 ; 
+A22 -> C10 ; 
+A23 -> C3 ; 
+A24 -> C5 ; 
+A25 -> C11 ; 
+}
+COALITIONS: 
+
+C1: A11, A13, A14, 
+C2: 
+C3: A20, A23, 
+C4: 
+C5: A1, A9, A16, A24, 
+C6: 
+C7: A4, 
+C8: A10, A15, 
+C9: A2, A19, 
+C10: A6, A12, A22, 
+C11: A5, A17, A25, 
+C12: A3, A7, A8, A18, A21, 
+C13: 
+C14: 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 66.33333333333333
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 57.75
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 48.0
+Agent: 6; Utility: 47.5
+Agent: 7; Utility: 47.5
+Agent: 8; Utility: 37.75
+Agent: 9; Utility: 48.0
+Agent: 10; Utility: 59.0
+Agent: 11; Utility: 73.5
+Agent: 12; Utility: 23.5
+Agent: 13; Utility: 79.5
+Agent: 14; Utility: 26.0
+Agent: 15; Utility: 19.0
+Agent: 16; Utility: 22.666666666666668
+Agent: 17; Utility: 23.0
+Agent: 18; Utility: 31.75
+Agent: 19; Utility: 71.0
+Agent: 20; Utility: 97.0
+Agent: 21; Utility: 12.25
+Agent: 22; Utility: 43.0
+Agent: 23; Utility: 19.0
+Agent: 24; Utility: 51.666666666666664
+Agent: 25; Utility: 46.5
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C9 ; 
+A3 -> C7 ; 
+A4 -> C5 ; 
+A5 -> C4 ; 
+A6 -> C10 ; 
+A7 -> C11 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C13 ; 
+A11 -> C13 ; 
+A12 -> C14 ; 
+A13 -> C2 ; 
+A14 -> C5 ; 
+A15 -> C4 ; 
+A16 -> C6 ; 
+A17 -> C11 ; 
+A18 -> C5 ; 
+A19 -> C8 ; 
+A20 -> C10 ; 
+A21 -> C14 ; 
+A22 -> C8 ; 
+A23 -> C9 ; 
+A24 -> C7 ; 
+A25 -> C6 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A1, A13, 
+C3: A8, A9, 
+C4: A5, A15, 
+C5: A18, A4, A14, 
+C6: A16, A25, 
+C7: A3, A24, 
+C8: A19, A22, 
+C9: A2, A23, 
+C10: A20, A6, 
+C11: A17, A7, 
+C12: 
+C13: A10, A11, 
+C14: A21, A12, 
+C15: 
+C16: 
+C17: 
+C18: 
+C19: 
+C20: 
+C21: 
+C22: 
+C23: 
+C24: 
+C25: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 99.0
+Agent: 4; Utility: 26.5
+Agent: 5; Utility: 53.0
+Agent: 6; Utility: 77.0
+Agent: 7; Utility: 91.0
+Agent: 8; Utility: 98.0
+Agent: 9; Utility: 23.0
+Agent: 10; Utility: 78.0
+Agent: 11; Utility: 66.0
+Agent: 12; Utility: 59.0
+Agent: 13; Utility: 99.0
+Agent: 14; Utility: 45.0
+Agent: 15; Utility: 94.0
+Agent: 16; Utility: 95.0
+Agent: 17; Utility: 63.0
+Agent: 18; Utility: 7.5
+Agent: 19; Utility: 89.0
+Agent: 20; Utility: 51.0
+Agent: 21; Utility: 86.0
+Agent: 22; Utility: 78.0
+Agent: 23; Utility: 91.0
+Agent: 24; Utility: 90.0
+Agent: 25; Utility: 58.0

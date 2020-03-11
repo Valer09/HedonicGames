@@ -1,0 +1,90 @@
+
+
+****************ISTANZA N. 1***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A1, A2, A3, A4, 
+C2: 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 27.0
+Agent: 2; Utility: 23.0
+Agent: 3; Utility: 48.666666666666664
+Agent: 4; Utility: 51.333333333333336
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A2, A3, 
+C2: A1, A4, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 52.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 78.0
+
+
+****************ISTANZA N. 2***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A2, A3, 
+C2: A1, A4, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 52.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 78.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A2, A3, 
+C2: A1, A4, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 52.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 78.0

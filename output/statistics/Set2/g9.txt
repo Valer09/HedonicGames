@@ -1,0 +1,100 @@
+
+
+**ESECUZIONE CON k= 16archi, q=4, tempo= 1.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C1 ; 
+A5 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A2, A3, A4, A5, 
+C2: A1, 
+C3: 
+C4: 
+C5: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 40.0
+Agent: 3; Utility: 20.666666666666668
+Agent: 4; Utility: 53.666666666666664
+Agent: 5; Utility: 38.333333333333336
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C2 ; 
+A3 -> C1 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A3, A5, 
+C2: A2, A4, 
+C3: 
+C4: A1, 
+C5: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 31.0
+Agent: 3; Utility: 62.0
+Agent: 4; Utility: 84.0
+Agent: 5; Utility: 43.0
+
+
+**ESECUZIONE CON k= 16archi, q=4, tempo= 1.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C1 ; 
+A4 -> C1 ; 
+A5 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A2, A3, A4, A5, 
+C2: A1, 
+C3: 
+C4: 
+C5: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 40.0
+Agent: 3; Utility: 20.666666666666668
+Agent: 4; Utility: 53.666666666666664
+Agent: 5; Utility: 38.333333333333336
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C3 ; 
+A3 -> C2 ; 
+A4 -> C1 ; 
+A5 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A4, 
+C2: A3, A5, 
+C3: A1, A2, 
+C4: 
+C5: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 62.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 43.0

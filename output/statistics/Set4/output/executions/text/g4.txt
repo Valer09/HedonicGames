@@ -1,0 +1,3200 @@
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 1.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, 
+C3: A8, A9, 
+C4: 
+C5: A2, A6, 
+C6: A3, A10, 
+C7: 
+C8: A1, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 2.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C7 ; 
+A3 -> C2 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, 
+C3: A8, A9, 
+C4: A1, A10, 
+C5: A4, 
+C6: A6, 
+C7: A2, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 40.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 64.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 3.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C6 ; 
+A3 -> C8 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A6, 
+C3: A8, A9, 
+C4: 
+C5: A10, 
+C6: A2, A4, 
+C7: 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 6.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 32.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 4.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C7 ; 
+A3 -> C8 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: 
+C3: A8, A9, 
+C4: A10, 
+C5: A4, 
+C6: A6, 
+C7: A2, 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 5.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C4 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: 
+C3: A8, A9, 
+C4: A1, A4, 
+C5: A2, A6, 
+C6: A3, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 12.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 28.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 1.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C4 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A1, A6, 
+C3: A8, A9, 
+C4: A4, 
+C5: A2, 
+C6: A3, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 37.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 88.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 2.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C6 ; 
+A3 -> C8 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A6, 
+C3: A8, A9, 
+C4: 
+C5: A10, 
+C6: A2, A4, 
+C7: 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 6.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 32.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 3.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C7 ; 
+A3 -> C6 ; 
+A4 -> C4 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A6, 
+C3: A8, A9, 
+C4: A4, 
+C5: A1, A10, 
+C6: A3, 
+C7: A2, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 40.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 64.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 4.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C5 ; 
+A3 -> C8 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, 
+C3: A8, A9, 
+C4: A10, 
+C5: A2, A6, 
+C6: 
+C7: 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 5.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C5 ; 
+A3 -> C8 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, 
+C3: A8, A9, 
+C4: A10, 
+C5: A2, A6, 
+C6: 
+C7: 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 1.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C4 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A1, A6, 
+C3: A8, A9, 
+C4: A4, 
+C5: A2, 
+C6: A3, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 37.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 88.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 2.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C4 ; 
+A3 -> C2 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C4 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, A10, 
+C3: A8, A9, 
+C4: A2, A6, 
+C5: A1, A4, 
+C6: 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 12.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 28.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 3.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C7 ; 
+A3 -> C2 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, 
+C3: A8, A9, 
+C4: A1, A10, 
+C5: A4, 
+C6: A6, 
+C7: A2, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 40.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 64.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 4.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, 
+C3: A8, A9, 
+C4: 
+C5: A2, A6, 
+C6: A3, A10, 
+C7: 
+C8: A1, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 5.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C4 ; 
+A3 -> C2 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C4 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, A10, 
+C3: A8, A9, 
+C4: A2, A6, 
+C5: 
+C6: A4, 
+C7: 
+C8: A1, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 1.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C5 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, 
+C3: A8, A9, 
+C4: 
+C5: A2, A6, 
+C6: A3, A10, 
+C7: 
+C8: A1, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 2.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C7 ; 
+A3 -> C2 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, 
+C3: A8, A9, 
+C4: A1, A10, 
+C5: A4, 
+C6: A6, 
+C7: A2, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 40.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 64.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 3.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C7 ; 
+A3 -> C8 ; 
+A4 -> C5 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: 
+C3: A8, A9, 
+C4: A10, 
+C5: A4, 
+C6: A6, 
+C7: A2, 
+C8: A1, A3, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 0.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 4.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C7 ; 
+A2 -> C7 ; 
+A3 -> C6 ; 
+A4 -> C4 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A6, 
+C3: A8, A9, 
+C4: A4, 
+C5: 
+C6: A3, A10, 
+C7: A1, A2, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 39.0
+Agent: 2; Utility: 38.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 5.0 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C4 ; 
+A3 -> C2 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C4 ; 
+A7 -> C1 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A3, A10, 
+C3: A8, A9, 
+C4: A2, A6, 
+C5: 
+C6: A4, 
+C7: 
+C8: A1, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 95.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 5.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 1.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C3 ; 
+A3 -> C4 ; 
+A4 -> C2 ; 
+A5 -> C8 ; 
+A6 -> C3 ; 
+A7 -> C8 ; 
+A8 -> C5 ; 
+A9 -> C5 ; 
+A10 -> C2 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A4, A10, 
+C3: A2, A6, 
+C4: A1, A3, 
+C5: A8, A9, 
+C6: 
+C7: 
+C8: A5, A7, 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 2.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C1 ; 
+A3 -> C3 ; 
+A4 -> C5 ; 
+A5 -> C9 ; 
+A6 -> C1 ; 
+A7 -> C9 ; 
+A8 -> C7 ; 
+A9 -> C7 ; 
+A10 -> C5 ; 
+}
+COALITIONS: 
+
+C1: A2, A6, 
+C2: 
+C3: A1, A3, 
+C4: 
+C5: A4, A10, 
+C6: 
+C7: A8, A9, 
+C8: 
+C9: A5, A7, 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 3.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C4 ; 
+A3 -> C3 ; 
+A4 -> C6 ; 
+A5 -> C5 ; 
+A6 -> C4 ; 
+A7 -> C5 ; 
+A8 -> C1 ; 
+A9 -> C1 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A8, A9, 
+C2: 
+C3: A1, A3, 
+C4: A2, A6, 
+C5: A5, A7, 
+C6: A4, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 4.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C6 ; 
+A3 -> C3 ; 
+A4 -> C7 ; 
+A5 -> C1 ; 
+A6 -> C6 ; 
+A7 -> C1 ; 
+A8 -> C2 ; 
+A9 -> C2 ; 
+A10 -> C7 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A8, A9, 
+C3: A1, A3, 
+C4: 
+C5: 
+C6: A2, A6, 
+C7: A4, A10, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=2, tempo= 5.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C2 ; 
+A3 -> C4 ; 
+A4 -> C6 ; 
+A5 -> C3 ; 
+A6 -> C2 ; 
+A7 -> C3 ; 
+A8 -> C5 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A2, A6, 
+C3: A5, A7, 
+C4: A1, A3, 
+C5: A8, A9, 
+C6: A4, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 1.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C6 ; 
+A3 -> C4 ; 
+A4 -> C1 ; 
+A5 -> C3 ; 
+A6 -> C6 ; 
+A7 -> C3 ; 
+A8 -> C2 ; 
+A9 -> C2 ; 
+A10 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, A10, 
+C2: A8, A9, 
+C3: A5, A7, 
+C4: A1, A3, 
+C5: 
+C6: A2, A6, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 2.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C7 ; 
+A2 -> C1 ; 
+A3 -> C7 ; 
+A4 -> C6 ; 
+A5 -> C2 ; 
+A6 -> C1 ; 
+A7 -> C2 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A2, A6, 
+C2: A5, A7, 
+C3: A8, A9, 
+C4: 
+C5: 
+C6: A4, A10, 
+C7: A1, A3, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 3.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C1 ; 
+A3 -> C2 ; 
+A4 -> C3 ; 
+A5 -> C5 ; 
+A6 -> C1 ; 
+A7 -> C5 ; 
+A8 -> C6 ; 
+A9 -> C6 ; 
+A10 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A2, A6, 
+C2: A1, A3, 
+C3: A4, A10, 
+C4: 
+C5: A5, A7, 
+C6: A8, A9, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 4.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C4 ; 
+A3 -> C1 ; 
+A4 -> C7 ; 
+A5 -> C3 ; 
+A6 -> C4 ; 
+A7 -> C3 ; 
+A8 -> C6 ; 
+A9 -> C6 ; 
+A10 -> C7 ; 
+}
+COALITIONS: 
+
+C1: A1, A3, 
+C2: 
+C3: A5, A7, 
+C4: A2, A6, 
+C5: 
+C6: A8, A9, 
+C7: A4, A10, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=3, tempo= 5.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C6 ; 
+A2 -> C3 ; 
+A3 -> C6 ; 
+A4 -> C1 ; 
+A5 -> C2 ; 
+A6 -> C3 ; 
+A7 -> C2 ; 
+A8 -> C4 ; 
+A9 -> C4 ; 
+A10 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, A10, 
+C2: A5, A7, 
+C3: A2, A6, 
+C4: A8, A9, 
+C5: 
+C6: A1, A3, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 1.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C7 ; 
+A2 -> C4 ; 
+A3 -> C7 ; 
+A4 -> C1 ; 
+A5 -> C2 ; 
+A6 -> C4 ; 
+A7 -> C2 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, A10, 
+C2: A5, A7, 
+C3: A8, A9, 
+C4: A2, A6, 
+C5: 
+C6: 
+C7: A1, A3, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 2.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C6 ; 
+A2 -> C5 ; 
+A3 -> C6 ; 
+A4 -> C7 ; 
+A5 -> C2 ; 
+A6 -> C5 ; 
+A7 -> C2 ; 
+A8 -> C3 ; 
+A9 -> C3 ; 
+A10 -> C7 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A5, A7, 
+C3: A8, A9, 
+C4: 
+C5: A2, A6, 
+C6: A1, A3, 
+C7: A4, A10, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 3.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C7 ; 
+A3 -> C4 ; 
+A4 -> C6 ; 
+A5 -> C1 ; 
+A6 -> C7 ; 
+A7 -> C1 ; 
+A8 -> C2 ; 
+A9 -> C2 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A8, A9, 
+C3: 
+C4: A1, A3, 
+C5: 
+C6: A4, A10, 
+C7: A2, A6, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 4.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C5 ; 
+A3 -> C4 ; 
+A4 -> C1 ; 
+A5 -> C7 ; 
+A6 -> C5 ; 
+A7 -> C7 ; 
+A8 -> C2 ; 
+A9 -> C2 ; 
+A10 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, A10, 
+C2: A8, A9, 
+C3: 
+C4: A1, A3, 
+C5: A2, A6, 
+C6: 
+C7: A5, A7, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=4, tempo= 5.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C1 ; 
+A3 -> C4 ; 
+A4 -> C3 ; 
+A5 -> C2 ; 
+A6 -> C1 ; 
+A7 -> C2 ; 
+A8 -> C6 ; 
+A9 -> C6 ; 
+A10 -> C3 ; 
+}
+COALITIONS: 
+
+C1: A2, A6, 
+C2: A5, A7, 
+C3: A4, A10, 
+C4: A1, A3, 
+C5: 
+C6: A8, A9, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 1.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C5 ; 
+A2 -> C4 ; 
+A3 -> C5 ; 
+A4 -> C7 ; 
+A5 -> C6 ; 
+A6 -> C4 ; 
+A7 -> C6 ; 
+A8 -> C1 ; 
+A9 -> C1 ; 
+A10 -> C7 ; 
+}
+COALITIONS: 
+
+C1: A8, A9, 
+C2: 
+C3: 
+C4: A2, A6, 
+C5: A1, A3, 
+C6: A5, A7, 
+C7: A4, A10, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 2.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C7 ; 
+A3 -> C3 ; 
+A4 -> C4 ; 
+A5 -> C5 ; 
+A6 -> C7 ; 
+A7 -> C5 ; 
+A8 -> C2 ; 
+A9 -> C2 ; 
+A10 -> C4 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A8, A9, 
+C3: A1, A3, 
+C4: A4, A10, 
+C5: A5, A7, 
+C6: 
+C7: A2, A6, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 3.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C2 ; 
+A3 -> C3 ; 
+A4 -> C7 ; 
+A5 -> C1 ; 
+A6 -> C2 ; 
+A7 -> C1 ; 
+A8 -> C5 ; 
+A9 -> C5 ; 
+A10 -> C7 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A2, A6, 
+C3: A1, A3, 
+C4: 
+C5: A8, A9, 
+C6: 
+C7: A4, A10, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 4.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C3 ; 
+A2 -> C1 ; 
+A3 -> C3 ; 
+A4 -> C6 ; 
+A5 -> C4 ; 
+A6 -> C1 ; 
+A7 -> C4 ; 
+A8 -> C7 ; 
+A9 -> C7 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A2, A6, 
+C2: 
+C3: A1, A3, 
+C4: A5, A7, 
+C5: 
+C6: A4, A10, 
+C7: A8, A9, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0
+
+
+**ESECUZIONE CON k= 80archi, q=5, tempo= 5.0 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C1 ; 
+A2 -> C2 ; 
+A3 -> C6 ; 
+A4 -> C2 ; 
+A5 -> C6 ; 
+A6 -> C6 ; 
+A7 -> C2 ; 
+A8 -> C1 ; 
+A9 -> C5 ; 
+A10 -> C6 ; 
+}
+COALITIONS: 
+
+C1: A1, A8, 
+C2: A2, A4, A7, 
+C3: 
+C4: 
+C5: A9, 
+C6: A3, A5, A6, A10, 
+C7: 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 89.0
+Agent: 2; Utility: 32.0
+Agent: 3; Utility: 80.33333333333333
+Agent: 4; Utility: 16.0
+Agent: 5; Utility: 41.0
+Agent: 6; Utility: 14.333333333333334
+Agent: 7; Utility: 2.0
+Agent: 8; Utility: 3.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 23.666666666666668
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C7 ; 
+A2 -> C3 ; 
+A3 -> C7 ; 
+A4 -> C2 ; 
+A5 -> C1 ; 
+A6 -> C3 ; 
+A7 -> C1 ; 
+A8 -> C5 ; 
+A9 -> C5 ; 
+A10 -> C2 ; 
+}
+COALITIONS: 
+
+C1: A5, A7, 
+C2: A4, A10, 
+C3: A2, A6, 
+C4: 
+C5: A8, A9, 
+C6: 
+C7: A1, A3, 
+C8: 
+C9: 
+C10: 
+
+ AGENTS:
+Agent: 1; Utility: 97.0
+Agent: 2; Utility: 99.0
+Agent: 3; Utility: 83.0
+Agent: 4; Utility: 90.0
+Agent: 5; Utility: 89.0
+Agent: 6; Utility: 64.0
+Agent: 7; Utility: 95.0
+Agent: 8; Utility: 63.0
+Agent: 9; Utility: 52.0
+Agent: 10; Utility: 36.0

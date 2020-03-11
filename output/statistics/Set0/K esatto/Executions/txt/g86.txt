@@ -1,0 +1,6105 @@
+
+
+****************ISTANZA N. 1***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C55 ; 
+A2 -> C71 ; 
+A3 -> C76 ; 
+A4 -> C8 ; 
+A5 -> C22 ; 
+A6 -> C72 ; 
+A7 -> C36 ; 
+A8 -> C21 ; 
+A9 -> C77 ; 
+A10 -> C89 ; 
+A11 -> C49 ; 
+A12 -> C2 ; 
+A13 -> C38 ; 
+A14 -> C46 ; 
+A15 -> C17 ; 
+A16 -> C96 ; 
+A17 -> C46 ; 
+A18 -> C87 ; 
+A19 -> C36 ; 
+A20 -> C83 ; 
+A21 -> C51 ; 
+A22 -> C82 ; 
+A23 -> C31 ; 
+A24 -> C31 ; 
+A25 -> C87 ; 
+A26 -> C59 ; 
+A27 -> C62 ; 
+A28 -> C86 ; 
+A29 -> C13 ; 
+A30 -> C94 ; 
+A31 -> C93 ; 
+A32 -> C88 ; 
+A33 -> C44 ; 
+A34 -> C96 ; 
+A35 -> C16 ; 
+A36 -> C50 ; 
+A37 -> C59 ; 
+A38 -> C55 ; 
+A39 -> C46 ; 
+A40 -> C58 ; 
+A41 -> C78 ; 
+A42 -> C2 ; 
+A43 -> C24 ; 
+A44 -> C91 ; 
+A45 -> C98 ; 
+A46 -> C3 ; 
+A47 -> C61 ; 
+A48 -> C49 ; 
+A49 -> C85 ; 
+A50 -> C9 ; 
+A51 -> C37 ; 
+A52 -> C39 ; 
+A53 -> C36 ; 
+A54 -> C57 ; 
+A55 -> C33 ; 
+A56 -> C96 ; 
+A57 -> C46 ; 
+A58 -> C18 ; 
+A59 -> C54 ; 
+A60 -> C2 ; 
+A61 -> C5 ; 
+A62 -> C7 ; 
+A63 -> C100 ; 
+A64 -> C35 ; 
+A65 -> C52 ; 
+A66 -> C89 ; 
+A67 -> C10 ; 
+A68 -> C33 ; 
+A69 -> C81 ; 
+A70 -> C60 ; 
+A71 -> C51 ; 
+A72 -> C33 ; 
+A73 -> C7 ; 
+A74 -> C53 ; 
+A75 -> C8 ; 
+A76 -> C95 ; 
+A77 -> C97 ; 
+A78 -> C8 ; 
+A79 -> C28 ; 
+A80 -> C91 ; 
+A81 -> C62 ; 
+A82 -> C48 ; 
+A83 -> C25 ; 
+A84 -> C54 ; 
+A85 -> C79 ; 
+A86 -> C14 ; 
+A87 -> C52 ; 
+A88 -> C99 ; 
+A89 -> C3 ; 
+A90 -> C22 ; 
+A91 -> C4 ; 
+A92 -> C72 ; 
+A93 -> C7 ; 
+A94 -> C66 ; 
+A95 -> C2 ; 
+A96 -> C1 ; 
+A97 -> C44 ; 
+A98 -> C4 ; 
+A99 -> C60 ; 
+A100 -> C20 ; 
+A101 -> C12 ; 
+A102 -> C50 ; 
+A103 -> C31 ; 
+A104 -> C64 ; 
+A105 -> C67 ; 
+A106 -> C20 ; 
+A107 -> C27 ; 
+A108 -> C45 ; 
+A109 -> C65 ; 
+A110 -> C15 ; 
+A111 -> C60 ; 
+A112 -> C36 ; 
+A113 -> C27 ; 
+A114 -> C89 ; 
+A115 -> C2 ; 
+A116 -> C44 ; 
+A117 -> C21 ; 
+A118 -> C27 ; 
+A119 -> C27 ; 
+A120 -> C98 ; 
+A121 -> C78 ; 
+A122 -> C59 ; 
+A123 -> C3 ; 
+A124 -> C80 ; 
+A125 -> C64 ; 
+A126 -> C8 ; 
+A127 -> C40 ; 
+A128 -> C16 ; 
+A129 -> C71 ; 
+A130 -> C9 ; 
+A131 -> C55 ; 
+A132 -> C22 ; 
+A133 -> C62 ; 
+A134 -> C70 ; 
+A135 -> C51 ; 
+A136 -> C66 ; 
+A137 -> C9 ; 
+A138 -> C3 ; 
+A139 -> C49 ; 
+A140 -> C42 ; 
+A141 -> C19 ; 
+A142 -> C14 ; 
+A143 -> C52 ; 
+A144 -> C49 ; 
+A145 -> C77 ; 
+A146 -> C94 ; 
+A147 -> C79 ; 
+A148 -> C29 ; 
+A149 -> C39 ; 
+A150 -> C56 ; 
+A151 -> C5 ; 
+A152 -> C55 ; 
+A153 -> C77 ; 
+A154 -> C5 ; 
+A155 -> C22 ; 
+A156 -> C64 ; 
+A157 -> C90 ; 
+A158 -> C47 ; 
+A159 -> C34 ; 
+A160 -> C45 ; 
+A161 -> C52 ; 
+A162 -> C12 ; 
+A163 -> C42 ; 
+A164 -> C32 ; 
+A165 -> C49 ; 
+A166 -> C74 ; 
+A167 -> C89 ; 
+A168 -> C64 ; 
+A169 -> C91 ; 
+A170 -> C76 ; 
+A171 -> C67 ; 
+A172 -> C51 ; 
+A173 -> C76 ; 
+A174 -> C72 ; 
+A175 -> C92 ; 
+A176 -> C87 ; 
+A177 -> C55 ; 
+A178 -> C46 ; 
+A179 -> C100 ; 
+A180 -> C6 ; 
+A181 -> C8 ; 
+A182 -> C11 ; 
+A183 -> C38 ; 
+A184 -> C18 ; 
+A185 -> C29 ; 
+A186 -> C27 ; 
+A187 -> C14 ; 
+A188 -> C73 ; 
+A189 -> C13 ; 
+A190 -> C41 ; 
+A191 -> C53 ; 
+A192 -> C2 ; 
+A193 -> C30 ; 
+A194 -> C56 ; 
+A195 -> C3 ; 
+A196 -> C90 ; 
+A197 -> C96 ; 
+A198 -> C40 ; 
+A199 -> C60 ; 
+A200 -> C28 ; 
+}
+COALITIONS: 
+
+C1: A96, 
+C2: A12, A42, A60, A95, A115, A192, 
+C3: A46, A89, A123, A138, A195, 
+C4: A91, A98, 
+C5: A61, A151, A154, 
+C6: A180, 
+C7: A62, A73, A93, 
+C8: A4, A75, A78, A126, A181, 
+C9: A50, A130, A137, 
+C10: A67, 
+C11: A182, 
+C12: A101, A162, 
+C13: A29, A189, 
+C14: A86, A142, A187, 
+C15: A110, 
+C16: A35, A128, 
+C17: A15, 
+C18: A58, A184, 
+C19: A141, 
+C20: A100, A106, 
+C21: A8, A117, 
+C22: A5, A90, A132, A155, 
+C23: 
+C24: A43, 
+C25: A83, 
+C26: 
+C27: A107, A113, A118, A119, A186, 
+C28: A79, A200, 
+C29: A148, A185, 
+C30: A193, 
+C31: A23, A24, A103, 
+C32: A164, 
+C33: A55, A68, A72, 
+C34: A159, 
+C35: A64, 
+C36: A7, A19, A53, A112, 
+C37: A51, 
+C38: A13, A183, 
+C39: A52, A149, 
+C40: A127, A198, 
+C41: A190, 
+C42: A140, A163, 
+C43: 
+C44: A33, A97, A116, 
+C45: A108, A160, 
+C46: A14, A17, A39, A57, A178, 
+C47: A158, 
+C48: A82, 
+C49: A11, A48, A139, A144, A165, 
+C50: A36, A102, 
+C51: A21, A71, A135, A172, 
+C52: A65, A87, A143, A161, 
+C53: A74, A191, 
+C54: A59, A84, 
+C55: A1, A38, A131, A152, A177, 
+C56: A150, A194, 
+C57: A54, 
+C58: A40, 
+C59: A26, A37, A122, 
+C60: A70, A99, A111, A199, 
+C61: A47, 
+C62: A27, A81, A133, 
+C63: 
+C64: A104, A125, A156, A168, 
+C65: A109, 
+C66: A94, A136, 
+C67: A105, A171, 
+C68: 
+C69: 
+C70: A134, 
+C71: A2, A129, 
+C72: A6, A92, A174, 
+C73: A188, 
+C74: A166, 
+C75: 
+C76: A3, A170, A173, 
+C77: A9, A145, A153, 
+C78: A41, A121, 
+C79: A85, A147, 
+C80: A124, 
+C81: A69, 
+C82: A22, 
+C83: A20, 
+C84: 
+C85: A49, 
+C86: A28, 
+C87: A18, A25, A176, 
+C88: A32, 
+C89: A10, A66, A114, A167, 
+C90: A157, A196, 
+C91: A44, A80, A169, 
+C92: A175, 
+C93: A31, 
+C94: A30, A146, 
+C95: A76, 
+C96: A16, A34, A56, A197, 
+C97: A77, 
+C98: A45, A120, 
+C99: A88, 
+C100: A63, A179, 
+C101: 
+C102: 
+C103: 
+C104: 
+C105: 
+C106: 
+C107: 
+C108: 
+C109: 
+C110: 
+C111: 
+C112: 
+C113: 
+C114: 
+C115: 
+C116: 
+C117: 
+C118: 
+C119: 
+C120: 
+C121: 
+C122: 
+C123: 
+C124: 
+C125: 
+C126: 
+C127: 
+C128: 
+C129: 
+C130: 
+C131: 
+C132: 
+C133: 
+C134: 
+C135: 
+C136: 
+C137: 
+C138: 
+C139: 
+C140: 
+C141: 
+C142: 
+C143: 
+C144: 
+C145: 
+C146: 
+C147: 
+C148: 
+C149: 
+C150: 
+C151: 
+C152: 
+C153: 
+C154: 
+C155: 
+C156: 
+C157: 
+C158: 
+C159: 
+C160: 
+C161: 
+C162: 
+C163: 
+C164: 
+C165: 
+C166: 
+C167: 
+C168: 
+C169: 
+C170: 
+C171: 
+C172: 
+C173: 
+C174: 
+C175: 
+C176: 
+C177: 
+C178: 
+C179: 
+C180: 
+C181: 
+C182: 
+C183: 
+C184: 
+C185: 
+C186: 
+C187: 
+C188: 
+C189: 
+C190: 
+C191: 
+C192: 
+C193: 
+C194: 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 21.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 3.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 0.6666666666666666
+Agent: 6; Utility: 15.0
+Agent: 7; Utility: 5.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 2.0
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 32.8
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 5.75
+Agent: 15; Utility: 0.0
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 21.25
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 0.0
+Agent: 22; Utility: 0.0
+Agent: 23; Utility: 24.0
+Agent: 24; Utility: 77.0
+Agent: 25; Utility: 0.0
+Agent: 26; Utility: 33.0
+Agent: 27; Utility: 38.0
+Agent: 28; Utility: 0.0
+Agent: 29; Utility: 90.0
+Agent: 30; Utility: 7.0
+Agent: 31; Utility: 0.0
+Agent: 32; Utility: 0.0
+Agent: 33; Utility: 2.0
+Agent: 34; Utility: 0.0
+Agent: 35; Utility: 0.0
+Agent: 36; Utility: 95.0
+Agent: 37; Utility: 10.0
+Agent: 38; Utility: 0.0
+Agent: 39; Utility: 24.75
+Agent: 40; Utility: 0.0
+Agent: 41; Utility: 0.0
+Agent: 42; Utility: 0.0
+Agent: 43; Utility: 0.0
+Agent: 44; Utility: 24.5
+Agent: 45; Utility: 0.0
+Agent: 46; Utility: 1.75
+Agent: 47; Utility: 0.0
+Agent: 48; Utility: 7.0
+Agent: 49; Utility: 0.0
+Agent: 50; Utility: 30.0
+Agent: 51; Utility: 0.0
+Agent: 52; Utility: 0.0
+Agent: 53; Utility: 0.0
+Agent: 54; Utility: 0.0
+Agent: 55; Utility: 2.5
+Agent: 56; Utility: 0.0
+Agent: 57; Utility: 15.75
+Agent: 58; Utility: 0.0
+Agent: 59; Utility: 36.0
+Agent: 60; Utility: 39.4
+Agent: 61; Utility: 19.0
+Agent: 62; Utility: 0.0
+Agent: 63; Utility: 0.0
+Agent: 64; Utility: 0.0
+Agent: 65; Utility: 19.666666666666668
+Agent: 66; Utility: 18.0
+Agent: 67; Utility: 0.0
+Agent: 68; Utility: 0.0
+Agent: 69; Utility: 0.0
+Agent: 70; Utility: 7.0
+Agent: 71; Utility: 3.0
+Agent: 72; Utility: 0.0
+Agent: 73; Utility: 0.0
+Agent: 74; Utility: 0.0
+Agent: 75; Utility: 10.75
+Agent: 76; Utility: 0.0
+Agent: 77; Utility: 0.0
+Agent: 78; Utility: 0.0
+Agent: 79; Utility: 40.0
+Agent: 80; Utility: 21.0
+Agent: 81; Utility: 43.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 0.0
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 0.6666666666666666
+Agent: 88; Utility: 0.0
+Agent: 89; Utility: 20.25
+Agent: 90; Utility: 0.0
+Agent: 91; Utility: 0.0
+Agent: 92; Utility: 36.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 0.0
+Agent: 95; Utility: 19.6
+Agent: 96; Utility: 0.0
+Agent: 97; Utility: 0.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 7.333333333333333
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 2.3333333333333335
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 0.0
+Agent: 107; Utility: 44.75
+Agent: 108; Utility: 0.0
+Agent: 109; Utility: 0.0
+Agent: 110; Utility: 0.0
+Agent: 111; Utility: 54.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 16.0
+Agent: 116; Utility: 0.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 53.75
+Agent: 119; Utility: 36.75
+Agent: 120; Utility: 30.0
+Agent: 121; Utility: 63.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 46.0
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 31.666666666666668
+Agent: 126; Utility: 13.0
+Agent: 127; Utility: 32.0
+Agent: 128; Utility: 47.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 12.5
+Agent: 131; Utility: 12.25
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 0.0
+Agent: 134; Utility: 0.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 0.0
+Agent: 137; Utility: 14.0
+Agent: 138; Utility: 17.75
+Agent: 139; Utility: 12.75
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 24.5
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 38.25
+Agent: 145; Utility: 31.5
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 92.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 90.0
+Agent: 150; Utility: 5.0
+Agent: 151; Utility: 39.5
+Agent: 152; Utility: 11.25
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 22.0
+Agent: 155; Utility: 13.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 0.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 0.0
+Agent: 160; Utility: 0.0
+Agent: 161; Utility: 55.666666666666664
+Agent: 162; Utility: 0.0
+Agent: 163; Utility: 60.0
+Agent: 164; Utility: 0.0
+Agent: 165; Utility: 0.0
+Agent: 166; Utility: 0.0
+Agent: 167; Utility: 33.0
+Agent: 168; Utility: 8.666666666666666
+Agent: 169; Utility: 8.0
+Agent: 170; Utility: 0.0
+Agent: 171; Utility: 0.0
+Agent: 172; Utility: 0.0
+Agent: 173; Utility: 21.0
+Agent: 174; Utility: 47.5
+Agent: 175; Utility: 0.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 9.0
+Agent: 178; Utility: 35.5
+Agent: 179; Utility: 0.0
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 0.0
+Agent: 183; Utility: 78.0
+Agent: 184; Utility: 78.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 0.0
+Agent: 187; Utility: 1.5
+Agent: 188; Utility: 0.0
+Agent: 189; Utility: 0.0
+Agent: 190; Utility: 0.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 15.6
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 47.0
+Agent: 195; Utility: 0.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 0.0
+Agent: 199; Utility: 18.333333333333332
+Agent: 200; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C26 ; 
+A2 -> C193 ; 
+A3 -> C196 ; 
+A4 -> C114 ; 
+A5 -> C192 ; 
+A6 -> C43 ; 
+A7 -> C101 ; 
+A8 -> C104 ; 
+A9 -> C127 ; 
+A10 -> C108 ; 
+A11 -> C188 ; 
+A12 -> C86 ; 
+A13 -> C154 ; 
+A14 -> C191 ; 
+A15 -> C113 ; 
+A16 -> C61 ; 
+A17 -> C184 ; 
+A18 -> C93 ; 
+A19 -> C198 ; 
+A20 -> C111 ; 
+A21 -> C121 ; 
+A22 -> C106 ; 
+A23 -> C128 ; 
+A24 -> C88 ; 
+A25 -> C190 ; 
+A26 -> C187 ; 
+A27 -> C156 ; 
+A28 -> C102 ; 
+A29 -> C13 ; 
+A30 -> C167 ; 
+A31 -> C199 ; 
+A32 -> C81 ; 
+A33 -> C141 ; 
+A34 -> C95 ; 
+A35 -> C170 ; 
+A36 -> C145 ; 
+A37 -> C57 ; 
+A38 -> C35 ; 
+A39 -> C139 ; 
+A40 -> C142 ; 
+A41 -> C188 ; 
+A42 -> C149 ; 
+A43 -> C68 ; 
+A44 -> C35 ; 
+A45 -> C69 ; 
+A46 -> C93 ; 
+A47 -> C36 ; 
+A48 -> C150 ; 
+A49 -> C118 ; 
+A50 -> C155 ; 
+A51 -> C132 ; 
+A52 -> C163 ; 
+A53 -> C31 ; 
+A54 -> C155 ; 
+A55 -> C147 ; 
+A56 -> C116 ; 
+A57 -> C65 ; 
+A58 -> C148 ; 
+A59 -> C165 ; 
+A60 -> C166 ; 
+A61 -> C157 ; 
+A62 -> C65 ; 
+A63 -> C182 ; 
+A64 -> C138 ; 
+A65 -> C0 ; 
+A66 -> C168 ; 
+A67 -> C175 ; 
+A68 -> C174 ; 
+A69 -> C181 ; 
+A70 -> C183 ; 
+A71 -> C116 ; 
+A72 -> C189 ; 
+A73 -> C140 ; 
+A74 -> C166 ; 
+A75 -> C162 ; 
+A76 -> C133 ; 
+A77 -> C161 ; 
+A78 -> C157 ; 
+A79 -> C194 ; 
+A80 -> C0 ; 
+A81 -> C62 ; 
+A82 -> C21 ; 
+A83 -> C129 ; 
+A84 -> C83 ; 
+A85 -> C83 ; 
+A86 -> C57 ; 
+A87 -> C44 ; 
+A88 -> C61 ; 
+A89 -> C48 ; 
+A90 -> C26 ; 
+A91 -> C48 ; 
+A92 -> C133 ; 
+A93 -> C82 ; 
+A94 -> C140 ; 
+A95 -> C129 ; 
+A96 -> C0 ; 
+A97 -> C187 ; 
+A98 -> C4 ; 
+A99 -> C162 ; 
+A100 -> C131 ; 
+A101 -> C97 ; 
+A102 -> C200 ; 
+A103 -> C176 ; 
+A104 -> C114 ; 
+A105 -> C195 ; 
+A106 -> C108 ; 
+A107 -> C138 ; 
+A108 -> C190 ; 
+A109 -> C161 ; 
+A110 -> C127 ; 
+A111 -> C145 ; 
+A112 -> C144 ; 
+A113 -> C59 ; 
+A114 -> C23 ; 
+A115 -> C2 ; 
+A116 -> C163 ; 
+A117 -> C197 ; 
+A118 -> C199 ; 
+A119 -> C27 ; 
+A120 -> C192 ; 
+A121 -> C78 ; 
+A122 -> C15 ; 
+A123 -> C3 ; 
+A124 -> C80 ; 
+A125 -> C198 ; 
+A126 -> C43 ; 
+A127 -> C196 ; 
+A128 -> C44 ; 
+A129 -> C71 ; 
+A130 -> C9 ; 
+A131 -> C55 ; 
+A132 -> C22 ; 
+A133 -> C175 ; 
+A134 -> C132 ; 
+A135 -> C169 ; 
+A136 -> C147 ; 
+A137 -> C58 ; 
+A138 -> C3 ; 
+A139 -> C149 ; 
+A140 -> C180 ; 
+A141 -> C99 ; 
+A142 -> C14 ; 
+A143 -> C52 ; 
+A144 -> C193 ; 
+A145 -> C77 ; 
+A146 -> C98 ; 
+A147 -> C79 ; 
+A148 -> C178 ; 
+A149 -> C174 ; 
+A150 -> C24 ; 
+A151 -> C159 ; 
+A152 -> C165 ; 
+A153 -> C186 ; 
+A154 -> C105 ; 
+A155 -> C33 ; 
+A156 -> C64 ; 
+A157 -> C182 ; 
+A158 -> C47 ; 
+A159 -> C104 ; 
+A160 -> C121 ; 
+A161 -> C52 ; 
+A162 -> C150 ; 
+A163 -> C42 ; 
+A164 -> C156 ; 
+A165 -> C106 ; 
+A166 -> C88 ; 
+A167 -> C89 ; 
+A168 -> C21 ; 
+A169 -> C184 ; 
+A170 -> C111 ; 
+A171 -> C183 ; 
+A172 -> C81 ; 
+A173 -> C76 ; 
+A174 -> C134 ; 
+A175 -> C128 ; 
+A176 -> C87 ; 
+A177 -> C181 ; 
+A178 -> C139 ; 
+A179 -> C31 ; 
+A180 -> C6 ; 
+A181 -> C8 ; 
+A182 -> C173 ; 
+A183 -> C148 ; 
+A184 -> C189 ; 
+A185 -> C29 ; 
+A186 -> C27 ; 
+A187 -> C14 ; 
+A188 -> C86 ; 
+A189 -> C194 ; 
+A190 -> C142 ; 
+A191 -> C53 ; 
+A192 -> C95 ; 
+A193 -> C30 ; 
+A194 -> C172 ; 
+A195 -> C170 ; 
+A196 -> C90 ; 
+A197 -> C185 ; 
+A198 -> C191 ; 
+A199 -> C60 ; 
+A200 -> C28 ; 
+}
+COALITIONS: 
+
+C1: A148, 
+C2: A115, A192, 
+C3: A123, A138, A195, 
+C4: A98, 
+C5: A151, A154, 
+C6: A180, 
+C7: A139, 
+C8: A181, 
+C9: A130, A137, 
+C10: A151, 
+C11: A182, 
+C12: A162, 
+C13: A29, A189, 
+C14: A142, A187, 
+C15: A122, 
+C16: A128, 
+C17: A144, 
+C18: A184, 
+C19: A141, 
+C20: A144, 
+C21: A82, A168, 
+C22: A132, A155, 
+C23: A114, 
+C24: A150, 
+C25: A144, 
+C26: A1, A90, 
+C27: A119, A186, 
+C28: A200, 
+C29: A148, A185, 
+C30: A193, 
+C31: A53, A179, 
+C32: A164, 
+C33: A155, 
+C34: A159, 
+C35: A38, A44, 
+C36: A47, 
+C37: A174, 
+C38: A183, 
+C39: A149, 
+C40: A198, 
+C41: A190, 
+C42: A140, A163, 
+C43: A6, A126, 
+C44: A87, A128, 
+C45: A160, 
+C46: A178, 
+C47: A158, 
+C48: A89, A91, 
+C49: A139, A144, A165, 
+C50: A174, 
+C51: A135, A172, 
+C52: A143, A161, 
+C53: A191, 
+C54: A190, 
+C55: A131, A152, A177, 
+C56: A150, A194, 
+C57: A37, A86, 
+C58: A137, 
+C59: A113, 
+C60: A199, 
+C61: A16, A88, 
+C62: A81, A133, 
+C63: A144, 
+C64: A156, A168, 
+C65: A57, A62, 
+C66: A136, 
+C67: A171, 
+C68: A43, A197, 
+C69: A45, A134, 
+C70: A134, 
+C71: A129, 
+C72: A174, 
+C73: A188, 
+C74: A166, 
+C75: A140, 
+C76: A170, A173, 
+C77: A145, A153, 
+C78: A121, 
+C79: A147, 
+C80: A124, 
+C81: A32, A172, 
+C82: A93, 
+C83: A84, A85, 
+C84: A157, 
+C85: A146, 
+C86: A12, A188, 
+C87: A176, 
+C88: A24, A166, 
+C89: A167, 
+C90: A157, A196, 
+C91: A169, 
+C92: A175, 
+C93: A18, A46, 
+C94: A146, 
+C95: A34, A192, 
+C96: A197, 
+C97: A101, 
+C98: A146, 
+C99: A141, 
+C100: A179, 
+C101: A7, A171, 
+C102: A28, A151, 
+C103: A166, 
+C104: A8, A159, 
+C105: A154, 
+C106: A22, A165, 
+C107: A157, 
+C108: A10, A106, 
+C109: A146, 
+C110: A148, 
+C111: A20, A170, 
+C112: A166, 
+C113: A15, A198, 
+C114: A4, A104, 
+C115: A140, 
+C116: A56, A71, 
+C117: A162, 
+C118: A49, A194, 
+C119: A148, 
+C120: A144, 
+C121: A21, A160, 
+C122: A194, 
+C123: A182, 
+C124: A146, 
+C125: A157, 
+C126: A174, 
+C127: A9, A110, 
+C128: A23, A175, 
+C129: A83, A95, 
+C130: A139, 
+C131: A100, 
+C132: A51, A134, 
+C133: A76, A92, 
+C134: A174, 
+C135: A140, 
+C136: A162, 
+C137: A171, 
+C138: A64, A107, 
+C139: A39, A178, 
+C140: A73, A94, 
+C141: A33, A150, 
+C142: A40, A190, 
+C143: A195, 
+C144: A112, 
+C145: A36, A111, 
+C146: A169, 
+C147: A55, A136, 
+C148: A58, A183, 
+C149: A42, A139, 
+C150: A48, A162, 
+C151: A150, 
+C152: A151, 
+C153: A151, 
+C154: A13, A148, 
+C155: A50, A54, 
+C156: A27, A164, 
+C157: A61, A78, 
+C158: A195, 
+C159: A151, 
+C160: A157, 
+C161: A77, A109, 
+C162: A75, A99, 
+C163: A52, A116, 
+C164: A151, 
+C165: A59, A152, 
+C166: A60, A74, 
+C167: A30, A151, 
+C168: A66, 
+C169: A135, 
+C170: A35, A195, 
+C171: A195, 
+C172: A194, 
+C173: A182, 
+C174: A68, A149, 
+C175: A67, A133, 
+C176: A103, 
+C177: A197, 
+C178: A148, 
+C179: A198, 
+C180: A140, 
+C181: A69, A177, 
+C182: A63, A157, 
+C183: A70, A171, 
+C184: A17, A169, 
+C185: A197, 
+C186: A153, 
+C187: A26, A97, 
+C188: A11, A41, 
+C189: A72, A184, 
+C190: A25, A108, 
+C191: A14, A198, 
+C192: A5, A120, 
+C193: A2, A144, 
+C194: A79, A189, 
+C195: A105, 
+C196: A3, A127, 
+C197: A117, 
+C198: A19, A125, 
+C199: A31, A118, 
+C200: A102, 
+
+ AGENTS:
+Agent: 1; Utility: 86.0
+Agent: 2; Utility: 72.0
+Agent: 3; Utility: 80.0
+Agent: 4; Utility: 71.0
+Agent: 5; Utility: 78.0
+Agent: 6; Utility: 68.0
+Agent: 7; Utility: 81.0
+Agent: 8; Utility: 98.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 97.0
+Agent: 11; Utility: 96.0
+Agent: 12; Utility: 84.0
+Agent: 13; Utility: 64.0
+Agent: 14; Utility: 49.0
+Agent: 15; Utility: 83.0
+Agent: 16; Utility: 90.0
+Agent: 17; Utility: 87.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 96.0
+Agent: 20; Utility: 98.0
+Agent: 21; Utility: 78.0
+Agent: 22; Utility: 96.0
+Agent: 23; Utility: 99.0
+Agent: 24; Utility: 93.0
+Agent: 25; Utility: 65.0
+Agent: 26; Utility: 77.0
+Agent: 27; Utility: 86.0
+Agent: 28; Utility: 95.0
+Agent: 29; Utility: 90.0
+Agent: 30; Utility: 94.0
+Agent: 31; Utility: 69.0
+Agent: 32; Utility: 14.0
+Agent: 33; Utility: 24.0
+Agent: 34; Utility: 97.0
+Agent: 35; Utility: 76.0
+Agent: 36; Utility: 97.0
+Agent: 37; Utility: 71.0
+Agent: 38; Utility: 81.0
+Agent: 39; Utility: 99.0
+Agent: 40; Utility: 64.0
+Agent: 41; Utility: 48.0
+Agent: 42; Utility: 74.0
+Agent: 43; Utility: 75.0
+Agent: 44; Utility: 76.0
+Agent: 45; Utility: 96.0
+Agent: 46; Utility: 59.0
+Agent: 47; Utility: 0.0
+Agent: 48; Utility: 91.0
+Agent: 49; Utility: 96.0
+Agent: 50; Utility: 83.0
+Agent: 51; Utility: 96.0
+Agent: 52; Utility: 63.0
+Agent: 53; Utility: 84.0
+Agent: 54; Utility: 13.0
+Agent: 55; Utility: 73.0
+Agent: 56; Utility: 73.0
+Agent: 57; Utility: 70.0
+Agent: 58; Utility: 93.0
+Agent: 59; Utility: 99.0
+Agent: 60; Utility: 86.0
+Agent: 61; Utility: 86.0
+Agent: 62; Utility: 79.0
+Agent: 63; Utility: 58.0
+Agent: 64; Utility: 87.0
+Agent: 65; Utility: 52.5
+Agent: 66; Utility: 0.0
+Agent: 67; Utility: 99.0
+Agent: 68; Utility: 79.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 95.0
+Agent: 71; Utility: 55.0
+Agent: 72; Utility: 99.0
+Agent: 73; Utility: 91.0
+Agent: 74; Utility: 99.0
+Agent: 75; Utility: 98.0
+Agent: 76; Utility: 82.0
+Agent: 77; Utility: 84.0
+Agent: 78; Utility: 94.0
+Agent: 79; Utility: 87.0
+Agent: 80; Utility: 17.5
+Agent: 81; Utility: 86.0
+Agent: 82; Utility: 91.0
+Agent: 83; Utility: 61.0
+Agent: 84; Utility: 85.0
+Agent: 85; Utility: 91.0
+Agent: 86; Utility: 94.0
+Agent: 87; Utility: 55.0
+Agent: 88; Utility: 86.0
+Agent: 89; Utility: 48.0
+Agent: 90; Utility: 95.0
+Agent: 91; Utility: 55.0
+Agent: 92; Utility: 63.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 6.0
+Agent: 95; Utility: 4.0
+Agent: 96; Utility: 40.5
+Agent: 97; Utility: 30.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 70.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 68.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 98.0
+Agent: 107; Utility: 69.0
+Agent: 108; Utility: 52.0
+Agent: 109; Utility: 78.0
+Agent: 110; Utility: 74.0
+Agent: 111; Utility: 51.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 65.0
+Agent: 116; Utility: 69.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 42.0
+Agent: 119; Utility: 55.0
+Agent: 120; Utility: 76.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 50.5
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 2.0
+Agent: 126; Utility: 26.0
+Agent: 127; Utility: 88.0
+Agent: 128; Utility: 38.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 25.0
+Agent: 131; Utility: 24.5
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 75.0
+Agent: 134; Utility: 36.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 44.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 35.5
+Agent: 139; Utility: 76.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 49.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 49.0
+Agent: 145; Utility: 63.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 10.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 72.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 0.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 84.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 64.0
+Agent: 160; Utility: 81.0
+Agent: 161; Utility: 0.0
+Agent: 162; Utility: 67.0
+Agent: 163; Utility: 60.0
+Agent: 164; Utility: 33.0
+Agent: 165; Utility: 67.0
+Agent: 166; Utility: 56.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 55.0
+Agent: 169; Utility: 61.0
+Agent: 170; Utility: 21.0
+Agent: 171; Utility: 34.0
+Agent: 172; Utility: 77.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 66.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 58.0
+Agent: 178; Utility: 56.0
+Agent: 179; Utility: 95.0
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 0.0
+Agent: 183; Utility: 25.0
+Agent: 184; Utility: 1.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 0.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 52.0
+Agent: 189; Utility: 71.0
+Agent: 190; Utility: 7.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 99.0
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 97.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 80.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+
+****************ISTANZA N. 2***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C29 ; 
+A2 -> C98 ; 
+A3 -> C43 ; 
+A4 -> C79 ; 
+A5 -> C54 ; 
+A6 -> C45 ; 
+A7 -> C78 ; 
+A8 -> C34 ; 
+A9 -> C15 ; 
+A10 -> C74 ; 
+A11 -> C68 ; 
+A12 -> C55 ; 
+A13 -> C21 ; 
+A14 -> C76 ; 
+A15 -> C32 ; 
+A16 -> C28 ; 
+A17 -> C84 ; 
+A18 -> C51 ; 
+A19 -> C39 ; 
+A20 -> C19 ; 
+A21 -> C26 ; 
+A22 -> C9 ; 
+A23 -> C87 ; 
+A24 -> C60 ; 
+A25 -> C52 ; 
+A26 -> C93 ; 
+A27 -> C43 ; 
+A28 -> C91 ; 
+A29 -> C74 ; 
+A30 -> C5 ; 
+A31 -> C39 ; 
+A32 -> C77 ; 
+A33 -> C32 ; 
+A34 -> C80 ; 
+A35 -> C98 ; 
+A36 -> C77 ; 
+A37 -> C99 ; 
+A38 -> C38 ; 
+A39 -> C38 ; 
+A40 -> C32 ; 
+A41 -> C62 ; 
+A42 -> C5 ; 
+A43 -> C23 ; 
+A44 -> C41 ; 
+A45 -> C67 ; 
+A46 -> C34 ; 
+A47 -> C72 ; 
+A48 -> C85 ; 
+A49 -> C94 ; 
+A50 -> C60 ; 
+A51 -> C79 ; 
+A52 -> C37 ; 
+A53 -> C56 ; 
+A54 -> C63 ; 
+A55 -> C29 ; 
+A56 -> C70 ; 
+A57 -> C96 ; 
+A58 -> C78 ; 
+A59 -> C67 ; 
+A60 -> C42 ; 
+A61 -> C48 ; 
+A62 -> C9 ; 
+A63 -> C77 ; 
+A64 -> C32 ; 
+A65 -> C47 ; 
+A66 -> C84 ; 
+A67 -> C89 ; 
+A68 -> C10 ; 
+A69 -> C92 ; 
+A70 -> C54 ; 
+A71 -> C17 ; 
+A72 -> C59 ; 
+A73 -> C17 ; 
+A74 -> C78 ; 
+A75 -> C68 ; 
+A76 -> C10 ; 
+A77 -> C94 ; 
+A78 -> C87 ; 
+A79 -> C77 ; 
+A80 -> C74 ; 
+A81 -> C17 ; 
+A82 -> C94 ; 
+A83 -> C25 ; 
+A84 -> C5 ; 
+A85 -> C12 ; 
+A86 -> C74 ; 
+A87 -> C2 ; 
+A88 -> C88 ; 
+A89 -> C6 ; 
+A90 -> C9 ; 
+A91 -> C60 ; 
+A92 -> C48 ; 
+A93 -> C3 ; 
+A94 -> C48 ; 
+A95 -> C87 ; 
+A96 -> C23 ; 
+A97 -> C8 ; 
+A98 -> C91 ; 
+A99 -> C31 ; 
+A100 -> C10 ; 
+A101 -> C52 ; 
+A102 -> C41 ; 
+A103 -> C62 ; 
+A104 -> C15 ; 
+A105 -> C67 ; 
+A106 -> C42 ; 
+A107 -> C56 ; 
+A108 -> C69 ; 
+A109 -> C41 ; 
+A110 -> C16 ; 
+A111 -> C9 ; 
+A112 -> C15 ; 
+A113 -> C74 ; 
+A114 -> C33 ; 
+A115 -> C47 ; 
+A116 -> C31 ; 
+A117 -> C54 ; 
+A118 -> C80 ; 
+A119 -> C28 ; 
+A120 -> C41 ; 
+A121 -> C57 ; 
+A122 -> C57 ; 
+A123 -> C21 ; 
+A124 -> C82 ; 
+A125 -> C21 ; 
+A126 -> C67 ; 
+A127 -> C1 ; 
+A128 -> C73 ; 
+A129 -> C12 ; 
+A130 -> C28 ; 
+A131 -> C4 ; 
+A132 -> C32 ; 
+A133 -> C14 ; 
+A134 -> C58 ; 
+A135 -> C11 ; 
+A136 -> C39 ; 
+A137 -> C16 ; 
+A138 -> C31 ; 
+A139 -> C43 ; 
+A140 -> C82 ; 
+A141 -> C8 ; 
+A142 -> C96 ; 
+A143 -> C47 ; 
+A144 -> C31 ; 
+A145 -> C70 ; 
+A146 -> C24 ; 
+A147 -> C53 ; 
+A148 -> C94 ; 
+A149 -> C3 ; 
+A150 -> C72 ; 
+A151 -> C74 ; 
+A152 -> C8 ; 
+A153 -> C20 ; 
+A154 -> C31 ; 
+A155 -> C36 ; 
+A156 -> C30 ; 
+A157 -> C18 ; 
+A158 -> C67 ; 
+A159 -> C66 ; 
+A160 -> C34 ; 
+A161 -> C55 ; 
+A162 -> C23 ; 
+A163 -> C79 ; 
+A164 -> C90 ; 
+A165 -> C26 ; 
+A166 -> C39 ; 
+A167 -> C67 ; 
+A168 -> C84 ; 
+A169 -> C31 ; 
+A170 -> C21 ; 
+A171 -> C98 ; 
+A172 -> C12 ; 
+A173 -> C6 ; 
+A174 -> C93 ; 
+A175 -> C4 ; 
+A176 -> C90 ; 
+A177 -> C85 ; 
+A178 -> C70 ; 
+A179 -> C5 ; 
+A180 -> C21 ; 
+A181 -> C79 ; 
+A182 -> C5 ; 
+A183 -> C49 ; 
+A184 -> C28 ; 
+A185 -> C60 ; 
+A186 -> C94 ; 
+A187 -> C58 ; 
+A188 -> C41 ; 
+A189 -> C66 ; 
+A190 -> C32 ; 
+A191 -> C28 ; 
+A192 -> C65 ; 
+A193 -> C85 ; 
+A194 -> C63 ; 
+A195 -> C18 ; 
+A196 -> C59 ; 
+A197 -> C96 ; 
+A198 -> C20 ; 
+A199 -> C63 ; 
+A200 -> C81 ; 
+}
+COALITIONS: 
+
+C1: A127, 
+C2: A87, 
+C3: A93, A149, 
+C4: A131, A175, 
+C5: A30, A42, A84, A179, A182, 
+C6: A89, A173, 
+C7: 
+C8: A97, A141, A152, 
+C9: A22, A62, A90, A111, 
+C10: A68, A76, A100, 
+C11: A135, 
+C12: A85, A129, A172, 
+C13: 
+C14: A133, 
+C15: A9, A104, A112, 
+C16: A110, A137, 
+C17: A71, A73, A81, 
+C18: A157, A195, 
+C19: A20, 
+C20: A153, A198, 
+C21: A13, A123, A125, A170, A180, 
+C22: 
+C23: A43, A96, A162, 
+C24: A146, 
+C25: A83, 
+C26: A21, A165, 
+C27: 
+C28: A16, A119, A130, A184, A191, 
+C29: A1, A55, 
+C30: A156, 
+C31: A99, A116, A138, A144, A154, A169, 
+C32: A15, A33, A40, A64, A132, A190, 
+C33: A114, 
+C34: A8, A46, A160, 
+C35: 
+C36: A155, 
+C37: A52, 
+C38: A38, A39, 
+C39: A19, A31, A136, A166, 
+C40: 
+C41: A44, A102, A109, A120, A188, 
+C42: A60, A106, 
+C43: A3, A27, A139, 
+C44: 
+C45: A6, 
+C46: 
+C47: A65, A115, A143, 
+C48: A61, A92, A94, 
+C49: A183, 
+C50: 
+C51: A18, 
+C52: A25, A101, 
+C53: A147, 
+C54: A5, A70, A117, 
+C55: A12, A161, 
+C56: A53, A107, 
+C57: A121, A122, 
+C58: A134, A187, 
+C59: A72, A196, 
+C60: A24, A50, A91, A185, 
+C61: 
+C62: A41, A103, 
+C63: A54, A194, A199, 
+C64: 
+C65: A192, 
+C66: A159, A189, 
+C67: A45, A59, A105, A126, A158, A167, 
+C68: A11, A75, 
+C69: A108, 
+C70: A56, A145, A178, 
+C71: 
+C72: A47, A150, 
+C73: A128, 
+C74: A10, A29, A80, A86, A113, A151, 
+C75: 
+C76: A14, 
+C77: A32, A36, A63, A79, 
+C78: A7, A58, A74, 
+C79: A4, A51, A163, A181, 
+C80: A34, A118, 
+C81: A200, 
+C82: A124, A140, 
+C83: 
+C84: A17, A66, A168, 
+C85: A48, A177, A193, 
+C86: 
+C87: A23, A78, A95, 
+C88: A88, 
+C89: A67, 
+C90: A164, A176, 
+C91: A28, A98, 
+C92: A69, 
+C93: A26, A174, 
+C94: A49, A77, A82, A148, A186, 
+C95: 
+C96: A57, A142, A197, 
+C97: 
+C98: A2, A35, A171, 
+C99: A37, 
+C100: 
+C101: 
+C102: 
+C103: 
+C104: 
+C105: 
+C106: 
+C107: 
+C108: 
+C109: 
+C110: 
+C111: 
+C112: 
+C113: 
+C114: 
+C115: 
+C116: 
+C117: 
+C118: 
+C119: 
+C120: 
+C121: 
+C122: 
+C123: 
+C124: 
+C125: 
+C126: 
+C127: 
+C128: 
+C129: 
+C130: 
+C131: 
+C132: 
+C133: 
+C134: 
+C135: 
+C136: 
+C137: 
+C138: 
+C139: 
+C140: 
+C141: 
+C142: 
+C143: 
+C144: 
+C145: 
+C146: 
+C147: 
+C148: 
+C149: 
+C150: 
+C151: 
+C152: 
+C153: 
+C154: 
+C155: 
+C156: 
+C157: 
+C158: 
+C159: 
+C160: 
+C161: 
+C162: 
+C163: 
+C164: 
+C165: 
+C166: 
+C167: 
+C168: 
+C169: 
+C170: 
+C171: 
+C172: 
+C173: 
+C174: 
+C175: 
+C176: 
+C177: 
+C178: 
+C179: 
+C180: 
+C181: 
+C182: 
+C183: 
+C184: 
+C185: 
+C186: 
+C187: 
+C188: 
+C189: 
+C190: 
+C191: 
+C192: 
+C193: 
+C194: 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 3.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 12.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 8.4
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 0.0
+Agent: 13; Utility: 11.5
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 12.8
+Agent: 16; Utility: 16.25
+Agent: 17; Utility: 4.5
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 21.666666666666668
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 0.0
+Agent: 22; Utility: 15.0
+Agent: 23; Utility: 13.0
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 0.0
+Agent: 26; Utility: 0.0
+Agent: 27; Utility: 0.0
+Agent: 28; Utility: 0.0
+Agent: 29; Utility: 4.6
+Agent: 30; Utility: 0.0
+Agent: 31; Utility: 0.0
+Agent: 32; Utility: 0.0
+Agent: 33; Utility: 22.4
+Agent: 34; Utility: 33.0
+Agent: 35; Utility: 24.0
+Agent: 36; Utility: 2.0
+Agent: 37; Utility: 0.0
+Agent: 38; Utility: 0.0
+Agent: 39; Utility: 0.0
+Agent: 40; Utility: 12.8
+Agent: 41; Utility: 0.0
+Agent: 42; Utility: 13.5
+Agent: 43; Utility: 27.5
+Agent: 44; Utility: 0.0
+Agent: 45; Utility: 15.0
+Agent: 46; Utility: 0.0
+Agent: 47; Utility: 0.0
+Agent: 48; Utility: 0.0
+Agent: 49; Utility: 0.0
+Agent: 50; Utility: 15.333333333333334
+Agent: 51; Utility: 0.3333333333333333
+Agent: 52; Utility: 0.0
+Agent: 53; Utility: 0.0
+Agent: 54; Utility: 25.5
+Agent: 55; Utility: 0.0
+Agent: 56; Utility: 18.0
+Agent: 57; Utility: 0.0
+Agent: 58; Utility: 46.0
+Agent: 59; Utility: 28.4
+Agent: 60; Utility: 0.0
+Agent: 61; Utility: 0.0
+Agent: 62; Utility: 0.0
+Agent: 63; Utility: 20.333333333333332
+Agent: 64; Utility: 0.0
+Agent: 65; Utility: 23.0
+Agent: 66; Utility: 11.5
+Agent: 67; Utility: 0.0
+Agent: 68; Utility: 20.5
+Agent: 69; Utility: 0.0
+Agent: 70; Utility: 27.0
+Agent: 71; Utility: 0.0
+Agent: 72; Utility: 0.0
+Agent: 73; Utility: 0.0
+Agent: 74; Utility: 0.0
+Agent: 75; Utility: 0.0
+Agent: 76; Utility: 0.0
+Agent: 77; Utility: 5.75
+Agent: 78; Utility: 0.0
+Agent: 79; Utility: 61.333333333333336
+Agent: 80; Utility: 0.0
+Agent: 81; Utility: 0.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 0.0
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 14.2
+Agent: 87; Utility: 0.0
+Agent: 88; Utility: 0.0
+Agent: 89; Utility: 0.0
+Agent: 90; Utility: 6.666666666666667
+Agent: 91; Utility: 24.0
+Agent: 92; Utility: 44.5
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 6.5
+Agent: 95; Utility: 0.0
+Agent: 96; Utility: 1.5
+Agent: 97; Utility: 47.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 2.2
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 41.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 45.5
+Agent: 105; Utility: 23.2
+Agent: 106; Utility: 0.0
+Agent: 107; Utility: 0.0
+Agent: 108; Utility: 0.0
+Agent: 109; Utility: 22.25
+Agent: 110; Utility: 83.0
+Agent: 111; Utility: 30.666666666666668
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 12.4
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 27.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 0.0
+Agent: 119; Utility: 9.25
+Agent: 120; Utility: 0.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 34.5
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 18.75
+Agent: 126; Utility: 7.4
+Agent: 127; Utility: 0.0
+Agent: 128; Utility: 0.0
+Agent: 129; Utility: 35.5
+Agent: 130; Utility: 19.25
+Agent: 131; Utility: 39.0
+Agent: 132; Utility: 49.2
+Agent: 133; Utility: 0.0
+Agent: 134; Utility: 0.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 0.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 6.0
+Agent: 139; Utility: 0.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 32.0
+Agent: 142; Utility: 0.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 0.0
+Agent: 145; Utility: 0.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 91.0
+Agent: 150; Utility: 83.0
+Agent: 151; Utility: 61.4
+Agent: 152; Utility: 28.5
+Agent: 153; Utility: 99.0
+Agent: 154; Utility: 28.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 0.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 19.0
+Agent: 160; Utility: 0.0
+Agent: 161; Utility: 0.0
+Agent: 162; Utility: 24.0
+Agent: 163; Utility: 0.0
+Agent: 164; Utility: 0.0
+Agent: 165; Utility: 0.0
+Agent: 166; Utility: 0.0
+Agent: 167; Utility: 19.2
+Agent: 168; Utility: 0.0
+Agent: 169; Utility: 55.4
+Agent: 170; Utility: 0.0
+Agent: 171; Utility: 0.0
+Agent: 172; Utility: 23.5
+Agent: 173; Utility: 69.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 0.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 43.5
+Agent: 178; Utility: 37.0
+Agent: 179; Utility: 25.0
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 65.0
+Agent: 183; Utility: 0.0
+Agent: 184; Utility: 0.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 2.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 1.5
+Agent: 189; Utility: 0.0
+Agent: 190; Utility: 1.4
+Agent: 191; Utility: 19.0
+Agent: 192; Utility: 0.0
+Agent: 193; Utility: 13.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 0.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 0.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C13 ; 
+A2 -> C48 ; 
+A3 -> C165 ; 
+A4 -> C118 ; 
+A5 -> C175 ; 
+A6 -> C35 ; 
+A7 -> C83 ; 
+A8 -> C89 ; 
+A9 -> C97 ; 
+A10 -> C102 ; 
+A11 -> C155 ; 
+A12 -> C103 ; 
+A13 -> C154 ; 
+A14 -> C185 ; 
+A15 -> C106 ; 
+A16 -> C143 ; 
+A17 -> C182 ; 
+A18 -> C193 ; 
+A19 -> C192 ; 
+A20 -> C107 ; 
+A21 -> C50 ; 
+A22 -> C80 ; 
+A23 -> C114 ; 
+A24 -> C77 ; 
+A25 -> C181 ; 
+A26 -> C189 ; 
+A27 -> C161 ; 
+A28 -> C86 ; 
+A29 -> C128 ; 
+A30 -> C152 ; 
+A31 -> C113 ; 
+A32 -> C163 ; 
+A33 -> C145 ; 
+A34 -> C71 ; 
+A35 -> C166 ; 
+A36 -> C123 ; 
+A37 -> C182 ; 
+A38 -> C133 ; 
+A39 -> C121 ; 
+A40 -> C10 ; 
+A41 -> C155 ; 
+A42 -> C140 ; 
+A43 -> C124 ; 
+A44 -> C133 ; 
+A45 -> C95 ; 
+A46 -> C172 ; 
+A47 -> C167 ; 
+A48 -> C142 ; 
+A49 -> C147 ; 
+A50 -> C150 ; 
+A51 -> C111 ; 
+A52 -> C141 ; 
+A53 -> C9 ; 
+A54 -> C150 ; 
+A55 -> C44 ; 
+A56 -> C56 ; 
+A57 -> C78 ; 
+A58 -> C158 ; 
+A59 -> C33 ; 
+A60 -> C157 ; 
+A61 -> C92 ; 
+A62 -> C78 ; 
+A63 -> C171 ; 
+A64 -> C138 ; 
+A65 -> C144 ; 
+A66 -> C164 ; 
+A67 -> C168 ; 
+A68 -> C22 ; 
+A69 -> C176 ; 
+A70 -> C178 ; 
+A71 -> C56 ; 
+A72 -> C183 ; 
+A73 -> C15 ; 
+A74 -> C157 ; 
+A75 -> C101 ; 
+A76 -> C159 ; 
+A77 -> C68 ; 
+A78 -> C92 ; 
+A79 -> C156 ; 
+A80 -> C69 ; 
+A81 -> C177 ; 
+A82 -> C54 ; 
+A83 -> C194 ; 
+A84 -> C138 ; 
+A85 -> C129 ; 
+A86 -> C42 ; 
+A87 -> C189 ; 
+A88 -> C143 ; 
+A89 -> C165 ; 
+A90 -> C13 ; 
+A91 -> C188 ; 
+A92 -> C187 ; 
+A93 -> C105 ; 
+A94 -> C15 ; 
+A95 -> C194 ; 
+A96 -> C144 ; 
+A97 -> C46 ; 
+A98 -> C91 ; 
+A99 -> C101 ; 
+A100 -> C186 ; 
+A101 -> C190 ; 
+A102 -> C40 ; 
+A103 -> C112 ; 
+A104 -> C118 ; 
+A105 -> C132 ; 
+A106 -> C102 ; 
+A107 -> C100 ; 
+A108 -> C181 ; 
+A109 -> C68 ; 
+A110 -> C16 ; 
+A111 -> C123 ; 
+A112 -> C179 ; 
+A113 -> C193 ; 
+A114 -> C45 ; 
+A115 -> C47 ; 
+A116 -> C141 ; 
+A117 -> C191 ; 
+A118 -> C172 ; 
+A119 -> C127 ; 
+A120 -> C175 ; 
+A121 -> C57 ; 
+A122 -> C7 ; 
+A123 -> C21 ; 
+A124 -> C82 ; 
+A125 -> C192 ; 
+A126 -> C35 ; 
+A127 -> C113 ; 
+A128 -> C73 ; 
+A129 -> C12 ; 
+A130 -> C28 ; 
+A131 -> C4 ; 
+A132 -> C32 ; 
+A133 -> C168 ; 
+A134 -> C111 ; 
+A135 -> C164 ; 
+A136 -> C44 ; 
+A137 -> C62 ; 
+A138 -> C180 ; 
+A139 -> C140 ; 
+A140 -> C184 ; 
+A141 -> C75 ; 
+A142 -> C96 ; 
+A143 -> C47 ; 
+A144 -> C48 ; 
+A145 -> C159 ; 
+A146 -> C170 ; 
+A147 -> C53 ; 
+A148 -> C51 ; 
+A149 -> C22 ; 
+A150 -> C2 ; 
+A151 -> C153 ; 
+A152 -> C33 ; 
+A153 -> C20 ; 
+A154 -> C97 ; 
+A155 -> C29 ; 
+A156 -> C30 ; 
+A157 -> C171 ; 
+A158 -> C67 ; 
+A159 -> C89 ; 
+A160 -> C50 ; 
+A161 -> C177 ; 
+A162 -> C142 ; 
+A163 -> C185 ; 
+A164 -> C161 ; 
+A165 -> C80 ; 
+A166 -> C77 ; 
+A167 -> C67 ; 
+A168 -> C54 ; 
+A169 -> C31 ; 
+A170 -> C107 ; 
+A171 -> C178 ; 
+A172 -> C163 ; 
+A173 -> C6 ; 
+A174 -> C69 ; 
+A175 -> C114 ; 
+A176 -> C90 ; 
+A177 -> C176 ; 
+A178 -> C121 ; 
+A179 -> C9 ; 
+A180 -> C21 ; 
+A181 -> C79 ; 
+A182 -> C5 ; 
+A183 -> C158 ; 
+A184 -> C183 ; 
+A185 -> C60 ; 
+A186 -> C128 ; 
+A187 -> C58 ; 
+A188 -> C103 ; 
+A189 -> C156 ; 
+A190 -> C10 ; 
+A191 -> C28 ; 
+A192 -> C71 ; 
+A193 -> C151 ; 
+A194 -> C167 ; 
+A195 -> C166 ; 
+A196 -> C59 ; 
+A197 -> C116 ; 
+A198 -> C106 ; 
+A199 -> C63 ; 
+A200 -> C81 ; 
+}
+COALITIONS: 
+
+C1: A146, 
+C2: A150, 
+C3: A149, 
+C4: A131, A175, 
+C5: A179, A182, 
+C6: A173, 
+C7: A122, 
+C8: A141, A152, 
+C9: A53, A179, 
+C10: A40, A190, 
+C11: A135, 
+C12: A129, A172, 
+C13: A1, A90, 
+C14: A133, 
+C15: A73, A94, 
+C16: A110, A137, 
+C17: A190, 
+C18: A157, A195, 
+C19: A140, 
+C20: A153, A198, 
+C21: A123, A170, A180, 
+C22: A68, A149, 
+C23: A162, 
+C24: A146, 
+C25: A146, 
+C26: A165, 
+C27: A144, 
+C28: A130, A184, A191, 
+C29: A155, 
+C30: A156, 
+C31: A138, A144, A154, A169, 
+C32: A132, A190, 
+C33: A59, A152, 
+C34: A160, 
+C35: A6, A126, 
+C36: A155, 
+C37: A157, 
+C38: A146, 
+C39: A136, A166, 
+C40: A102, 
+C41: A188, 
+C42: A86, 
+C43: A139, 
+C44: A55, A136, 
+C45: A114, 
+C46: A97, 
+C47: A115, A143, 
+C48: A2, A144, 
+C49: A183, 
+C50: A21, A160, 
+C51: A148, 
+C52: A144, 
+C53: A147, 
+C54: A82, A168, 
+C55: A161, 
+C56: A56, A71, 
+C57: A121, 
+C58: A134, A187, 
+C59: A196, 
+C60: A185, 
+C61: A139, 
+C62: A137, 
+C63: A194, A199, 
+C64: A144, 
+C65: A192, 
+C66: A159, A189, 
+C67: A158, A167, 
+C68: A77, A109, 
+C69: A80, A174, 
+C70: A145, A178, 
+C71: A34, A192, 
+C72: A150, 
+C73: A128, 
+C74: A151, 
+C75: A141, 
+C76: A166, 
+C77: A24, A166, 
+C78: A57, A62, 
+C79: A163, A181, 
+C80: A22, A165, 
+C81: A200, 
+C82: A124, A140, 
+C83: A7, A171, 
+C84: A168, 
+C85: A177, A193, 
+C86: A28, A151, 
+C87: A157, 
+C88: A166, 
+C89: A8, A159, 
+C90: A164, A176, 
+C91: A98, 
+C92: A61, A78, 
+C93: A174, 
+C94: A148, A186, 
+C95: A45, A134, 
+C96: A142, A197, 
+C97: A9, A154, 
+C98: A171, 
+C99: A148, 
+C100: A107, 
+C101: A75, A99, 
+C102: A10, A106, 
+C103: A12, A188, 
+C104: A162, 
+C105: A93, 
+C106: A15, A198, 
+C107: A20, A170, 
+C108: A194, 
+C109: A174, 
+C110: A148, 
+C111: A51, A134, 
+C112: A103, 
+C113: A31, A127, 
+C114: A23, A175, 
+C115: A174, 
+C116: A197, 
+C117: A139, 
+C118: A4, A104, 
+C119: A140, 
+C120: A150, 
+C121: A39, A178, 
+C122: A140, 
+C123: A36, A111, 
+C124: A43, A197, 
+C125: A133, 
+C126: A157, 
+C127: A119, 
+C128: A29, A186, 
+C129: A85, 
+C130: A162, 
+C131: A171, 
+C132: A105, 
+C133: A38, A44, 
+C134: A195, 
+C135: A174, 
+C136: A195, 
+C137: A150, 
+C138: A64, A84, 
+C139: A151, 
+C140: A42, A139, 
+C141: A52, A116, 
+C142: A48, A162, 
+C143: A16, A88, 
+C144: A65, A96, 
+C145: A33, A150, 
+C146: A193, 
+C147: A49, A194, 
+C148: A151, 
+C149: 
+C150: A50, A54, 
+C151: A193, 
+C152: A30, A151, 
+C153: A151, 
+C154: A13, A148, 
+C155: A11, A41, 
+C156: A79, A189, 
+C157: A60, A74, 
+C158: A58, A183, 
+C159: A76, A145, 
+C160: 
+C161: A27, A164, 
+C162: A140, 
+C163: A32, A172, 
+C164: A66, A135, 
+C165: A3, A89, 
+C166: A35, A195, 
+C167: A47, A194, 
+C168: A67, A133, 
+C169: A151, 
+C170: A146, 
+C171: A63, A157, 
+C172: A46, A118, 
+C173: A163, 
+C174: A140, 
+C175: A5, A120, 
+C176: A69, A177, 
+C177: A81, A161, 
+C178: A70, A171, 
+C179: A112, 
+C180: A138, 
+C181: A25, A108, 
+C182: A17, A37, 
+C183: A72, A184, 
+C184: A140, 
+C185: A14, A163, 
+C186: A100, 
+C187: A92, 
+C188: A91, 
+C189: A26, A87, 
+C190: A101, 
+C191: A117, 
+C192: A19, A125, 
+C193: A18, A113, 
+C194: A83, A95, 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 86.0
+Agent: 2; Utility: 72.0
+Agent: 3; Utility: 85.0
+Agent: 4; Utility: 71.0
+Agent: 5; Utility: 78.0
+Agent: 6; Utility: 68.0
+Agent: 7; Utility: 81.0
+Agent: 8; Utility: 98.0
+Agent: 9; Utility: 81.0
+Agent: 10; Utility: 97.0
+Agent: 11; Utility: 96.0
+Agent: 12; Utility: 84.0
+Agent: 13; Utility: 64.0
+Agent: 14; Utility: 58.0
+Agent: 15; Utility: 83.0
+Agent: 16; Utility: 90.0
+Agent: 17; Utility: 74.0
+Agent: 18; Utility: 68.0
+Agent: 19; Utility: 96.0
+Agent: 20; Utility: 98.0
+Agent: 21; Utility: 78.0
+Agent: 22; Utility: 96.0
+Agent: 23; Utility: 99.0
+Agent: 24; Utility: 93.0
+Agent: 25; Utility: 65.0
+Agent: 26; Utility: 96.0
+Agent: 27; Utility: 86.0
+Agent: 28; Utility: 95.0
+Agent: 29; Utility: 51.0
+Agent: 30; Utility: 94.0
+Agent: 31; Utility: 71.0
+Agent: 32; Utility: 14.0
+Agent: 33; Utility: 24.0
+Agent: 34; Utility: 97.0
+Agent: 35; Utility: 76.0
+Agent: 36; Utility: 97.0
+Agent: 37; Utility: 76.0
+Agent: 38; Utility: 81.0
+Agent: 39; Utility: 99.0
+Agent: 40; Utility: 64.0
+Agent: 41; Utility: 48.0
+Agent: 42; Utility: 74.0
+Agent: 43; Utility: 75.0
+Agent: 44; Utility: 76.0
+Agent: 45; Utility: 96.0
+Agent: 46; Utility: 86.0
+Agent: 47; Utility: 68.0
+Agent: 48; Utility: 91.0
+Agent: 49; Utility: 96.0
+Agent: 50; Utility: 83.0
+Agent: 51; Utility: 96.0
+Agent: 52; Utility: 63.0
+Agent: 53; Utility: 84.0
+Agent: 54; Utility: 13.0
+Agent: 55; Utility: 73.0
+Agent: 56; Utility: 73.0
+Agent: 57; Utility: 70.0
+Agent: 58; Utility: 93.0
+Agent: 59; Utility: 99.0
+Agent: 60; Utility: 86.0
+Agent: 61; Utility: 86.0
+Agent: 62; Utility: 79.0
+Agent: 63; Utility: 58.0
+Agent: 64; Utility: 15.0
+Agent: 65; Utility: 75.0
+Agent: 66; Utility: 64.0
+Agent: 67; Utility: 99.0
+Agent: 68; Utility: 79.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 95.0
+Agent: 71; Utility: 55.0
+Agent: 72; Utility: 99.0
+Agent: 73; Utility: 91.0
+Agent: 74; Utility: 99.0
+Agent: 75; Utility: 98.0
+Agent: 76; Utility: 99.0
+Agent: 77; Utility: 84.0
+Agent: 78; Utility: 94.0
+Agent: 79; Utility: 87.0
+Agent: 80; Utility: 22.0
+Agent: 81; Utility: 21.0
+Agent: 82; Utility: 91.0
+Agent: 83; Utility: 61.0
+Agent: 84; Utility: 95.0
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 42.0
+Agent: 88; Utility: 86.0
+Agent: 89; Utility: 8.0
+Agent: 90; Utility: 95.0
+Agent: 91; Utility: 0.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 6.0
+Agent: 95; Utility: 4.0
+Agent: 96; Utility: 81.0
+Agent: 97; Utility: 0.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 70.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 68.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 98.0
+Agent: 107; Utility: 0.0
+Agent: 108; Utility: 52.0
+Agent: 109; Utility: 78.0
+Agent: 110; Utility: 83.0
+Agent: 111; Utility: 51.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 21.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 69.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 31.0
+Agent: 119; Utility: 0.0
+Agent: 120; Utility: 76.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 69.0
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 2.0
+Agent: 126; Utility: 26.0
+Agent: 127; Utility: 56.0
+Agent: 128; Utility: 0.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 37.0
+Agent: 131; Utility: 39.0
+Agent: 132; Utility: 80.0
+Agent: 133; Utility: 75.0
+Agent: 134; Utility: 36.0
+Agent: 135; Utility: 82.0
+Agent: 136; Utility: 44.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 0.0
+Agent: 139; Utility: 76.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 0.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 49.0
+Agent: 145; Utility: 24.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 10.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 72.0
+Agent: 153; Utility: 99.0
+Agent: 154; Utility: 72.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 84.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 64.0
+Agent: 160; Utility: 81.0
+Agent: 161; Utility: 8.0
+Agent: 162; Utility: 67.0
+Agent: 163; Utility: 59.0
+Agent: 164; Utility: 33.0
+Agent: 165; Utility: 67.0
+Agent: 166; Utility: 56.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 55.0
+Agent: 169; Utility: 68.66666666666667
+Agent: 170; Utility: 21.0
+Agent: 171; Utility: 34.0
+Agent: 172; Utility: 77.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 55.0
+Agent: 175; Utility: 66.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 58.0
+Agent: 178; Utility: 56.0
+Agent: 179; Utility: 95.0
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 89.0
+Agent: 183; Utility: 25.0
+Agent: 184; Utility: 1.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 41.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 52.0
+Agent: 189; Utility: 71.0
+Agent: 190; Utility: 7.0
+Agent: 191; Utility: 38.0
+Agent: 192; Utility: 99.0
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 97.0
+Agent: 195; Utility: 97.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 2.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+
+****************ISTANZA N. 3***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C54 ; 
+A2 -> C28 ; 
+A3 -> C19 ; 
+A4 -> C82 ; 
+A5 -> C13 ; 
+A6 -> C78 ; 
+A7 -> C49 ; 
+A8 -> C16 ; 
+A9 -> C56 ; 
+A10 -> C33 ; 
+A11 -> C97 ; 
+A12 -> C55 ; 
+A13 -> C97 ; 
+A14 -> C58 ; 
+A15 -> C61 ; 
+A16 -> C61 ; 
+A17 -> C91 ; 
+A18 -> C67 ; 
+A19 -> C17 ; 
+A20 -> C84 ; 
+A21 -> C38 ; 
+A22 -> C33 ; 
+A23 -> C13 ; 
+A24 -> C6 ; 
+A25 -> C51 ; 
+A26 -> C61 ; 
+A27 -> C96 ; 
+A28 -> C23 ; 
+A29 -> C30 ; 
+A30 -> C3 ; 
+A31 -> C10 ; 
+A32 -> C59 ; 
+A33 -> C39 ; 
+A34 -> C82 ; 
+A35 -> C68 ; 
+A36 -> C28 ; 
+A37 -> C85 ; 
+A38 -> C94 ; 
+A39 -> C41 ; 
+A40 -> C55 ; 
+A41 -> C95 ; 
+A42 -> C43 ; 
+A43 -> C32 ; 
+A44 -> C82 ; 
+A45 -> C33 ; 
+A46 -> C49 ; 
+A47 -> C12 ; 
+A48 -> C13 ; 
+A49 -> C46 ; 
+A50 -> C83 ; 
+A51 -> C16 ; 
+A52 -> C56 ; 
+A53 -> C76 ; 
+A54 -> C36 ; 
+A55 -> C21 ; 
+A56 -> C19 ; 
+A57 -> C22 ; 
+A58 -> C41 ; 
+A59 -> C24 ; 
+A60 -> C76 ; 
+A61 -> C34 ; 
+A62 -> C81 ; 
+A63 -> C8 ; 
+A64 -> C74 ; 
+A65 -> C27 ; 
+A66 -> C26 ; 
+A67 -> C64 ; 
+A68 -> C21 ; 
+A69 -> C93 ; 
+A70 -> C80 ; 
+A71 -> C18 ; 
+A72 -> C65 ; 
+A73 -> C44 ; 
+A74 -> C86 ; 
+A75 -> C71 ; 
+A76 -> C91 ; 
+A77 -> C66 ; 
+A78 -> C59 ; 
+A79 -> C37 ; 
+A80 -> C73 ; 
+A81 -> C81 ; 
+A82 -> C98 ; 
+A83 -> C30 ; 
+A84 -> C55 ; 
+A85 -> C62 ; 
+A86 -> C46 ; 
+A87 -> C44 ; 
+A88 -> C86 ; 
+A89 -> C62 ; 
+A90 -> C85 ; 
+A91 -> C83 ; 
+A92 -> C98 ; 
+A93 -> C77 ; 
+A94 -> C70 ; 
+A95 -> C34 ; 
+A96 -> C69 ; 
+A97 -> C59 ; 
+A98 -> C65 ; 
+A99 -> C41 ; 
+A100 -> C75 ; 
+A101 -> C60 ; 
+A102 -> C17 ; 
+A103 -> C15 ; 
+A104 -> C88 ; 
+A105 -> C67 ; 
+A106 -> C66 ; 
+A107 -> C50 ; 
+A108 -> C4 ; 
+A109 -> C72 ; 
+A110 -> C88 ; 
+A111 -> C16 ; 
+A112 -> C66 ; 
+A113 -> C60 ; 
+A114 -> C99 ; 
+A115 -> C44 ; 
+A116 -> C15 ; 
+A117 -> C17 ; 
+A118 -> C15 ; 
+A119 -> C19 ; 
+A120 -> C62 ; 
+A121 -> C65 ; 
+A122 -> C57 ; 
+A123 -> C95 ; 
+A124 -> C94 ; 
+A125 -> C56 ; 
+A126 -> C27 ; 
+A127 -> C15 ; 
+A128 -> C91 ; 
+A129 -> C91 ; 
+A130 -> C87 ; 
+A131 -> C77 ; 
+A132 -> C37 ; 
+A133 -> C10 ; 
+A134 -> C84 ; 
+A135 -> C49 ; 
+A136 -> C7 ; 
+A137 -> C98 ; 
+A138 -> C72 ; 
+A139 -> C47 ; 
+A140 -> C85 ; 
+A141 -> C23 ; 
+A142 -> C22 ; 
+A143 -> C27 ; 
+A144 -> C7 ; 
+A145 -> C87 ; 
+A146 -> C61 ; 
+A147 -> C92 ; 
+A148 -> C17 ; 
+A149 -> C80 ; 
+A150 -> C36 ; 
+A151 -> C6 ; 
+A152 -> C10 ; 
+A153 -> C98 ; 
+A154 -> C94 ; 
+A155 -> C34 ; 
+A156 -> C10 ; 
+A157 -> C100 ; 
+A158 -> C94 ; 
+A159 -> C22 ; 
+A160 -> C25 ; 
+A161 -> C21 ; 
+A162 -> C79 ; 
+A163 -> C35 ; 
+A164 -> C72 ; 
+A165 -> C27 ; 
+A166 -> C76 ; 
+A167 -> C35 ; 
+A168 -> C40 ; 
+A169 -> C5 ; 
+A170 -> C72 ; 
+A171 -> C19 ; 
+A172 -> C29 ; 
+A173 -> C12 ; 
+A174 -> C83 ; 
+A175 -> C30 ; 
+A176 -> C48 ; 
+A177 -> C37 ; 
+A178 -> C87 ; 
+A179 -> C41 ; 
+A180 -> C2 ; 
+A181 -> C33 ; 
+A182 -> C91 ; 
+A183 -> C84 ; 
+A184 -> C20 ; 
+A185 -> C17 ; 
+A186 -> C15 ; 
+A187 -> C38 ; 
+A188 -> C18 ; 
+A189 -> C71 ; 
+A190 -> C54 ; 
+A191 -> C70 ; 
+A192 -> C43 ; 
+A193 -> C93 ; 
+A194 -> C13 ; 
+A195 -> C15 ; 
+A196 -> C84 ; 
+A197 -> C76 ; 
+A198 -> C55 ; 
+A199 -> C21 ; 
+A200 -> C94 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A180, 
+C3: A30, 
+C4: A108, 
+C5: A169, 
+C6: A24, A151, 
+C7: A136, A144, 
+C8: A63, 
+C9: 
+C10: A31, A133, A152, A156, 
+C11: 
+C12: A47, A173, 
+C13: A5, A23, A48, A194, 
+C14: 
+C15: A103, A116, A118, A127, A186, A195, 
+C16: A8, A51, A111, 
+C17: A19, A102, A117, A148, A185, 
+C18: A71, A188, 
+C19: A3, A56, A119, A171, 
+C20: A184, 
+C21: A55, A68, A161, A199, 
+C22: A57, A142, A159, 
+C23: A28, A141, 
+C24: A59, 
+C25: A160, 
+C26: A66, 
+C27: A65, A126, A143, A165, 
+C28: A2, A36, 
+C29: A172, 
+C30: A29, A83, A175, 
+C31: 
+C32: A43, 
+C33: A10, A22, A45, A181, 
+C34: A61, A95, A155, 
+C35: A163, A167, 
+C36: A54, A150, 
+C37: A79, A132, A177, 
+C38: A21, A187, 
+C39: A33, 
+C40: A168, 
+C41: A39, A58, A99, A179, 
+C42: 
+C43: A42, A192, 
+C44: A73, A87, A115, 
+C45: 
+C46: A49, A86, 
+C47: A139, 
+C48: A176, 
+C49: A7, A46, A135, 
+C50: A107, 
+C51: A25, 
+C52: 
+C53: 
+C54: A1, A190, 
+C55: A12, A40, A84, A198, 
+C56: A9, A52, A125, 
+C57: A122, 
+C58: A14, 
+C59: A32, A78, A97, 
+C60: A101, A113, 
+C61: A15, A16, A26, A146, 
+C62: A85, A89, A120, 
+C63: 
+C64: A67, 
+C65: A72, A98, A121, 
+C66: A77, A106, A112, 
+C67: A18, A105, 
+C68: A35, 
+C69: A96, 
+C70: A94, A191, 
+C71: A75, A189, 
+C72: A109, A138, A164, A170, 
+C73: A80, 
+C74: A64, 
+C75: A100, 
+C76: A53, A60, A166, A197, 
+C77: A93, A131, 
+C78: A6, 
+C79: A162, 
+C80: A70, A149, 
+C81: A62, A81, 
+C82: A4, A34, A44, 
+C83: A50, A91, A174, 
+C84: A20, A134, A183, A196, 
+C85: A37, A90, A140, 
+C86: A74, A88, 
+C87: A130, A145, A178, 
+C88: A104, A110, 
+C89: 
+C90: 
+C91: A17, A76, A128, A129, A182, 
+C92: A147, 
+C93: A69, A193, 
+C94: A38, A124, A154, A158, A200, 
+C95: A41, A123, 
+C96: A27, 
+C97: A11, A13, 
+C98: A82, A92, A137, A153, 
+C99: A114, 
+C100: A157, 
+C101: 
+C102: 
+C103: 
+C104: 
+C105: 
+C106: 
+C107: 
+C108: 
+C109: 
+C110: 
+C111: 
+C112: 
+C113: 
+C114: 
+C115: 
+C116: 
+C117: 
+C118: 
+C119: 
+C120: 
+C121: 
+C122: 
+C123: 
+C124: 
+C125: 
+C126: 
+C127: 
+C128: 
+C129: 
+C130: 
+C131: 
+C132: 
+C133: 
+C134: 
+C135: 
+C136: 
+C137: 
+C138: 
+C139: 
+C140: 
+C141: 
+C142: 
+C143: 
+C144: 
+C145: 
+C146: 
+C147: 
+C148: 
+C149: 
+C150: 
+C151: 
+C152: 
+C153: 
+C154: 
+C155: 
+C156: 
+C157: 
+C158: 
+C159: 
+C160: 
+C161: 
+C162: 
+C163: 
+C164: 
+C165: 
+C166: 
+C167: 
+C168: 
+C169: 
+C170: 
+C171: 
+C172: 
+C173: 
+C174: 
+C175: 
+C176: 
+C177: 
+C178: 
+C179: 
+C180: 
+C181: 
+C182: 
+C183: 
+C184: 
+C185: 
+C186: 
+C187: 
+C188: 
+C189: 
+C190: 
+C191: 
+C192: 
+C193: 
+C194: 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 31.333333333333332
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 25.666666666666668
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 12.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 17.5
+Agent: 10; Utility: 0.0
+Agent: 11; Utility: 27.0
+Agent: 12; Utility: 10.0
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 1.0
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 26.0
+Agent: 21; Utility: 0.0
+Agent: 22; Utility: 50.333333333333336
+Agent: 23; Utility: 18.666666666666668
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 0.0
+Agent: 26; Utility: 36.666666666666664
+Agent: 27; Utility: 0.0
+Agent: 28; Utility: 29.0
+Agent: 29; Utility: 0.0
+Agent: 30; Utility: 0.0
+Agent: 31; Utility: 0.0
+Agent: 32; Utility: 61.5
+Agent: 33; Utility: 0.0
+Agent: 34; Utility: 19.5
+Agent: 35; Utility: 0.0
+Agent: 36; Utility: 0.0
+Agent: 37; Utility: 2.0
+Agent: 38; Utility: 3.75
+Agent: 39; Utility: 0.0
+Agent: 40; Utility: 17.333333333333332
+Agent: 41; Utility: 0.0
+Agent: 42; Utility: 0.0
+Agent: 43; Utility: 0.0
+Agent: 44; Utility: 0.0
+Agent: 45; Utility: 0.0
+Agent: 46; Utility: 48.5
+Agent: 47; Utility: 0.0
+Agent: 48; Utility: 5.0
+Agent: 49; Utility: 0.0
+Agent: 50; Utility: 0.0
+Agent: 51; Utility: 0.0
+Agent: 52; Utility: 0.0
+Agent: 53; Utility: 43.0
+Agent: 54; Utility: 0.0
+Agent: 55; Utility: 32.333333333333336
+Agent: 56; Utility: 0.0
+Agent: 57; Utility: 0.0
+Agent: 58; Utility: 32.666666666666664
+Agent: 59; Utility: 0.0
+Agent: 60; Utility: 11.666666666666666
+Agent: 61; Utility: 56.5
+Agent: 62; Utility: 0.0
+Agent: 63; Utility: 0.0
+Agent: 64; Utility: 0.0
+Agent: 65; Utility: 15.333333333333334
+Agent: 66; Utility: 0.0
+Agent: 67; Utility: 0.0
+Agent: 68; Utility: 3.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 0.0
+Agent: 71; Utility: 0.0
+Agent: 72; Utility: 0.0
+Agent: 73; Utility: 0.0
+Agent: 74; Utility: 0.0
+Agent: 75; Utility: 75.0
+Agent: 76; Utility: 0.0
+Agent: 77; Utility: 33.0
+Agent: 78; Utility: 33.5
+Agent: 79; Utility: 26.0
+Agent: 80; Utility: 0.0
+Agent: 81; Utility: 0.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 26.0
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 73.0
+Agent: 87; Utility: 20.0
+Agent: 88; Utility: 0.0
+Agent: 89; Utility: 0.0
+Agent: 90; Utility: 13.5
+Agent: 91; Utility: 45.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 0.0
+Agent: 95; Utility: 0.0
+Agent: 96; Utility: 0.0
+Agent: 97; Utility: 39.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 29.666666666666668
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 11.0
+Agent: 103; Utility: 26.2
+Agent: 104; Utility: 0.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 15.0
+Agent: 107; Utility: 0.0
+Agent: 108; Utility: 0.0
+Agent: 109; Utility: 6.666666666666667
+Agent: 110; Utility: 15.0
+Agent: 111; Utility: 0.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 2.6
+Agent: 117; Utility: 15.25
+Agent: 118; Utility: 31.0
+Agent: 119; Utility: 24.666666666666668
+Agent: 120; Utility: 0.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 2.25
+Agent: 125; Utility: 9.0
+Agent: 126; Utility: 1.0
+Agent: 127; Utility: 4.2
+Agent: 128; Utility: 16.75
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 24.333333333333332
+Agent: 134; Utility: 0.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 72.0
+Agent: 137; Utility: 42.0
+Agent: 138; Utility: 0.0
+Agent: 139; Utility: 0.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 1.0
+Agent: 143; Utility: 15.666666666666666
+Agent: 144; Utility: 0.0
+Agent: 145; Utility: 0.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 19.5
+Agent: 149; Utility: 0.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 3.6666666666666665
+Agent: 153; Utility: 24.0
+Agent: 154; Utility: 19.5
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 0.0
+Agent: 158; Utility: 17.75
+Agent: 159; Utility: 25.0
+Agent: 160; Utility: 0.0
+Agent: 161; Utility: 23.666666666666668
+Agent: 162; Utility: 0.0
+Agent: 163; Utility: 0.0
+Agent: 164; Utility: 29.333333333333332
+Agent: 165; Utility: 0.0
+Agent: 166; Utility: 10.666666666666666
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 0.0
+Agent: 169; Utility: 0.0
+Agent: 170; Utility: 19.0
+Agent: 171; Utility: 3.0
+Agent: 172; Utility: 0.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 0.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 9.5
+Agent: 178; Utility: 37.0
+Agent: 179; Utility: 1.3333333333333333
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 10.666666666666666
+Agent: 182; Utility: 0.0
+Agent: 183; Utility: 0.0
+Agent: 184; Utility: 0.0
+Agent: 185; Utility: 18.75
+Agent: 186; Utility: 6.4
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 0.0
+Agent: 189; Utility: 0.0
+Agent: 190; Utility: 0.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 0.0
+Agent: 193; Utility: 52.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 33.2
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 0.0
+Agent: 199; Utility: 9.333333333333334
+Agent: 200; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C9 ; 
+A2 -> C68 ; 
+A3 -> C196 ; 
+A4 -> C11 ; 
+A5 -> C112 ; 
+A6 -> C78 ; 
+A7 -> C102 ; 
+A8 -> C95 ; 
+A9 -> C123 ; 
+A10 -> C109 ; 
+A11 -> C178 ; 
+A12 -> C111 ; 
+A13 -> C115 ; 
+A14 -> C195 ; 
+A15 -> C107 ; 
+A16 -> C81 ; 
+A17 -> C176 ; 
+A18 -> C134 ; 
+A19 -> C184 ; 
+A20 -> C119 ; 
+A21 -> C144 ; 
+A22 -> C106 ; 
+A23 -> C124 ; 
+A24 -> C190 ; 
+A25 -> C175 ; 
+A26 -> C143 ; 
+A27 -> C127 ; 
+A28 -> C125 ; 
+A29 -> C50 ; 
+A30 -> C154 ; 
+A31 -> C197 ; 
+A32 -> C193 ; 
+A33 -> C89 ; 
+A34 -> C39 ; 
+A35 -> C31 ; 
+A36 -> C139 ; 
+A37 -> C97 ; 
+A38 -> C74 ; 
+A39 -> C133 ; 
+A40 -> C67 ; 
+A41 -> C178 ; 
+A42 -> C62 ; 
+A43 -> C116 ; 
+A44 -> C74 ; 
+A45 -> C122 ; 
+A46 -> C134 ; 
+A47 -> C0 ; 
+A48 -> C146 ; 
+A49 -> C56 ; 
+A50 -> C137 ; 
+A51 -> C64 ; 
+A52 -> C157 ; 
+A53 -> C60 ; 
+A54 -> C137 ; 
+A55 -> C1 ; 
+A56 -> C142 ; 
+A57 -> C149 ; 
+A58 -> C41 ; 
+A59 -> C99 ; 
+A60 -> C148 ; 
+A61 -> C34 ; 
+A62 -> C149 ; 
+A63 -> C0 ; 
+A64 -> C198 ; 
+A65 -> C156 ; 
+A66 -> C192 ; 
+A67 -> C160 ; 
+A68 -> C164 ; 
+A69 -> C170 ; 
+A70 -> C172 ; 
+A71 -> C142 ; 
+A72 -> C179 ; 
+A73 -> C28 ; 
+A74 -> C148 ; 
+A75 -> C75 ; 
+A76 -> C131 ; 
+A77 -> C66 ; 
+A78 -> C186 ; 
+A79 -> C188 ; 
+A80 -> C117 ; 
+A81 -> C120 ; 
+A82 -> C191 ; 
+A83 -> C59 ; 
+A84 -> C130 ; 
+A85 -> C130 ; 
+A86 -> C97 ; 
+A87 -> C189 ; 
+A88 -> C81 ; 
+A89 -> C177 ; 
+A90 -> C9 ; 
+A91 -> C177 ; 
+A92 -> C183 ; 
+A93 -> C121 ; 
+A94 -> C28 ; 
+A95 -> C59 ; 
+A96 -> C0 ; 
+A97 -> C143 ; 
+A98 -> C65 ; 
+A99 -> C75 ; 
+A100 -> C199 ; 
+A101 -> C187 ; 
+A102 -> C200 ; 
+A103 -> C15 ; 
+A104 -> C11 ; 
+A105 -> C182 ; 
+A106 -> C109 ; 
+A107 -> C198 ; 
+A108 -> C175 ; 
+A109 -> C66 ; 
+A110 -> C123 ; 
+A111 -> C139 ; 
+A112 -> C173 ; 
+A113 -> C57 ; 
+A114 -> C166 ; 
+A115 -> C44 ; 
+A116 -> C157 ; 
+A117 -> C171 ; 
+A118 -> C197 ; 
+A119 -> C19 ; 
+A120 -> C112 ; 
+A121 -> C65 ; 
+A122 -> C1 ; 
+A123 -> C90 ; 
+A124 -> C94 ; 
+A125 -> C184 ; 
+A126 -> C78 ; 
+A127 -> C196 ; 
+A128 -> C189 ; 
+A129 -> C91 ; 
+A130 -> C103 ; 
+A131 -> C77 ; 
+A132 -> C185 ; 
+A133 -> C160 ; 
+A134 -> C64 ; 
+A135 -> C161 ; 
+A136 -> C7 ; 
+A137 -> C167 ; 
+A138 -> C174 ; 
+A139 -> C62 ; 
+A140 -> C151 ; 
+A141 -> C101 ; 
+A142 -> C22 ; 
+A143 -> C27 ; 
+A144 -> C68 ; 
+A145 -> C131 ; 
+A146 -> C165 ; 
+A147 -> C92 ; 
+A148 -> C51 ; 
+A149 -> C164 ; 
+A150 -> C4 ; 
+A151 -> C69 ; 
+A152 -> C99 ; 
+A153 -> C162 ; 
+A154 -> C105 ; 
+A155 -> C126 ; 
+A156 -> C10 ; 
+A157 -> C0 ; 
+A158 -> C94 ; 
+A159 -> C95 ; 
+A160 -> C144 ; 
+A161 -> C21 ; 
+A162 -> C146 ; 
+A163 -> C195 ; 
+A164 -> C127 ; 
+A165 -> C106 ; 
+A166 -> C190 ; 
+A167 -> C35 ; 
+A168 -> C191 ; 
+A169 -> C176 ; 
+A170 -> C119 ; 
+A171 -> C172 ; 
+A172 -> C193 ; 
+A173 -> C12 ; 
+A174 -> C117 ; 
+A175 -> C124 ; 
+A176 -> C48 ; 
+A177 -> C170 ; 
+A178 -> C133 ; 
+A179 -> C60 ; 
+A180 -> C2 ; 
+A181 -> C33 ; 
+A182 -> C153 ; 
+A183 -> C84 ; 
+A184 -> C179 ; 
+A185 -> C17 ; 
+A186 -> C50 ; 
+A187 -> C38 ; 
+A188 -> C111 ; 
+A189 -> C188 ; 
+A190 -> C67 ; 
+A191 -> C70 ; 
+A192 -> C39 ; 
+A193 -> C93 ; 
+A194 -> C159 ; 
+A195 -> C31 ; 
+A196 -> C84 ; 
+A197 -> C88 ; 
+A198 -> C107 ; 
+A199 -> C21 ; 
+A200 -> C94 ; 
+}
+COALITIONS: 
+
+C1: A55, A122, 
+C2: A180, 
+C3: A194, 
+C4: A150, 
+C5: A169, 
+C6: A151, 
+C7: A136, A144, 
+C8: A140, 
+C9: A1, A90, 
+C10: A133, A152, A156, 
+C11: A4, A104, 
+C12: A173, 
+C13: A194, 
+C14: A162, 
+C15: A103, A186, A195, 
+C16: A174, 
+C17: A148, A185, 
+C18: A188, 
+C19: A119, A171, 
+C20: A184, 
+C21: A161, A199, 
+C22: A142, A159, 
+C23: A141, 
+C24: A190, 
+C25: A160, 
+C26: A174, 
+C27: A143, A165, 
+C28: A73, A94, 
+C29: A172, 
+C30: A175, 
+C31: A35, A195, 
+C32: A140, 
+C33: A181, 
+C34: A61, A155, 
+C35: A163, A167, 
+C36: A150, 
+C37: A132, A177, 
+C38: A187, 
+C39: A34, A192, 
+C40: A168, 
+C41: A58, A179, 
+C42: A151, 
+C43: A192, 
+C44: A115, 
+C45: A157, 
+C46: A146, 
+C47: A139, 
+C48: A176, 
+C49: A135, 
+C50: A29, A186, 
+C51: A148, 
+C52: A148, 
+C53: A144, 
+C54: A190, 
+C55: A198, 
+C56: A49, A194, 
+C57: A113, 
+C58: A166, 
+C59: A83, A95, 
+C60: A53, A179, 
+C61: A146, 
+C62: A42, A139, 
+C63: A144, 
+C64: A51, A134, 
+C65: A98, A121, 
+C66: A77, A109, 
+C67: A40, A190, 
+C68: A2, A144, 
+C69: A151, 
+C70: A191, 
+C71: A189, 
+C72: A138, A164, A170, 
+C73: A138, 
+C74: A38, A44, 
+C75: A75, A99, 
+C76: A166, A197, 
+C77: A131, 
+C78: A6, A126, 
+C79: A162, 
+C80: A149, 
+C81: A16, A88, 
+C82: A146, 
+C83: A174, 
+C84: A134, A183, A196, 
+C85: A140, 
+C86: A139, 
+C87: A130, A145, A178, 
+C88: A197, 
+C89: A33, A150, 
+C90: A123, 
+C91: A128, A129, A182, 
+C92: A147, 
+C93: A193, 
+C94: A124, A154, A158, A200, 
+C95: A8, A159, 
+C96: A197, 
+C97: A37, A86, 
+C98: A137, A153, 
+C99: A59, A152, 
+C100: A157, 
+C101: A141, 
+C102: A7, A171, 
+C103: A130, 
+C104: A166, 
+C105: A154, 
+C106: A22, A165, 
+C107: A15, A198, 
+C108: A157, 
+C109: A10, A106, 
+C110: A157, 
+C111: A12, A188, 
+C112: A5, A120, 
+C113: A146, 
+C114: A139, 
+C115: A13, A162, 
+C116: A43, A197, 
+C117: A80, A174, 
+C118: A169, 
+C119: A20, A170, 
+C120: A81, 
+C121: A93, 
+C122: A45, A134, 
+C123: A9, A110, 
+C124: A23, A175, 
+C125: A28, A151, 
+C126: A155, 
+C127: A27, A164, 
+C128: A151, 
+C129: A174, 
+C130: A84, A85, 
+C131: A76, A145, 
+C132: A150, 
+C133: A39, A178, 
+C134: A18, A46, 
+C135: A169, 
+C136: A195, 
+C137: A50, A54, 
+C138: A146, 
+C139: A36, A111, 
+C140: A157, 
+C141: A140, 
+C142: A56, A71, 
+C143: A26, A97, 
+C144: A21, A160, 
+C145: A182, 
+C146: A48, A162, 
+C147: A151, 
+C148: A60, A74, 
+C149: A57, A62, 
+C150: A195, 
+C151: A140, 
+C152: A151, 
+C153: A182, 
+C154: A30, A151, 
+C155: A151, 
+C156: A65, 
+C157: A52, A116, 
+C158: A195, 
+C159: A194, 
+C160: A67, A133, 
+C161: A135, 
+C162: A153, 
+C163: A169, 
+C164: A68, A149, 
+C165: A146, 
+C166: A114, 
+C167: A137, 
+C168: A163, 
+C169: A140, 
+C170: A69, A177, 
+C171: A117, 
+C172: A70, A171, 
+C173: A112, 
+C174: A138, 
+C175: A25, A108, 
+C176: A17, A169, 
+C177: A89, A91, 
+C178: A11, A41, 
+C179: A72, A184, 
+C180: A140, 
+C181: A163, 
+C182: A105, 
+C183: A92, 
+C184: A19, A125, 
+C185: A132, 
+C186: A78, A168, 
+C187: A101, 
+C188: A79, A189, 
+C189: A87, A128, 
+C190: A24, A166, 
+C191: A82, A168, 
+C192: A66, 
+C193: A32, A172, 
+C194: A157, 
+C195: A14, A163, 
+C196: A3, A127, 
+C197: A31, A118, 
+C198: A64, A107, 
+C199: A100, 
+C200: A102, 
+
+ AGENTS:
+Agent: 1; Utility: 86.0
+Agent: 2; Utility: 72.0
+Agent: 3; Utility: 80.0
+Agent: 4; Utility: 71.0
+Agent: 5; Utility: 78.0
+Agent: 6; Utility: 68.0
+Agent: 7; Utility: 81.0
+Agent: 8; Utility: 98.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 97.0
+Agent: 11; Utility: 96.0
+Agent: 12; Utility: 84.0
+Agent: 13; Utility: 79.0
+Agent: 14; Utility: 58.0
+Agent: 15; Utility: 83.0
+Agent: 16; Utility: 90.0
+Agent: 17; Utility: 87.0
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 96.0
+Agent: 20; Utility: 98.0
+Agent: 21; Utility: 78.0
+Agent: 22; Utility: 96.0
+Agent: 23; Utility: 99.0
+Agent: 24; Utility: 93.0
+Agent: 25; Utility: 65.0
+Agent: 26; Utility: 77.0
+Agent: 27; Utility: 86.0
+Agent: 28; Utility: 95.0
+Agent: 29; Utility: 51.0
+Agent: 30; Utility: 94.0
+Agent: 31; Utility: 69.0
+Agent: 32; Utility: 14.0
+Agent: 33; Utility: 24.0
+Agent: 34; Utility: 97.0
+Agent: 35; Utility: 76.0
+Agent: 36; Utility: 97.0
+Agent: 37; Utility: 71.0
+Agent: 38; Utility: 81.0
+Agent: 39; Utility: 99.0
+Agent: 40; Utility: 64.0
+Agent: 41; Utility: 48.0
+Agent: 42; Utility: 74.0
+Agent: 43; Utility: 75.0
+Agent: 44; Utility: 76.0
+Agent: 45; Utility: 96.0
+Agent: 46; Utility: 59.0
+Agent: 47; Utility: 24.333333333333332
+Agent: 48; Utility: 91.0
+Agent: 49; Utility: 96.0
+Agent: 50; Utility: 83.0
+Agent: 51; Utility: 96.0
+Agent: 52; Utility: 63.0
+Agent: 53; Utility: 84.0
+Agent: 54; Utility: 13.0
+Agent: 55; Utility: 53.0
+Agent: 56; Utility: 73.0
+Agent: 57; Utility: 70.0
+Agent: 58; Utility: 98.0
+Agent: 59; Utility: 99.0
+Agent: 60; Utility: 86.0
+Agent: 61; Utility: 96.0
+Agent: 62; Utility: 79.0
+Agent: 63; Utility: 19.333333333333332
+Agent: 64; Utility: 87.0
+Agent: 65; Utility: 0.0
+Agent: 66; Utility: 0.0
+Agent: 67; Utility: 99.0
+Agent: 68; Utility: 79.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 95.0
+Agent: 71; Utility: 55.0
+Agent: 72; Utility: 99.0
+Agent: 73; Utility: 91.0
+Agent: 74; Utility: 99.0
+Agent: 75; Utility: 98.0
+Agent: 76; Utility: 99.0
+Agent: 77; Utility: 84.0
+Agent: 78; Utility: 83.0
+Agent: 79; Utility: 87.0
+Agent: 80; Utility: 22.0
+Agent: 81; Utility: 0.0
+Agent: 82; Utility: 91.0
+Agent: 83; Utility: 61.0
+Agent: 84; Utility: 85.0
+Agent: 85; Utility: 91.0
+Agent: 86; Utility: 94.0
+Agent: 87; Utility: 55.0
+Agent: 88; Utility: 86.0
+Agent: 89; Utility: 48.0
+Agent: 90; Utility: 95.0
+Agent: 91; Utility: 55.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 6.0
+Agent: 95; Utility: 4.0
+Agent: 96; Utility: 24.666666666666668
+Agent: 97; Utility: 30.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 70.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 32.5
+Agent: 104; Utility: 68.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 98.0
+Agent: 107; Utility: 69.0
+Agent: 108; Utility: 52.0
+Agent: 109; Utility: 78.0
+Agent: 110; Utility: 74.0
+Agent: 111; Utility: 51.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 69.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 42.0
+Agent: 119; Utility: 74.0
+Agent: 120; Utility: 76.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 85.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 3.0
+Agent: 125; Utility: 2.0
+Agent: 126; Utility: 26.0
+Agent: 127; Utility: 88.0
+Agent: 128; Utility: 38.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 75.0
+Agent: 134; Utility: 36.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 72.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 0.0
+Agent: 139; Utility: 76.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 2.0
+Agent: 143; Utility: 47.0
+Agent: 144; Utility: 49.0
+Agent: 145; Utility: 24.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 10.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 72.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 0.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 28.0
+Agent: 158; Utility: 23.666666666666668
+Agent: 159; Utility: 64.0
+Agent: 160; Utility: 81.0
+Agent: 161; Utility: 71.0
+Agent: 162; Utility: 67.0
+Agent: 163; Utility: 59.0
+Agent: 164; Utility: 33.0
+Agent: 165; Utility: 67.0
+Agent: 166; Utility: 56.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 55.0
+Agent: 169; Utility: 61.0
+Agent: 170; Utility: 21.0
+Agent: 171; Utility: 34.0
+Agent: 172; Utility: 77.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 55.0
+Agent: 175; Utility: 66.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 58.0
+Agent: 178; Utility: 56.0
+Agent: 179; Utility: 95.0
+Agent: 180; Utility: 0.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 0.0
+Agent: 183; Utility: 0.0
+Agent: 184; Utility: 1.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 41.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 52.0
+Agent: 189; Utility: 71.0
+Agent: 190; Utility: 7.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 99.0
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 97.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 2.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+
+****************ISTANZA N. 4***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C84 ; 
+A2 -> C13 ; 
+A3 -> C58 ; 
+A4 -> C99 ; 
+A5 -> C96 ; 
+A6 -> C90 ; 
+A7 -> C19 ; 
+A8 -> C92 ; 
+A9 -> C71 ; 
+A10 -> C29 ; 
+A11 -> C29 ; 
+A12 -> C26 ; 
+A13 -> C71 ; 
+A14 -> C2 ; 
+A15 -> C33 ; 
+A16 -> C19 ; 
+A17 -> C47 ; 
+A18 -> C48 ; 
+A19 -> C22 ; 
+A20 -> C85 ; 
+A21 -> C16 ; 
+A22 -> C18 ; 
+A23 -> C23 ; 
+A24 -> C9 ; 
+A25 -> C4 ; 
+A26 -> C20 ; 
+A27 -> C29 ; 
+A28 -> C7 ; 
+A29 -> C55 ; 
+A30 -> C24 ; 
+A31 -> C32 ; 
+A32 -> C19 ; 
+A33 -> C79 ; 
+A34 -> C10 ; 
+A35 -> C27 ; 
+A36 -> C95 ; 
+A37 -> C93 ; 
+A38 -> C49 ; 
+A39 -> C96 ; 
+A40 -> C49 ; 
+A41 -> C72 ; 
+A42 -> C89 ; 
+A43 -> C50 ; 
+A44 -> C89 ; 
+A45 -> C6 ; 
+A46 -> C68 ; 
+A47 -> C87 ; 
+A48 -> C87 ; 
+A49 -> C52 ; 
+A50 -> C52 ; 
+A51 -> C4 ; 
+A52 -> C93 ; 
+A53 -> C35 ; 
+A54 -> C12 ; 
+A55 -> C59 ; 
+A56 -> C24 ; 
+A57 -> C93 ; 
+A58 -> C56 ; 
+A59 -> C63 ; 
+A60 -> C2 ; 
+A61 -> C11 ; 
+A62 -> C93 ; 
+A63 -> C22 ; 
+A64 -> C85 ; 
+A65 -> C2 ; 
+A66 -> C82 ; 
+A67 -> C64 ; 
+A68 -> C92 ; 
+A69 -> C18 ; 
+A70 -> C62 ; 
+A71 -> C12 ; 
+A72 -> C66 ; 
+A73 -> C90 ; 
+A74 -> C14 ; 
+A75 -> C47 ; 
+A76 -> C39 ; 
+A77 -> C36 ; 
+A78 -> C36 ; 
+A79 -> C38 ; 
+A80 -> C71 ; 
+A81 -> C22 ; 
+A82 -> C43 ; 
+A83 -> C91 ; 
+A84 -> C62 ; 
+A85 -> C46 ; 
+A86 -> C77 ; 
+A87 -> C43 ; 
+A88 -> C16 ; 
+A89 -> C64 ; 
+A90 -> C89 ; 
+A91 -> C98 ; 
+A92 -> C82 ; 
+A93 -> C21 ; 
+A94 -> C3 ; 
+A95 -> C65 ; 
+A96 -> C88 ; 
+A97 -> C41 ; 
+A98 -> C64 ; 
+A99 -> C4 ; 
+A100 -> C18 ; 
+A101 -> C32 ; 
+A102 -> C35 ; 
+A103 -> C61 ; 
+A104 -> C56 ; 
+A105 -> C33 ; 
+A106 -> C24 ; 
+A107 -> C13 ; 
+A108 -> C40 ; 
+A109 -> C24 ; 
+A110 -> C28 ; 
+A111 -> C28 ; 
+A112 -> C60 ; 
+A113 -> C3 ; 
+A114 -> C26 ; 
+A115 -> C85 ; 
+A116 -> C90 ; 
+A117 -> C27 ; 
+A118 -> C84 ; 
+A119 -> C41 ; 
+A120 -> C39 ; 
+A121 -> C84 ; 
+A122 -> C40 ; 
+A123 -> C86 ; 
+A124 -> C28 ; 
+A125 -> C33 ; 
+A126 -> C61 ; 
+A127 -> C63 ; 
+A128 -> C96 ; 
+A129 -> C92 ; 
+A130 -> C14 ; 
+A131 -> C90 ; 
+A132 -> C47 ; 
+A133 -> C51 ; 
+A134 -> C1 ; 
+A135 -> C4 ; 
+A136 -> C90 ; 
+A137 -> C11 ; 
+A138 -> C43 ; 
+A139 -> C57 ; 
+A140 -> C32 ; 
+A141 -> C54 ; 
+A142 -> C97 ; 
+A143 -> C27 ; 
+A144 -> C96 ; 
+A145 -> C54 ; 
+A146 -> C70 ; 
+A147 -> C93 ; 
+A148 -> C34 ; 
+A149 -> C94 ; 
+A150 -> C32 ; 
+A151 -> C94 ; 
+A152 -> C71 ; 
+A153 -> C17 ; 
+A154 -> C71 ; 
+A155 -> C39 ; 
+A156 -> C33 ; 
+A157 -> C13 ; 
+A158 -> C67 ; 
+A159 -> C72 ; 
+A160 -> C49 ; 
+A161 -> C76 ; 
+A162 -> C95 ; 
+A163 -> C53 ; 
+A164 -> C26 ; 
+A165 -> C58 ; 
+A166 -> C24 ; 
+A167 -> C36 ; 
+A168 -> C74 ; 
+A169 -> C99 ; 
+A170 -> C18 ; 
+A171 -> C40 ; 
+A172 -> C72 ; 
+A173 -> C16 ; 
+A174 -> C11 ; 
+A175 -> C48 ; 
+A176 -> C83 ; 
+A177 -> C80 ; 
+A178 -> C32 ; 
+A179 -> C97 ; 
+A180 -> C43 ; 
+A181 -> C95 ; 
+A182 -> C54 ; 
+A183 -> C74 ; 
+A184 -> C20 ; 
+A185 -> C16 ; 
+A186 -> C30 ; 
+A187 -> C46 ; 
+A188 -> C63 ; 
+A189 -> C32 ; 
+A190 -> C79 ; 
+A191 -> C75 ; 
+A192 -> C95 ; 
+A193 -> C64 ; 
+A194 -> C89 ; 
+A195 -> C2 ; 
+A196 -> C65 ; 
+A197 -> C69 ; 
+A198 -> C47 ; 
+A199 -> C63 ; 
+A200 -> C98 ; 
+}
+COALITIONS: 
+
+C1: A134, 
+C2: A14, A60, A65, A195, 
+C3: A94, A113, 
+C4: A25, A51, A99, A135, 
+C5: 
+C6: A45, 
+C7: A28, 
+C8: 
+C9: A24, 
+C10: A34, 
+C11: A61, A137, A174, 
+C12: A54, A71, 
+C13: A2, A107, A157, 
+C14: A74, A130, 
+C15: 
+C16: A21, A88, A173, A185, 
+C17: A153, 
+C18: A22, A69, A100, A170, 
+C19: A7, A16, A32, 
+C20: A26, A184, 
+C21: A93, 
+C22: A19, A63, A81, 
+C23: A23, 
+C24: A30, A56, A106, A109, A166, 
+C25: 
+C26: A12, A114, A164, 
+C27: A35, A117, A143, 
+C28: A110, A111, A124, 
+C29: A10, A11, A27, 
+C30: A186, 
+C31: 
+C32: A31, A101, A140, A150, A178, A189, 
+C33: A15, A105, A125, A156, 
+C34: A148, 
+C35: A53, A102, 
+C36: A77, A78, A167, 
+C37: 
+C38: A79, 
+C39: A76, A120, A155, 
+C40: A108, A122, A171, 
+C41: A97, A119, 
+C42: 
+C43: A82, A87, A138, A180, 
+C44: 
+C45: 
+C46: A85, A187, 
+C47: A17, A75, A132, A198, 
+C48: A18, A175, 
+C49: A38, A40, A160, 
+C50: A43, 
+C51: A133, 
+C52: A49, A50, 
+C53: A163, 
+C54: A141, A145, A182, 
+C55: A29, 
+C56: A58, A104, 
+C57: A139, 
+C58: A3, A165, 
+C59: A55, 
+C60: A112, 
+C61: A103, A126, 
+C62: A70, A84, 
+C63: A59, A127, A188, A199, 
+C64: A67, A89, A98, A193, 
+C65: A95, A196, 
+C66: A72, 
+C67: A158, 
+C68: A46, 
+C69: A197, 
+C70: A146, 
+C71: A9, A13, A80, A152, A154, 
+C72: A41, A159, A172, 
+C73: 
+C74: A168, A183, 
+C75: A191, 
+C76: A161, 
+C77: A86, 
+C78: 
+C79: A33, A190, 
+C80: A177, 
+C81: 
+C82: A66, A92, 
+C83: A176, 
+C84: A1, A118, A121, 
+C85: A20, A64, A115, 
+C86: A123, 
+C87: A47, A48, 
+C88: A96, 
+C89: A42, A44, A90, A194, 
+C90: A6, A73, A116, A131, A136, 
+C91: A83, 
+C92: A8, A68, A129, 
+C93: A37, A52, A57, A62, A147, 
+C94: A149, A151, 
+C95: A36, A162, A181, A192, 
+C96: A5, A39, A128, A144, 
+C97: A142, A179, 
+C98: A91, A200, 
+C99: A4, A169, 
+C100: 
+C101: 
+C102: 
+C103: 
+C104: 
+C105: 
+C106: 
+C107: 
+C108: 
+C109: 
+C110: 
+C111: 
+C112: 
+C113: 
+C114: 
+C115: 
+C116: 
+C117: 
+C118: 
+C119: 
+C120: 
+C121: 
+C122: 
+C123: 
+C124: 
+C125: 
+C126: 
+C127: 
+C128: 
+C129: 
+C130: 
+C131: 
+C132: 
+C133: 
+C134: 
+C135: 
+C136: 
+C137: 
+C138: 
+C139: 
+C140: 
+C141: 
+C142: 
+C143: 
+C144: 
+C145: 
+C146: 
+C147: 
+C148: 
+C149: 
+C150: 
+C151: 
+C152: 
+C153: 
+C154: 
+C155: 
+C156: 
+C157: 
+C158: 
+C159: 
+C160: 
+C161: 
+C162: 
+C163: 
+C164: 
+C165: 
+C166: 
+C167: 
+C168: 
+C169: 
+C170: 
+C171: 
+C172: 
+C173: 
+C174: 
+C175: 
+C176: 
+C177: 
+C178: 
+C179: 
+C180: 
+C181: 
+C182: 
+C183: 
+C184: 
+C185: 
+C186: 
+C187: 
+C188: 
+C189: 
+C190: 
+C191: 
+C192: 
+C193: 
+C194: 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 13.25
+Agent: 7; Utility: 0.0
+Agent: 8; Utility: 0.0
+Agent: 9; Utility: 31.75
+Agent: 10; Utility: 4.5
+Agent: 11; Utility: 0.0
+Agent: 12; Utility: 17.0
+Agent: 13; Utility: 0.0
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 13.666666666666666
+Agent: 16; Utility: 73.5
+Agent: 17; Utility: 0.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 30.5
+Agent: 21; Utility: 29.666666666666668
+Agent: 22; Utility: 26.666666666666668
+Agent: 23; Utility: 0.0
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 0.0
+Agent: 26; Utility: 0.0
+Agent: 27; Utility: 13.5
+Agent: 28; Utility: 0.0
+Agent: 29; Utility: 0.0
+Agent: 30; Utility: 21.25
+Agent: 31; Utility: 18.4
+Agent: 32; Utility: 6.0
+Agent: 33; Utility: 0.0
+Agent: 34; Utility: 0.0
+Agent: 35; Utility: 0.0
+Agent: 36; Utility: 33.333333333333336
+Agent: 37; Utility: 22.25
+Agent: 38; Utility: 0.0
+Agent: 39; Utility: 15.0
+Agent: 40; Utility: 0.0
+Agent: 41; Utility: 40.5
+Agent: 42; Utility: 18.0
+Agent: 43; Utility: 0.0
+Agent: 44; Utility: 11.666666666666666
+Agent: 45; Utility: 0.0
+Agent: 46; Utility: 0.0
+Agent: 47; Utility: 0.0
+Agent: 48; Utility: 50.0
+Agent: 49; Utility: 31.0
+Agent: 50; Utility: 0.0
+Agent: 51; Utility: 0.0
+Agent: 52; Utility: 0.0
+Agent: 53; Utility: 0.0
+Agent: 54; Utility: 0.0
+Agent: 55; Utility: 0.0
+Agent: 56; Utility: 21.5
+Agent: 57; Utility: 17.5
+Agent: 58; Utility: 0.0
+Agent: 59; Utility: 0.0
+Agent: 60; Utility: 23.666666666666668
+Agent: 61; Utility: 0.0
+Agent: 62; Utility: 19.75
+Agent: 63; Utility: 6.0
+Agent: 64; Utility: 0.0
+Agent: 65; Utility: 17.0
+Agent: 66; Utility: 0.0
+Agent: 67; Utility: 0.0
+Agent: 68; Utility: 46.5
+Agent: 69; Utility: 18.333333333333332
+Agent: 70; Utility: 0.0
+Agent: 71; Utility: 0.0
+Agent: 72; Utility: 0.0
+Agent: 73; Utility: 23.0
+Agent: 74; Utility: 87.0
+Agent: 75; Utility: 0.0
+Agent: 76; Utility: 0.0
+Agent: 77; Utility: 28.0
+Agent: 78; Utility: 0.0
+Agent: 79; Utility: 0.0
+Agent: 80; Utility: 28.75
+Agent: 81; Utility: 0.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 0.0
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 0.0
+Agent: 88; Utility: 27.666666666666668
+Agent: 89; Utility: 23.0
+Agent: 90; Utility: 21.0
+Agent: 91; Utility: 22.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 0.0
+Agent: 95; Utility: 0.0
+Agent: 96; Utility: 0.0
+Agent: 97; Utility: 78.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 7.666666666666667
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 18.4
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 0.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 0.0
+Agent: 107; Utility: 27.0
+Agent: 108; Utility: 9.5
+Agent: 109; Utility: 13.5
+Agent: 110; Utility: 0.0
+Agent: 111; Utility: 0.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 27.25
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 0.0
+Agent: 119; Utility: 0.0
+Agent: 120; Utility: 0.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 0.0
+Agent: 126; Utility: 0.0
+Agent: 127; Utility: 50.0
+Agent: 128; Utility: 24.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 0.0
+Agent: 134; Utility: 0.0
+Agent: 135; Utility: 2.0
+Agent: 136; Utility: 43.75
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 0.0
+Agent: 139; Utility: 0.0
+Agent: 140; Utility: 6.4
+Agent: 141; Utility: 28.5
+Agent: 142; Utility: 31.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 27.666666666666668
+Agent: 145; Utility: 0.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 0.0
+Agent: 150; Utility: 34.2
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 0.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 18.0
+Agent: 155; Utility: 10.5
+Agent: 156; Utility: 29.0
+Agent: 157; Utility: 0.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 33.0
+Agent: 160; Utility: 9.0
+Agent: 161; Utility: 0.0
+Agent: 162; Utility: 23.333333333333332
+Agent: 163; Utility: 0.0
+Agent: 164; Utility: 29.0
+Agent: 165; Utility: 0.0
+Agent: 166; Utility: 12.25
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 0.0
+Agent: 169; Utility: 10.0
+Agent: 170; Utility: 24.0
+Agent: 171; Utility: 0.0
+Agent: 172; Utility: 42.5
+Agent: 173; Utility: 32.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 39.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 0.0
+Agent: 178; Utility: 9.8
+Agent: 179; Utility: 0.0
+Agent: 180; Utility: 40.0
+Agent: 181; Utility: 10.666666666666666
+Agent: 182; Utility: 88.0
+Agent: 183; Utility: 14.0
+Agent: 184; Utility: 0.0
+Agent: 185; Utility: 23.333333333333332
+Agent: 186; Utility: 0.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 16.333333333333332
+Agent: 189; Utility: 14.0
+Agent: 190; Utility: 0.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 25.333333333333332
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 40.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 0.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C8 ; 
+A2 -> C163 ; 
+A3 -> C168 ; 
+A4 -> C45 ; 
+A5 -> C133 ; 
+A6 -> C73 ; 
+A7 -> C100 ; 
+A8 -> C200 ; 
+A9 -> C164 ; 
+A10 -> C107 ; 
+A11 -> C109 ; 
+A12 -> C7 ; 
+A13 -> C153 ; 
+A14 -> C178 ; 
+A15 -> C9 ; 
+A16 -> C155 ; 
+A17 -> C0 ; 
+A18 -> C194 ; 
+A19 -> C78 ; 
+A20 -> C138 ; 
+A21 -> C120 ; 
+A22 -> C104 ; 
+A23 -> C21 ; 
+A24 -> C101 ; 
+A25 -> C181 ; 
+A26 -> C134 ; 
+A27 -> C135 ; 
+A28 -> C110 ; 
+A29 -> C137 ; 
+A30 -> C158 ; 
+A31 -> C10 ; 
+A32 -> C142 ; 
+A33 -> C145 ; 
+A34 -> C68 ; 
+A35 -> C169 ; 
+A36 -> C41 ; 
+A37 -> C199 ; 
+A38 -> C108 ; 
+A39 -> C143 ; 
+A40 -> C12 ; 
+A41 -> C77 ; 
+A42 -> C154 ; 
+A43 -> C91 ; 
+A44 -> C108 ; 
+A45 -> C87 ; 
+A46 -> C198 ; 
+A47 -> C59 ; 
+A48 -> C102 ; 
+A49 -> C50 ; 
+A50 -> C52 ; 
+A51 -> C131 ; 
+A52 -> C129 ; 
+A53 -> C148 ; 
+A54 -> C52 ; 
+A55 -> C3 ; 
+A56 -> C35 ; 
+A57 -> C115 ; 
+A58 -> C160 ; 
+A59 -> C156 ; 
+A60 -> C166 ; 
+A61 -> C140 ; 
+A62 -> C115 ; 
+A63 -> C106 ; 
+A64 -> C167 ; 
+A65 -> C114 ; 
+A66 -> C192 ; 
+A67 -> C172 ; 
+A68 -> C92 ; 
+A69 -> C177 ; 
+A70 -> C62 ; 
+A71 -> C180 ; 
+A72 -> C159 ; 
+A73 -> C22 ; 
+A74 -> C166 ; 
+A75 -> C77 ; 
+A76 -> C163 ; 
+A77 -> C36 ; 
+A78 -> C140 ; 
+A79 -> C196 ; 
+A80 -> C170 ; 
+A81 -> C15 ; 
+A82 -> C43 ; 
+A83 -> C176 ; 
+A84 -> C135 ; 
+A85 -> C167 ; 
+A86 -> C152 ; 
+A87 -> C134 ; 
+A88 -> C155 ; 
+A89 -> C168 ; 
+A90 -> C8 ; 
+A91 -> C98 ; 
+A92 -> C165 ; 
+A93 -> C23 ; 
+A94 -> C161 ; 
+A95 -> C159 ; 
+A96 -> C114 ; 
+A97 -> C147 ; 
+A98 -> C64 ; 
+A99 -> C178 ; 
+A100 -> C6 ; 
+A101 -> C31 ; 
+A102 -> C66 ; 
+A103 -> C125 ; 
+A104 -> C45 ; 
+A105 -> C200 ; 
+A106 -> C107 ; 
+A107 -> C141 ; 
+A108 -> C181 ; 
+A109 -> C35 ; 
+A110 -> C164 ; 
+A111 -> C41 ; 
+A112 -> C0 ; 
+A113 -> C194 ; 
+A114 -> C37 ; 
+A115 -> C85 ; 
+A116 -> C129 ; 
+A117 -> C27 ; 
+A118 -> C198 ; 
+A119 -> C55 ; 
+A120 -> C133 ; 
+A121 -> C84 ; 
+A122 -> C5 ; 
+A123 -> C81 ; 
+A124 -> C28 ; 
+A125 -> C78 ; 
+A126 -> C73 ; 
+A127 -> C10 ; 
+A128 -> C96 ; 
+A129 -> C92 ; 
+A130 -> C56 ; 
+A131 -> C90 ; 
+A132 -> C47 ; 
+A133 -> C172 ; 
+A134 -> C131 ; 
+A135 -> C192 ; 
+A136 -> C3 ; 
+A137 -> C61 ; 
+A138 -> C180 ; 
+A139 -> C154 ; 
+A140 -> C19 ; 
+A141 -> C86 ; 
+A142 -> C97 ; 
+A143 -> C27 ; 
+A144 -> C130 ; 
+A145 -> C54 ; 
+A146 -> C109 ; 
+A147 -> C93 ; 
+A148 -> C38 ; 
+A149 -> C94 ; 
+A150 -> C145 ; 
+A151 -> C150 ; 
+A152 -> C156 ; 
+A153 -> C17 ; 
+A154 -> C127 ; 
+A155 -> C39 ; 
+A156 -> C33 ; 
+A157 -> C106 ; 
+A158 -> C67 ; 
+A159 -> C72 ; 
+A160 -> C120 ; 
+A161 -> C76 ; 
+A162 -> C102 ; 
+A163 -> C174 ; 
+A164 -> C26 ; 
+A165 -> C104 ; 
+A166 -> C101 ; 
+A167 -> C36 ; 
+A168 -> C74 ; 
+A169 -> C0 ; 
+A170 -> C138 ; 
+A171 -> C62 ; 
+A172 -> C72 ; 
+A173 -> C16 ; 
+A174 -> C117 ; 
+A175 -> C21 ; 
+A176 -> C83 ; 
+A177 -> C177 ; 
+A178 -> C143 ; 
+A179 -> C148 ; 
+A180 -> C43 ; 
+A181 -> C95 ; 
+A182 -> C54 ; 
+A183 -> C160 ; 
+A184 -> C20 ; 
+A185 -> C16 ; 
+A186 -> C137 ; 
+A187 -> C46 ; 
+A188 -> C7 ; 
+A189 -> C32 ; 
+A190 -> C12 ; 
+A191 -> C75 ; 
+A192 -> C68 ; 
+A193 -> C157 ; 
+A194 -> C59 ; 
+A195 -> C169 ; 
+A196 -> C65 ; 
+A197 -> C88 ; 
+A198 -> C9 ; 
+A199 -> C63 ; 
+A200 -> C98 ; 
+}
+COALITIONS: 
+
+C1: A134, 
+C2: A195, 
+C3: A55, A136, 
+C4: A135, 
+C5: A122, 
+C6: A100, 
+C7: A12, A188, 
+C8: A1, A90, 
+C9: A15, A198, 
+C10: A31, A127, 
+C11: A137, A174, 
+C12: A40, A190, 
+C13: A157, 
+C14: A130, 
+C15: A81, 
+C16: A173, A185, 
+C17: A153, 
+C18: A170, 
+C19: A140, 
+C20: A184, 
+C21: A23, A175, 
+C22: A73, 
+C23: A93, 
+C24: A166, 
+C25: A144, 
+C26: A164, 
+C27: A117, A143, 
+C28: A124, 
+C29: A157, 
+C30: A186, 
+C31: A101, 
+C32: A140, A150, A178, A189, 
+C33: A156, 
+C34: A148, 
+C35: A56, A109, 
+C36: A77, A167, 
+C37: A114, 
+C38: A148, 
+C39: A155, 
+C40: A171, 
+C41: A36, A111, 
+C42: A135, 
+C43: A82, A138, A180, 
+C44: A157, 
+C45: A4, A104, 
+C46: A187, 
+C47: A132, A198, 
+C48: A175, 
+C49: A160, 
+C50: A49, A194, 
+C51: A133, 
+C52: A50, A54, 
+C53: A163, 
+C54: A141, A145, A182, 
+C55: A119, 
+C56: A130, 
+C57: A139, 
+C58: A165, 
+C59: A47, A194, 
+C60: A135, 
+C61: A137, 
+C62: A70, A171, 
+C63: A188, A199, 
+C64: A98, A193, 
+C65: A196, 
+C66: A102, 
+C67: A158, 
+C68: A34, A192, 
+C69: A197, 
+C70: A146, 
+C71: A152, A154, 
+C72: A159, A172, 
+C73: A6, A126, 
+C74: A168, A183, 
+C75: A191, 
+C76: A161, 
+C77: A41, A75, 
+C78: A19, A125, 
+C79: A190, 
+C80: A177, 
+C81: A123, 
+C82: A174, 
+C83: A176, 
+C84: A121, 
+C85: A115, 
+C86: A141, 
+C87: A45, A134, 
+C88: A197, 
+C89: A194, 
+C90: A131, A136, 
+C91: A43, A197, 
+C92: A68, A129, 
+C93: A147, 
+C94: A149, A151, 
+C95: A162, A181, A192, 
+C96: A128, A144, 
+C97: A142, A179, 
+C98: A91, A200, 
+C99: A169, 
+C100: A7, A171, 
+C101: A24, A166, 
+C102: A48, A162, 
+C103: A154, 
+C104: A22, A165, 
+C105: A166, 
+C106: A63, A157, 
+C107: A10, A106, 
+C108: A38, A44, 
+C109: A11, A146, 
+C110: A28, A151, 
+C111: A148, 
+C112: A140, 
+C113: A135, 
+C114: A65, A96, 
+C115: A57, A62, 
+C116: A162, 
+C117: A174, 
+C118: A148, 
+C119: A144, 
+C120: A21, A160, 
+C121: A194, 
+C122: A140, 
+C123: A169, 
+C124: A138, 
+C125: A103, 
+C126: A193, 
+C127: A154, 
+C128: A139, 
+C129: A52, A116, 
+C130: A144, 
+C131: A51, A134, 
+C132: A151, 
+C133: A5, A120, 
+C134: A26, A87, 
+C135: A27, A84, 
+C136: A174, 
+C137: A29, A186, 
+C138: A20, A170, 
+C139: A162, 
+C140: A61, A78, 
+C141: A107, 
+C142: A32, A139, 
+C143: A39, A178, 
+C144: A195, 
+C145: A33, A150, 
+C146: A195, 
+C147: A97, 
+C148: A53, A179, 
+C149: A151, 
+C150: A151, 
+C151: A171, 
+C152: A86, 
+C153: A13, A148, 
+C154: A42, A139, 
+C155: A16, A88, 
+C156: A59, A152, 
+C157: A193, 
+C158: A30, A151, 
+C159: A72, A95, 
+C160: A58, A183, 
+C161: A94, 
+C162: A135, 
+C163: A2, A76, 
+C164: A9, A110, 
+C165: A92, 
+C166: A60, A74, 
+C167: A64, A85, 
+C168: A3, A89, 
+C169: A35, A195, 
+C170: A80, 
+C171: A169, 
+C172: A67, A133, 
+C173: A169, 
+C174: A163, 
+C175: A135, 
+C176: A83, 
+C177: A69, A177, 
+C178: A14, A99, 
+C179: A169, 
+C180: A71, A138, 
+C181: A25, A108, 
+C182: A135, 
+C183: A169, 
+C184: A135, 
+C185: A169, 
+C186: A135, 
+C187: A169, 
+C188: A135, 
+C189: A169, 
+C190: A135, 
+C191: A169, 
+C192: A66, A135, 
+C193: A169, 
+C194: A18, A113, 
+C195: A169, 
+C196: A79, 
+C197: A169, 
+C198: A46, A118, 
+C199: A37, 
+C200: A8, A105, 
+
+ AGENTS:
+Agent: 1; Utility: 86.0
+Agent: 2; Utility: 86.0
+Agent: 3; Utility: 85.0
+Agent: 4; Utility: 71.0
+Agent: 5; Utility: 78.0
+Agent: 6; Utility: 68.0
+Agent: 7; Utility: 81.0
+Agent: 8; Utility: 58.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 97.0
+Agent: 11; Utility: 82.0
+Agent: 12; Utility: 84.0
+Agent: 13; Utility: 64.0
+Agent: 14; Utility: 83.0
+Agent: 15; Utility: 83.0
+Agent: 16; Utility: 90.0
+Agent: 17; Utility: 86.9476534296029
+Agent: 18; Utility: 68.0
+Agent: 19; Utility: 96.0
+Agent: 20; Utility: 98.0
+Agent: 21; Utility: 78.0
+Agent: 22; Utility: 96.0
+Agent: 23; Utility: 99.0
+Agent: 24; Utility: 93.0
+Agent: 25; Utility: 65.0
+Agent: 26; Utility: 96.0
+Agent: 27; Utility: 86.0
+Agent: 28; Utility: 95.0
+Agent: 29; Utility: 51.0
+Agent: 30; Utility: 94.0
+Agent: 31; Utility: 71.0
+Agent: 32; Utility: 82.0
+Agent: 33; Utility: 24.0
+Agent: 34; Utility: 97.0
+Agent: 35; Utility: 76.0
+Agent: 36; Utility: 97.0
+Agent: 37; Utility: 0.0
+Agent: 38; Utility: 81.0
+Agent: 39; Utility: 99.0
+Agent: 40; Utility: 64.0
+Agent: 41; Utility: 68.0
+Agent: 42; Utility: 74.0
+Agent: 43; Utility: 75.0
+Agent: 44; Utility: 76.0
+Agent: 45; Utility: 96.0
+Agent: 46; Utility: 86.0
+Agent: 47; Utility: 68.0
+Agent: 48; Utility: 91.0
+Agent: 49; Utility: 96.0
+Agent: 50; Utility: 83.0
+Agent: 51; Utility: 96.0
+Agent: 52; Utility: 63.0
+Agent: 53; Utility: 84.0
+Agent: 54; Utility: 13.0
+Agent: 55; Utility: 73.0
+Agent: 56; Utility: 78.0
+Agent: 57; Utility: 70.0
+Agent: 58; Utility: 93.0
+Agent: 59; Utility: 99.0
+Agent: 60; Utility: 86.0
+Agent: 61; Utility: 86.0
+Agent: 62; Utility: 79.0
+Agent: 63; Utility: 58.0
+Agent: 64; Utility: 99.0
+Agent: 65; Utility: 75.0
+Agent: 66; Utility: 64.0
+Agent: 67; Utility: 99.0
+Agent: 68; Utility: 93.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 95.0
+Agent: 71; Utility: 54.0
+Agent: 72; Utility: 34.0
+Agent: 73; Utility: 0.0
+Agent: 74; Utility: 99.0
+Agent: 75; Utility: 53.0
+Agent: 76; Utility: 9.0
+Agent: 77; Utility: 56.0
+Agent: 78; Utility: 94.0
+Agent: 79; Utility: 0.0
+Agent: 80; Utility: 0.0
+Agent: 81; Utility: 0.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 73.0
+Agent: 85; Utility: 52.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 42.0
+Agent: 88; Utility: 86.0
+Agent: 89; Utility: 8.0
+Agent: 90; Utility: 95.0
+Agent: 91; Utility: 22.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 0.0
+Agent: 95; Utility: 22.0
+Agent: 96; Utility: 81.0
+Agent: 97; Utility: 0.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 68.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 68.0
+Agent: 105; Utility: 96.0
+Agent: 106; Utility: 98.0
+Agent: 107; Utility: 0.0
+Agent: 108; Utility: 52.0
+Agent: 109; Utility: 54.0
+Agent: 110; Utility: 74.0
+Agent: 111; Utility: 51.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 21.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 69.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 31.0
+Agent: 119; Utility: 0.0
+Agent: 120; Utility: 76.0
+Agent: 121; Utility: 0.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 0.0
+Agent: 125; Utility: 2.0
+Agent: 126; Utility: 26.0
+Agent: 127; Utility: 56.0
+Agent: 128; Utility: 72.0
+Agent: 129; Utility: 0.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 75.0
+Agent: 134; Utility: 36.0
+Agent: 135; Utility: 82.0
+Agent: 136; Utility: 44.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 30.0
+Agent: 139; Utility: 76.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 31.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 0.0
+Agent: 145; Utility: 0.0
+Agent: 146; Utility: 7.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 0.0
+Agent: 150; Utility: 52.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 72.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 0.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 84.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 66.0
+Agent: 160; Utility: 81.0
+Agent: 161; Utility: 0.0
+Agent: 162; Utility: 67.0
+Agent: 163; Utility: 0.0
+Agent: 164; Utility: 0.0
+Agent: 165; Utility: 67.0
+Agent: 166; Utility: 56.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 0.0
+Agent: 169; Utility: 57.0
+Agent: 170; Utility: 21.0
+Agent: 171; Utility: 34.0
+Agent: 172; Utility: 85.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 66.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 58.0
+Agent: 178; Utility: 56.0
+Agent: 179; Utility: 95.0
+Agent: 180; Utility: 20.5
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 88.0
+Agent: 183; Utility: 25.0
+Agent: 184; Utility: 0.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 41.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 52.0
+Agent: 189; Utility: 23.333333333333332
+Agent: 190; Utility: 7.0
+Agent: 191; Utility: 0.0
+Agent: 192; Utility: 99.0
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 97.0
+Agent: 195; Utility: 97.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 2.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+
+****************ISTANZA N. 5***************
+
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C64 ; 
+A2 -> C48 ; 
+A3 -> C47 ; 
+A4 -> C88 ; 
+A5 -> C20 ; 
+A6 -> C87 ; 
+A7 -> C33 ; 
+A8 -> C30 ; 
+A9 -> C68 ; 
+A10 -> C74 ; 
+A11 -> C48 ; 
+A12 -> C55 ; 
+A13 -> C21 ; 
+A14 -> C50 ; 
+A15 -> C36 ; 
+A16 -> C92 ; 
+A17 -> C40 ; 
+A18 -> C24 ; 
+A19 -> C16 ; 
+A20 -> C91 ; 
+A21 -> C13 ; 
+A22 -> C53 ; 
+A23 -> C31 ; 
+A24 -> C93 ; 
+A25 -> C13 ; 
+A26 -> C50 ; 
+A27 -> C19 ; 
+A28 -> C57 ; 
+A29 -> C41 ; 
+A30 -> C35 ; 
+A31 -> C9 ; 
+A32 -> C48 ; 
+A33 -> C67 ; 
+A34 -> C28 ; 
+A35 -> C13 ; 
+A36 -> C31 ; 
+A37 -> C23 ; 
+A38 -> C64 ; 
+A39 -> C37 ; 
+A40 -> C61 ; 
+A41 -> C60 ; 
+A42 -> C30 ; 
+A43 -> C30 ; 
+A44 -> C70 ; 
+A45 -> C12 ; 
+A46 -> C33 ; 
+A47 -> C22 ; 
+A48 -> C35 ; 
+A49 -> C46 ; 
+A50 -> C84 ; 
+A51 -> C75 ; 
+A52 -> C66 ; 
+A53 -> C16 ; 
+A54 -> C74 ; 
+A55 -> C69 ; 
+A56 -> C73 ; 
+A57 -> C6 ; 
+A58 -> C7 ; 
+A59 -> C60 ; 
+A60 -> C20 ; 
+A61 -> C91 ; 
+A62 -> C38 ; 
+A63 -> C51 ; 
+A64 -> C23 ; 
+A65 -> C3 ; 
+A66 -> C2 ; 
+A67 -> C70 ; 
+A68 -> C36 ; 
+A69 -> C97 ; 
+A70 -> C43 ; 
+A71 -> C55 ; 
+A72 -> C97 ; 
+A73 -> C91 ; 
+A74 -> C24 ; 
+A75 -> C47 ; 
+A76 -> C83 ; 
+A77 -> C17 ; 
+A78 -> C63 ; 
+A79 -> C75 ; 
+A80 -> C80 ; 
+A81 -> C61 ; 
+A82 -> C76 ; 
+A83 -> C4 ; 
+A84 -> C50 ; 
+A85 -> C49 ; 
+A86 -> C18 ; 
+A87 -> C97 ; 
+A88 -> C74 ; 
+A89 -> C63 ; 
+A90 -> C56 ; 
+A91 -> C92 ; 
+A92 -> C94 ; 
+A93 -> C24 ; 
+A94 -> C50 ; 
+A95 -> C22 ; 
+A96 -> C76 ; 
+A97 -> C47 ; 
+A98 -> C42 ; 
+A99 -> C54 ; 
+A100 -> C64 ; 
+A101 -> C30 ; 
+A102 -> C58 ; 
+A103 -> C32 ; 
+A104 -> C8 ; 
+A105 -> C63 ; 
+A106 -> C49 ; 
+A107 -> C3 ; 
+A108 -> C57 ; 
+A109 -> C52 ; 
+A110 -> C47 ; 
+A111 -> C95 ; 
+A112 -> C46 ; 
+A113 -> C89 ; 
+A114 -> C10 ; 
+A115 -> C100 ; 
+A116 -> C2 ; 
+A117 -> C63 ; 
+A118 -> C40 ; 
+A119 -> C51 ; 
+A120 -> C91 ; 
+A121 -> C6 ; 
+A122 -> C80 ; 
+A123 -> C62 ; 
+A124 -> C22 ; 
+A125 -> C29 ; 
+A126 -> C21 ; 
+A127 -> C99 ; 
+A128 -> C23 ; 
+A129 -> C41 ; 
+A130 -> C37 ; 
+A131 -> C50 ; 
+A132 -> C83 ; 
+A133 -> C93 ; 
+A134 -> C82 ; 
+A135 -> C15 ; 
+A136 -> C85 ; 
+A137 -> C9 ; 
+A138 -> C47 ; 
+A139 -> C78 ; 
+A140 -> C89 ; 
+A141 -> C21 ; 
+A142 -> C80 ; 
+A143 -> C15 ; 
+A144 -> C46 ; 
+A145 -> C24 ; 
+A146 -> C49 ; 
+A147 -> C20 ; 
+A148 -> C2 ; 
+A149 -> C14 ; 
+A150 -> C19 ; 
+A151 -> C82 ; 
+A152 -> C38 ; 
+A153 -> C84 ; 
+A154 -> C17 ; 
+A155 -> C1 ; 
+A156 -> C10 ; 
+A157 -> C38 ; 
+A158 -> C72 ; 
+A159 -> C97 ; 
+A160 -> C48 ; 
+A161 -> C16 ; 
+A162 -> C88 ; 
+A163 -> C59 ; 
+A164 -> C70 ; 
+A165 -> C96 ; 
+A166 -> C31 ; 
+A167 -> C41 ; 
+A168 -> C41 ; 
+A169 -> C32 ; 
+A170 -> C2 ; 
+A171 -> C45 ; 
+A172 -> C97 ; 
+A173 -> C21 ; 
+A174 -> C81 ; 
+A175 -> C82 ; 
+A176 -> C6 ; 
+A177 -> C71 ; 
+A178 -> C91 ; 
+A179 -> C59 ; 
+A180 -> C99 ; 
+A181 -> C42 ; 
+A182 -> C47 ; 
+A183 -> C98 ; 
+A184 -> C55 ; 
+A185 -> C8 ; 
+A186 -> C66 ; 
+A187 -> C22 ; 
+A188 -> C16 ; 
+A189 -> C99 ; 
+A190 -> C81 ; 
+A191 -> C42 ; 
+A192 -> C31 ; 
+A193 -> C4 ; 
+A194 -> C53 ; 
+A195 -> C14 ; 
+A196 -> C26 ; 
+A197 -> C12 ; 
+A198 -> C18 ; 
+A199 -> C62 ; 
+A200 -> C81 ; 
+}
+COALITIONS: 
+
+C1: A155, 
+C2: A66, A116, A148, A170, 
+C3: A65, A107, 
+C4: A83, A193, 
+C5: 
+C6: A57, A121, A176, 
+C7: A58, 
+C8: A104, A185, 
+C9: A31, A137, 
+C10: A114, A156, 
+C11: 
+C12: A45, A197, 
+C13: A21, A25, A35, 
+C14: A149, A195, 
+C15: A135, A143, 
+C16: A19, A53, A161, A188, 
+C17: A77, A154, 
+C18: A86, A198, 
+C19: A27, A150, 
+C20: A5, A60, A147, 
+C21: A13, A126, A141, A173, 
+C22: A47, A95, A124, A187, 
+C23: A37, A64, A128, 
+C24: A18, A74, A93, A145, 
+C25: 
+C26: A196, 
+C27: 
+C28: A34, 
+C29: A125, 
+C30: A8, A42, A43, A101, 
+C31: A23, A36, A166, A192, 
+C32: A103, A169, 
+C33: A7, A46, 
+C34: 
+C35: A30, A48, 
+C36: A15, A68, 
+C37: A39, A130, 
+C38: A62, A152, A157, 
+C39: 
+C40: A17, A118, 
+C41: A29, A129, A167, A168, 
+C42: A98, A181, A191, 
+C43: A70, 
+C44: 
+C45: A171, 
+C46: A49, A112, A144, 
+C47: A3, A75, A97, A110, A138, A182, 
+C48: A2, A11, A32, A160, 
+C49: A85, A106, A146, 
+C50: A14, A26, A84, A94, A131, 
+C51: A63, A119, 
+C52: A109, 
+C53: A22, A194, 
+C54: A99, 
+C55: A12, A71, A184, 
+C56: A90, 
+C57: A28, A108, 
+C58: A102, 
+C59: A163, A179, 
+C60: A41, A59, 
+C61: A40, A81, 
+C62: A123, A199, 
+C63: A78, A89, A105, A117, 
+C64: A1, A38, A100, 
+C65: 
+C66: A52, A186, 
+C67: A33, 
+C68: A9, 
+C69: A55, 
+C70: A44, A67, A164, 
+C71: A177, 
+C72: A158, 
+C73: A56, 
+C74: A10, A54, A88, 
+C75: A51, A79, 
+C76: A82, A96, 
+C77: 
+C78: A139, 
+C79: 
+C80: A80, A122, A142, 
+C81: A174, A190, A200, 
+C82: A134, A151, A175, 
+C83: A76, A132, 
+C84: A50, A153, 
+C85: A136, 
+C86: 
+C87: A6, 
+C88: A4, A162, 
+C89: A113, A140, 
+C90: 
+C91: A20, A61, A73, A120, A178, 
+C92: A16, A91, 
+C93: A24, A133, 
+C94: A92, 
+C95: A111, 
+C96: A165, 
+C97: A69, A72, A87, A159, A172, 
+C98: A183, 
+C99: A127, A180, A189, 
+C100: A115, 
+C101: 
+C102: 
+C103: 
+C104: 
+C105: 
+C106: 
+C107: 
+C108: 
+C109: 
+C110: 
+C111: 
+C112: 
+C113: 
+C114: 
+C115: 
+C116: 
+C117: 
+C118: 
+C119: 
+C120: 
+C121: 
+C122: 
+C123: 
+C124: 
+C125: 
+C126: 
+C127: 
+C128: 
+C129: 
+C130: 
+C131: 
+C132: 
+C133: 
+C134: 
+C135: 
+C136: 
+C137: 
+C138: 
+C139: 
+C140: 
+C141: 
+C142: 
+C143: 
+C144: 
+C145: 
+C146: 
+C147: 
+C148: 
+C149: 
+C150: 
+C151: 
+C152: 
+C153: 
+C154: 
+C155: 
+C156: 
+C157: 
+C158: 
+C159: 
+C160: 
+C161: 
+C162: 
+C163: 
+C164: 
+C165: 
+C166: 
+C167: 
+C168: 
+C169: 
+C170: 
+C171: 
+C172: 
+C173: 
+C174: 
+C175: 
+C176: 
+C177: 
+C178: 
+C179: 
+C180: 
+C181: 
+C182: 
+C183: 
+C184: 
+C185: 
+C186: 
+C187: 
+C188: 
+C189: 
+C190: 
+C191: 
+C192: 
+C193: 
+C194: 
+C195: 
+C196: 
+C197: 
+C198: 
+C199: 
+C200: 
+
+ AGENTS:
+Agent: 1; Utility: 0.0
+Agent: 2; Utility: 0.0
+Agent: 3; Utility: 0.0
+Agent: 4; Utility: 0.0
+Agent: 5; Utility: 0.0
+Agent: 6; Utility: 0.0
+Agent: 7; Utility: 24.0
+Agent: 8; Utility: 11.333333333333334
+Agent: 9; Utility: 0.0
+Agent: 10; Utility: 0.0
+Agent: 11; Utility: 0.6666666666666666
+Agent: 12; Utility: 51.5
+Agent: 13; Utility: 14.666666666666666
+Agent: 14; Utility: 0.0
+Agent: 15; Utility: 0.0
+Agent: 16; Utility: 0.0
+Agent: 17; Utility: 98.0
+Agent: 18; Utility: 0.0
+Agent: 19; Utility: 0.0
+Agent: 20; Utility: 0.0
+Agent: 21; Utility: 0.0
+Agent: 22; Utility: 60.0
+Agent: 23; Utility: 0.0
+Agent: 24; Utility: 0.0
+Agent: 25; Utility: 0.0
+Agent: 26; Utility: 0.0
+Agent: 27; Utility: 0.0
+Agent: 28; Utility: 0.0
+Agent: 29; Utility: 39.666666666666664
+Agent: 30; Utility: 0.0
+Agent: 31; Utility: 0.0
+Agent: 32; Utility: 0.0
+Agent: 33; Utility: 0.0
+Agent: 34; Utility: 0.0
+Agent: 35; Utility: 5.0
+Agent: 36; Utility: 31.0
+Agent: 37; Utility: 37.5
+Agent: 38; Utility: 0.0
+Agent: 39; Utility: 0.0
+Agent: 40; Utility: 0.0
+Agent: 41; Utility: 0.0
+Agent: 42; Utility: 25.666666666666668
+Agent: 43; Utility: 0.0
+Agent: 44; Utility: 0.0
+Agent: 45; Utility: 0.0
+Agent: 46; Utility: 97.0
+Agent: 47; Utility: 31.0
+Agent: 48; Utility: 49.0
+Agent: 49; Utility: 0.0
+Agent: 50; Utility: 0.0
+Agent: 51; Utility: 0.0
+Agent: 52; Utility: 0.0
+Agent: 53; Utility: 12.0
+Agent: 54; Utility: 42.0
+Agent: 55; Utility: 0.0
+Agent: 56; Utility: 0.0
+Agent: 57; Utility: 0.0
+Agent: 58; Utility: 0.0
+Agent: 59; Utility: 0.0
+Agent: 60; Utility: 0.0
+Agent: 61; Utility: 5.25
+Agent: 62; Utility: 0.0
+Agent: 63; Utility: 0.0
+Agent: 64; Utility: 25.5
+Agent: 65; Utility: 0.0
+Agent: 66; Utility: 0.0
+Agent: 67; Utility: 49.0
+Agent: 68; Utility: 0.0
+Agent: 69; Utility: 15.5
+Agent: 70; Utility: 0.0
+Agent: 71; Utility: 33.5
+Agent: 72; Utility: 0.0
+Agent: 73; Utility: 34.0
+Agent: 74; Utility: 0.0
+Agent: 75; Utility: 7.2
+Agent: 76; Utility: 81.0
+Agent: 77; Utility: 0.0
+Agent: 78; Utility: 0.6666666666666666
+Agent: 79; Utility: 0.0
+Agent: 80; Utility: 2.5
+Agent: 81; Utility: 7.0
+Agent: 82; Utility: 0.0
+Agent: 83; Utility: 0.0
+Agent: 84; Utility: 4.75
+Agent: 85; Utility: 0.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 0.0
+Agent: 88; Utility: 0.0
+Agent: 89; Utility: 1.6666666666666667
+Agent: 90; Utility: 0.0
+Agent: 91; Utility: 0.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 21.75
+Agent: 95; Utility: 0.0
+Agent: 96; Utility: 0.0
+Agent: 97; Utility: 13.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 0.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 0.0
+Agent: 105; Utility: 30.333333333333332
+Agent: 106; Utility: 22.5
+Agent: 107; Utility: 0.0
+Agent: 108; Utility: 27.0
+Agent: 109; Utility: 0.0
+Agent: 110; Utility: 35.8
+Agent: 111; Utility: 0.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 55.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 0.0
+Agent: 117; Utility: 14.333333333333334
+Agent: 118; Utility: 7.0
+Agent: 119; Utility: 94.0
+Agent: 120; Utility: 0.0
+Agent: 121; Utility: 46.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 38.666666666666664
+Agent: 125; Utility: 0.0
+Agent: 126; Utility: 30.666666666666668
+Agent: 127; Utility: 0.0
+Agent: 128; Utility: 0.0
+Agent: 129; Utility: 8.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 0.0
+Agent: 134; Utility: 12.0
+Agent: 135; Utility: 0.0
+Agent: 136; Utility: 0.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 12.8
+Agent: 139; Utility: 0.0
+Agent: 140; Utility: 21.0
+Agent: 141; Utility: 32.666666666666664
+Agent: 142; Utility: 0.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 23.5
+Agent: 145; Utility: 0.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 2.5
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 0.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 0.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 0.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 0.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 27.75
+Agent: 160; Utility: 13.333333333333334
+Agent: 161; Utility: 18.0
+Agent: 162; Utility: 0.0
+Agent: 163; Utility: 0.0
+Agent: 164; Utility: 0.0
+Agent: 165; Utility: 0.0
+Agent: 166; Utility: 0.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 2.6666666666666665
+Agent: 169; Utility: 57.0
+Agent: 170; Utility: 0.0
+Agent: 171; Utility: 0.0
+Agent: 172; Utility: 21.25
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 47.0
+Agent: 175; Utility: 35.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 0.0
+Agent: 178; Utility: 2.75
+Agent: 179; Utility: 78.0
+Agent: 180; Utility: 2.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 2.2
+Agent: 183; Utility: 0.0
+Agent: 184; Utility: 0.0
+Agent: 185; Utility: 0.0
+Agent: 186; Utility: 0.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 0.0
+Agent: 189; Utility: 40.0
+Agent: 190; Utility: 0.0
+Agent: 191; Utility: 24.0
+Agent: 192; Utility: 9.666666666666666
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 0.0
+Agent: 195; Utility: 0.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 0.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: false
+PARTITIONS: {
+A1 -> C11 ; 
+A2 -> C13 ; 
+A3 -> C193 ; 
+A4 -> C56 ; 
+A5 -> C177 ; 
+A6 -> C87 ; 
+A7 -> C102 ; 
+A8 -> C105 ; 
+A9 -> C124 ; 
+A10 -> C108 ; 
+A11 -> C178 ; 
+A12 -> C110 ; 
+A13 -> C154 ; 
+A14 -> C192 ; 
+A15 -> C113 ; 
+A16 -> C61 ; 
+A17 -> C0 ; 
+A18 -> C148 ; 
+A19 -> C184 ; 
+A20 -> C121 ; 
+A21 -> C73 ; 
+A22 -> C106 ; 
+A23 -> C126 ; 
+A24 -> C188 ; 
+A25 -> C168 ; 
+A26 -> C86 ; 
+A27 -> C190 ; 
+A28 -> C127 ; 
+A29 -> C133 ; 
+A30 -> C163 ; 
+A31 -> C0 ; 
+A32 -> C175 ; 
+A33 -> C67 ; 
+A34 -> C27 ; 
+A35 -> C34 ; 
+A36 -> C142 ; 
+A37 -> C149 ; 
+A38 -> C138 ; 
+A39 -> C143 ; 
+A40 -> C185 ; 
+A41 -> C178 ; 
+A42 -> C95 ; 
+A43 -> C25 ; 
+A44 -> C138 ; 
+A45 -> C139 ; 
+A46 -> C148 ; 
+A47 -> C199 ; 
+A48 -> C116 ; 
+A49 -> C120 ; 
+A50 -> C156 ; 
+A51 -> C128 ; 
+A52 -> C134 ; 
+A53 -> C44 ; 
+A54 -> C156 ; 
+A55 -> C115 ; 
+A56 -> C185 ; 
+A57 -> C5 ; 
+A58 -> C60 ; 
+A59 -> C28 ; 
+A60 -> C3 ; 
+A61 -> C29 ; 
+A62 -> C5 ; 
+A63 -> C195 ; 
+A64 -> C196 ; 
+A65 -> C165 ; 
+A66 -> C194 ; 
+A67 -> C75 ; 
+A68 -> C166 ; 
+A69 -> C172 ; 
+A70 -> C174 ; 
+A71 -> C55 ; 
+A72 -> C179 ; 
+A73 -> C92 ; 
+A74 -> C3 ; 
+A75 -> C158 ; 
+A76 -> C147 ; 
+A77 -> C74 ; 
+A78 -> C29 ; 
+A79 -> C186 ; 
+A80 -> C200 ; 
+A81 -> C173 ; 
+A82 -> C63 ; 
+A83 -> C141 ; 
+A84 -> C151 ; 
+A85 -> C151 ; 
+A86 -> C94 ; 
+A87 -> C109 ; 
+A88 -> C61 ; 
+A89 -> C76 ; 
+A90 -> C11 ; 
+A91 -> C76 ; 
+A92 -> C183 ; 
+A93 -> C125 ; 
+A94 -> C92 ; 
+A95 -> C141 ; 
+A96 -> C165 ; 
+A97 -> C86 ; 
+A98 -> C42 ; 
+A99 -> C158 ; 
+A100 -> C197 ; 
+A101 -> C157 ; 
+A102 -> C198 ; 
+A103 -> C169 ; 
+A104 -> C56 ; 
+A105 -> C118 ; 
+A106 -> C108 ; 
+A107 -> C196 ; 
+A108 -> C168 ; 
+A109 -> C74 ; 
+A110 -> C124 ; 
+A111 -> C142 ; 
+A112 -> C130 ; 
+A113 -> C132 ; 
+A114 -> C167 ; 
+A115 -> C100 ; 
+A116 -> C134 ; 
+A117 -> C187 ; 
+A118 -> C0 ; 
+A119 -> C51 ; 
+A120 -> C177 ; 
+A121 -> C6 ; 
+A122 -> C69 ; 
+A123 -> C90 ; 
+A124 -> C22 ; 
+A125 -> C184 ; 
+A126 -> C87 ; 
+A127 -> C193 ; 
+A128 -> C109 ; 
+A129 -> C41 ; 
+A130 -> C103 ; 
+A131 -> C50 ; 
+A132 -> C83 ; 
+A133 -> C75 ; 
+A134 -> C128 ; 
+A135 -> C194 ; 
+A136 -> C115 ; 
+A137 -> C43 ; 
+A138 -> C47 ; 
+A139 -> C95 ; 
+A140 -> C164 ; 
+A141 -> C101 ; 
+A142 -> C80 ; 
+A143 -> C15 ; 
+A144 -> C13 ; 
+A145 -> C147 ; 
+A146 -> C114 ; 
+A147 -> C20 ; 
+A148 -> C112 ; 
+A149 -> C166 ; 
+A150 -> C33 ; 
+A151 -> C7 ; 
+A152 -> C28 ; 
+A153 -> C160 ; 
+A154 -> C68 ; 
+A155 -> C159 ; 
+A156 -> C10 ; 
+A157 -> C195 ; 
+A158 -> C72 ; 
+A159 -> C105 ; 
+A160 -> C73 ; 
+A161 -> C173 ; 
+A162 -> C116 ; 
+A163 -> C192 ; 
+A164 -> C190 ; 
+A165 -> C106 ; 
+A166 -> C188 ; 
+A167 -> C41 ; 
+A168 -> C63 ; 
+A169 -> C0 ; 
+A170 -> C121 ; 
+A171 -> C174 ; 
+A172 -> C97 ; 
+A173 -> C21 ; 
+A174 -> C182 ; 
+A175 -> C126 ; 
+A176 -> C6 ; 
+A177 -> C172 ; 
+A178 -> C143 ; 
+A179 -> C44 ; 
+A180 -> C99 ; 
+A181 -> C42 ; 
+A182 -> C0 ; 
+A183 -> C60 ; 
+A184 -> C179 ; 
+A185 -> C0 ; 
+A186 -> C133 ; 
+A187 -> C22 ; 
+A188 -> C110 ; 
+A189 -> C186 ; 
+A190 -> C52 ; 
+A191 -> C42 ; 
+A192 -> C27 ; 
+A193 -> C4 ; 
+A194 -> C199 ; 
+A195 -> C34 ; 
+A196 -> C26 ; 
+A197 -> C161 ; 
+A198 -> C113 ; 
+A199 -> C62 ; 
+A200 -> C81 ; 
+}
+COALITIONS: 
+
+C1: A155, 
+C2: A148, A170, 
+C3: A60, A74, 
+C4: A193, 
+C5: A57, A62, 
+C6: A121, A176, 
+C7: A151, 
+C8: A185, 
+C9: A137, 
+C10: A156, 
+C11: A1, A90, 
+C12: A197, 
+C13: A2, A144, 
+C14: A149, A195, 
+C15: A135, A143, 
+C16: A161, A188, 
+C17: A154, 
+C18: A198, 
+C19: A150, 
+C20: A147, 
+C21: A141, A173, 
+C22: A124, A187, 
+C23: A128, 
+C24: A145, 
+C25: A43, A197, 
+C26: A196, 
+C27: A34, A192, 
+C28: A59, A152, 
+C29: A61, A78, 
+C30: A166, 
+C31: A166, A192, 
+C32: A169, 
+C33: A150, 
+C34: A35, A195, 
+C35: A148, 
+C36: A151, 
+C37: A130, 
+C38: A152, A157, 
+C39: A144, 
+C40: A146, 
+C41: A129, A167, A168, 
+C42: A98, A181, A191, 
+C43: A137, 
+C44: A53, A179, 
+C45: A171, 
+C46: A144, 
+C47: A138, A182, 
+C48: A160, 
+C49: A146, 
+C50: A131, 
+C51: A119, 
+C52: A190, 
+C53: A194, 
+C54: A139, 
+C55: A71, A184, 
+C56: A4, A104, 
+C57: A140, 
+C58: A174, 
+C59: A163, A179, 
+C60: A58, A183, 
+C61: A16, A88, 
+C62: A199, 
+C63: A82, A168, 
+C64: A146, 
+C65: A150, 
+C66: A186, 
+C67: A33, A150, 
+C68: A154, 
+C69: A122, 
+C70: A164, 
+C71: A177, 
+C72: A158, 
+C73: A21, A160, 
+C74: A77, A109, 
+C75: A67, A133, 
+C76: A89, A91, 
+C77: A144, 
+C78: A139, 
+C79: A144, 
+C80: A142, 
+C81: A174, A190, A200, 
+C82: A134, A151, A175, 
+C83: A132, 
+C84: A153, 
+C85: A136, 
+C86: A26, A97, 
+C87: A6, A126, 
+C88: A162, 
+C89: A140, 
+C90: A123, 
+C91: A178, 
+C92: A73, A94, 
+C93: A133, 
+C94: A86, 
+C95: A42, A139, 
+C96: A165, 
+C97: A159, A172, 
+C98: A183, 
+C99: A180, A189, 
+C100: A115, 
+C101: A141, 
+C102: A7, A171, 
+C103: A130, 
+C104: A166, 
+C105: A8, A159, 
+C106: A22, A165, 
+C107: A157, 
+C108: A10, A106, 
+C109: A87, A128, 
+C110: A12, A188, 
+C111: A148, 
+C112: A148, 
+C113: A15, A198, 
+C114: A146, 
+C115: A55, A136, 
+C116: A48, A162, 
+C117: A162, 
+C118: A105, 
+C119: A157, 
+C120: A49, A194, 
+C121: A20, A170, 
+C122: A157, 
+C123: A174, 
+C124: A9, A110, 
+C125: A93, 
+C126: A23, A175, 
+C127: A28, A151, 
+C128: A51, A134, 
+C129: A169, 
+C130: A112, 
+C131: A140, 
+C132: A113, 
+C133: A29, A186, 
+C134: A52, A116, 
+C135: A162, 
+C136: A171, 
+C137: A139, 
+C138: A38, A44, 
+C139: A45, A144, 
+C140: A195, 
+C141: A83, A95, 
+C142: A36, A111, 
+C143: A39, A178, 
+C144: A140, 
+C145: A194, 
+C146: A195, 
+C147: A76, A145, 
+C148: A18, A46, 
+C149: A37, 
+C150: A151, 
+C151: A84, A85, 
+C152: A182, 
+C153: A151, 
+C154: A13, A148, 
+C155: A146, 
+C156: A50, A54, 
+C157: A101, 
+C158: A75, A99, 
+C159: A155, 
+C160: A153, 
+C161: A197, 
+C162: A135, 
+C163: A30, A151, 
+C164: A140, 
+C165: A65, A96, 
+C166: A68, A149, 
+C167: A114, 
+C168: A25, A108, 
+C169: A103, 
+C170: A163, 
+C171: A140, 
+C172: A69, A177, 
+C173: A81, A161, 
+C174: A70, A171, 
+C175: A32, 
+C176: A169, 
+C177: A5, A120, 
+C178: A11, A41, 
+C179: A72, A184, 
+C180: A140, 
+C181: A163, 
+C182: A174, 
+C183: A92, 
+C184: A19, A125, 
+C185: A40, A56, 
+C186: A79, A189, 
+C187: A117, 
+C188: A24, A166, 
+C189: A151, 
+C190: A27, A164, 
+C191: A157, 
+C192: A14, A163, 
+C193: A3, A127, 
+C194: A66, A135, 
+C195: A63, A157, 
+C196: A64, A107, 
+C197: A100, 
+C198: A102, 
+C199: A47, A194, 
+C200: A80, 
+
+ AGENTS:
+Agent: 1; Utility: 86.0
+Agent: 2; Utility: 72.0
+Agent: 3; Utility: 80.0
+Agent: 4; Utility: 71.0
+Agent: 5; Utility: 78.0
+Agent: 6; Utility: 68.0
+Agent: 7; Utility: 81.0
+Agent: 8; Utility: 98.0
+Agent: 9; Utility: 91.0
+Agent: 10; Utility: 97.0
+Agent: 11; Utility: 96.0
+Agent: 12; Utility: 84.0
+Agent: 13; Utility: 64.0
+Agent: 14; Utility: 58.0
+Agent: 15; Utility: 83.0
+Agent: 16; Utility: 90.0
+Agent: 17; Utility: 55.75
+Agent: 18; Utility: 91.0
+Agent: 19; Utility: 96.0
+Agent: 20; Utility: 98.0
+Agent: 21; Utility: 78.0
+Agent: 22; Utility: 96.0
+Agent: 23; Utility: 99.0
+Agent: 24; Utility: 93.0
+Agent: 25; Utility: 65.0
+Agent: 26; Utility: 77.0
+Agent: 27; Utility: 86.0
+Agent: 28; Utility: 95.0
+Agent: 29; Utility: 51.0
+Agent: 30; Utility: 94.0
+Agent: 31; Utility: 50.25
+Agent: 32; Utility: 0.0
+Agent: 33; Utility: 24.0
+Agent: 34; Utility: 97.0
+Agent: 35; Utility: 76.0
+Agent: 36; Utility: 97.0
+Agent: 37; Utility: 0.0
+Agent: 38; Utility: 81.0
+Agent: 39; Utility: 99.0
+Agent: 40; Utility: 93.0
+Agent: 41; Utility: 48.0
+Agent: 42; Utility: 74.0
+Agent: 43; Utility: 75.0
+Agent: 44; Utility: 76.0
+Agent: 45; Utility: 88.0
+Agent: 46; Utility: 59.0
+Agent: 47; Utility: 68.0
+Agent: 48; Utility: 91.0
+Agent: 49; Utility: 96.0
+Agent: 50; Utility: 83.0
+Agent: 51; Utility: 96.0
+Agent: 52; Utility: 63.0
+Agent: 53; Utility: 84.0
+Agent: 54; Utility: 13.0
+Agent: 55; Utility: 73.0
+Agent: 56; Utility: 71.0
+Agent: 57; Utility: 70.0
+Agent: 58; Utility: 93.0
+Agent: 59; Utility: 99.0
+Agent: 60; Utility: 86.0
+Agent: 61; Utility: 86.0
+Agent: 62; Utility: 79.0
+Agent: 63; Utility: 58.0
+Agent: 64; Utility: 87.0
+Agent: 65; Utility: 75.0
+Agent: 66; Utility: 64.0
+Agent: 67; Utility: 99.0
+Agent: 68; Utility: 79.0
+Agent: 69; Utility: 48.0
+Agent: 70; Utility: 95.0
+Agent: 71; Utility: 67.0
+Agent: 72; Utility: 99.0
+Agent: 73; Utility: 91.0
+Agent: 74; Utility: 99.0
+Agent: 75; Utility: 98.0
+Agent: 76; Utility: 99.0
+Agent: 77; Utility: 84.0
+Agent: 78; Utility: 94.0
+Agent: 79; Utility: 87.0
+Agent: 80; Utility: 0.0
+Agent: 81; Utility: 21.0
+Agent: 82; Utility: 91.0
+Agent: 83; Utility: 61.0
+Agent: 84; Utility: 85.0
+Agent: 85; Utility: 91.0
+Agent: 86; Utility: 0.0
+Agent: 87; Utility: 55.0
+Agent: 88; Utility: 86.0
+Agent: 89; Utility: 48.0
+Agent: 90; Utility: 95.0
+Agent: 91; Utility: 55.0
+Agent: 92; Utility: 0.0
+Agent: 93; Utility: 0.0
+Agent: 94; Utility: 6.0
+Agent: 95; Utility: 4.0
+Agent: 96; Utility: 81.0
+Agent: 97; Utility: 30.0
+Agent: 98; Utility: 0.0
+Agent: 99; Utility: 70.0
+Agent: 100; Utility: 0.0
+Agent: 101; Utility: 0.0
+Agent: 102; Utility: 0.0
+Agent: 103; Utility: 0.0
+Agent: 104; Utility: 68.0
+Agent: 105; Utility: 0.0
+Agent: 106; Utility: 98.0
+Agent: 107; Utility: 69.0
+Agent: 108; Utility: 52.0
+Agent: 109; Utility: 78.0
+Agent: 110; Utility: 74.0
+Agent: 111; Utility: 51.0
+Agent: 112; Utility: 0.0
+Agent: 113; Utility: 0.0
+Agent: 114; Utility: 0.0
+Agent: 115; Utility: 0.0
+Agent: 116; Utility: 69.0
+Agent: 117; Utility: 0.0
+Agent: 118; Utility: 6.125
+Agent: 119; Utility: 0.0
+Agent: 120; Utility: 76.0
+Agent: 121; Utility: 92.0
+Agent: 122; Utility: 0.0
+Agent: 123; Utility: 0.0
+Agent: 124; Utility: 84.0
+Agent: 125; Utility: 2.0
+Agent: 126; Utility: 26.0
+Agent: 127; Utility: 88.0
+Agent: 128; Utility: 38.0
+Agent: 129; Utility: 12.0
+Agent: 130; Utility: 0.0
+Agent: 131; Utility: 0.0
+Agent: 132; Utility: 0.0
+Agent: 133; Utility: 75.0
+Agent: 134; Utility: 36.0
+Agent: 135; Utility: 82.0
+Agent: 136; Utility: 44.0
+Agent: 137; Utility: 0.0
+Agent: 138; Utility: 63.0
+Agent: 139; Utility: 76.0
+Agent: 140; Utility: 0.0
+Agent: 141; Utility: 0.0
+Agent: 142; Utility: 0.0
+Agent: 143; Utility: 0.0
+Agent: 144; Utility: 49.0
+Agent: 145; Utility: 24.0
+Agent: 146; Utility: 0.0
+Agent: 147; Utility: 0.0
+Agent: 148; Utility: 0.0
+Agent: 149; Utility: 10.0
+Agent: 150; Utility: 0.0
+Agent: 151; Utility: 0.0
+Agent: 152; Utility: 72.0
+Agent: 153; Utility: 0.0
+Agent: 154; Utility: 0.0
+Agent: 155; Utility: 0.0
+Agent: 156; Utility: 0.0
+Agent: 157; Utility: 84.0
+Agent: 158; Utility: 0.0
+Agent: 159; Utility: 64.0
+Agent: 160; Utility: 81.0
+Agent: 161; Utility: 8.0
+Agent: 162; Utility: 67.0
+Agent: 163; Utility: 59.0
+Agent: 164; Utility: 33.0
+Agent: 165; Utility: 67.0
+Agent: 166; Utility: 56.0
+Agent: 167; Utility: 0.0
+Agent: 168; Utility: 55.0
+Agent: 169; Utility: 28.0
+Agent: 170; Utility: 21.0
+Agent: 171; Utility: 34.0
+Agent: 172; Utility: 85.0
+Agent: 173; Utility: 0.0
+Agent: 174; Utility: 0.0
+Agent: 175; Utility: 66.0
+Agent: 176; Utility: 0.0
+Agent: 177; Utility: 58.0
+Agent: 178; Utility: 56.0
+Agent: 179; Utility: 95.0
+Agent: 180; Utility: 4.0
+Agent: 181; Utility: 0.0
+Agent: 182; Utility: 18.25
+Agent: 183; Utility: 25.0
+Agent: 184; Utility: 1.0
+Agent: 185; Utility: 38.75
+Agent: 186; Utility: 41.0
+Agent: 187; Utility: 0.0
+Agent: 188; Utility: 52.0
+Agent: 189; Utility: 71.0
+Agent: 190; Utility: 0.0
+Agent: 191; Utility: 24.0
+Agent: 192; Utility: 99.0
+Agent: 193; Utility: 0.0
+Agent: 194; Utility: 97.0
+Agent: 195; Utility: 97.0
+Agent: 196; Utility: 0.0
+Agent: 197; Utility: 0.0
+Agent: 198; Utility: 2.0
+Agent: 199; Utility: 0.0
+Agent: 200; Utility: 0.0

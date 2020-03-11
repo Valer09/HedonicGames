@@ -1,0 +1,176 @@
+
+
+**ESECUZIONE CON k= 12archi, q=2, tempo= 0.2 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C2 ; 
+A3 -> C2 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, 
+C2: A1, A2, A3, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 28.5
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 58.5
+Agent: 4; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C1 ; 
+A3 -> C4 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A2, A4, 
+C2: 
+C3: 
+C4: A1, A3, 
+
+ AGENTS:
+Agent: 1; Utility: 46.0
+Agent: 2; Utility: 81.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 72.0
+
+
+**ESECUZIONE CON k= 12archi, q=3, tempo= 0.2 con mosse classiche 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C2 ; 
+A3 -> C2 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, 
+C2: A1, A2, A3, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 28.5
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 58.5
+Agent: 4; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C4 ; 
+A2 -> C1 ; 
+A3 -> C4 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A2, A4, 
+C2: 
+C3: 
+C4: A1, A3, 
+
+ AGENTS:
+Agent: 1; Utility: 46.0
+Agent: 2; Utility: 81.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 72.0
+
+
+**ESECUZIONE CON k= 12archi, q=2, tempo= 0.2 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C2 ; 
+A3 -> C2 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, 
+C2: A1, A2, A3, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 28.5
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 58.5
+Agent: 4; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C3 ; 
+A3 -> C2 ; 
+A4 -> C3 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A1, A3, 
+C3: A2, A4, 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 46.0
+Agent: 2; Utility: 81.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 72.0
+
+
+**ESECUZIONE CON k= 12archi, q=3, tempo= 0.2 con mosse random 
+----STATO INIZIALE----
+CORE: false
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C2 ; 
+A3 -> C2 ; 
+A4 -> C1 ; 
+}
+COALITIONS: 
+
+C1: A4, 
+C2: A1, A2, A3, 
+C3: 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 28.5
+Agent: 2; Utility: 52.0
+Agent: 3; Utility: 58.5
+Agent: 4; Utility: 0.0
+
+----ULTIMO STATO----
+CORE: true
+PARTITIONS: {
+A1 -> C2 ; 
+A2 -> C3 ; 
+A3 -> C2 ; 
+A4 -> C3 ; 
+}
+COALITIONS: 
+
+C1: 
+C2: A1, A3, 
+C3: A2, A4, 
+C4: 
+
+ AGENTS:
+Agent: 1; Utility: 46.0
+Agent: 2; Utility: 81.0
+Agent: 3; Utility: 31.0
+Agent: 4; Utility: 72.0
